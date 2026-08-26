@@ -72,11 +72,9 @@ export const mix1Work = {
       sector: 'fintech',
     },
     {
-      // TODO: desc still needs the specific design-decision claim — see the matching
-      // TODO markers on the 'blockfi-rewards-card' entry in mix1Projects below.
       name: 'BlockFi — Credit Card Rewards (Mobile)',
       headline: 'Scoping and shipping the mobile experience behind the world’s first Bitcoin rewards credit card',
-      desc: 'Led mobile design — enrollment, card management, and rewards tracking — for BlockFi’s Bitcoin Rewards Visa card, launched nationally in 2021 to a ~400,000-signup waitlist. Reached 50,000+ active cardholders within 90 days, averaging ~$30,000/year in spend (450% above the ~$5,000 industry norm) and pacing toward $2B+ in annualized volume (BlockFi, Oct 2021). [DESIGN DECISION — fill in the specific mobile-design decision behind these numbers before this goes live.]',
+      desc: 'Performed as lead product designer for the world’s first Bitcoin rewards credit card, owning the zero-to-one native experience — UX, wireframes, prototypes, and iteration — with marketing, engineering, and every cross-functional stakeholder in the loop. Reached 50,000+ active cardholders within 90 days of national launch, spending 450% above the card industry average and pacing toward $2B+ in annualized volume (BlockFi, Oct 2021).',
       image: '/images/portfolio/gf-blockfi.jpg',
       service: 'leadership',
       sector: 'fintech',
@@ -624,23 +622,19 @@ export const mix1Projects = [
       "BlockFi's Bitcoin Rewards Visa card wasn't a marketing bet — it was a product bet on a category no issuer had shipped: a credit card that paid rewards in Bitcoin instead of points or cashback. Before launch it had already pulled a waitlist of roughly 400,000 signups (Dec 2020–Jul 2021), which meant the mobile experience — enrollment, card management, and rewards tracking — had to hold up under real demand from day one, not iterate its way there.",
     featuredSections: [
       {
-        lead: 'Owned the mobile surface: enrollment, card management, and rewards tracking.',
+        lead: 'Performed as lead product designer for the world’s first Bitcoin rewards credit card — owning the mobile surface: enrollment, card management, and rewards tracking.',
         richTitle: 'Scope and role',
         body: [
-          'Lead designer, mobile, for the BlockFi Rewards Card experience — distinct from the BlockFi Mobile trading redesign (a separate case study in this portfolio). The card launched nationally in mid-2021 on the Visa network, issued by Evolve Bank & Trust and powered by Deserve’s card platform, converting a ~400K-signup waitlist into an active cardholder base.',
-          // TODO: the specific mobile-design decision this case study is built to prove —
-          // e.g. a streamlined enrollment path, a rewards-tracking pattern, a reusable
-          // component — isn't sourceable from press. Fill from memory of the actual work;
-          // this is the one claim in the case study that has to come from you, not research.
-          '[DESIGN DECISION — fill in: the specific enrollment, card-management, or rewards-tracking decision that drove the numbers below.]',
+          'Lead designer, mobile, for the BlockFi Rewards Card experience. The card launched nationally in mid-2021 on the Visa network, issued by Evolve Bank & Trust and powered by Deserve’s card platform, converting a ~400K-signup waitlist into an active cardholder base.',
+          'Owned the zero-to-one native experience end to end — UX, wireframes, prototypes, and iteration — incorporating marketing and engineering input, with every cross-functional stakeholder in the loop throughout.',
         ],
         images: ['/images/portfolio/gf-blockfi.jpg'],
       },
       {
-        lead: '50,000+ active cardholders within 90 days of national launch.',
+        lead: '50,000+ active cardholders within 90 days of national launch, spending 450% above the card industry average and pacing toward $2B+ in annualized volume.',
         richTitle: 'Launch and adoption',
         body: [
-          'Cardholders spent an average of ~$30,000/year on the card — roughly 450% above the ~$5,000 average for Amex, Mastercard, and Visa cards generally — with spend pacing toward $2B+ annualized. By December 2021, cardholders had grown past 70,000 (secondary source, cited with lighter confidence than BlockFi’s own release below).',
+          'By December 2021, cardholders had grown past 70,000 — a secondary source (Shorty Awards), cited with lighter confidence than BlockFi’s own release above. Rewards distribution reached 120+ BTC (~$6.8M) as of October 12, 2021 (BlockFi, GlobeNewswire).',
           'The card program paused following BlockFi’s bankruptcy filing on Nov 28, 2022, with no new cards issued after — a company-level wind-down, not a product or design failure (NerdWallet).',
           // TODO: fill in the downstream effect of the design decision above — what it
           // unlocked, per the Extended XYZ formula’s "which [unlocked what]" clause.
@@ -651,7 +645,7 @@ export const mix1Projects = [
     ],
     mockups: ['/images/portfolio/gf-blockfi.jpg'],
     closingLead:
-      'Led mobile design for BlockFi’s Bitcoin Rewards Visa card — enrollment, card management, and rewards tracking — for a launch that reached 50,000+ active cardholders within 90 days, averaging $30,000/year in spend (450% above the ~$5,000 industry norm) and pacing toward $2B+ in annualized volume (BlockFi, Oct 2021), by [the specific mobile-design decision], which [the downstream effect].',
+      'Led mobile design for BlockFi’s Bitcoin Rewards Visa card — enrollment, card management, and rewards tracking — for a launch that reached 50,000+ active cardholders within 90 days, averaging $30,000/year in spend (450% above the ~$5,000 industry norm) and pacing toward $2B+ in annualized volume (BlockFi, Oct 2021), by owning the zero-to-one native experience — UX, wireframes, prototypes, and iteration, with marketing and engineering input and every cross-functional stakeholder in the loop — which [the downstream effect].',
     stats: [
       { name: 'Pre-launch waitlist', description: 'Accumulated Dec 2020–Jul 2021, ahead of national launch (Forbes; PR Newswire, Jul 2021).', value: '~400,000' },
       { name: 'Active cardholders', description: 'Within the first 90 days of national launch (BlockFi, GlobeNewswire, Oct 13 2021).', value: '50,000+' },
