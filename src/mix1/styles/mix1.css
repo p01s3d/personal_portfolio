@@ -1114,12 +1114,26 @@ html[data-mix1] .block-screen-carousel__track::-webkit-scrollbar {
   display: none;
 }
 
+/* 1.3-up on mobile (peek of the next screen), 2-up on tablet, 3-up on
+   desktop — so the user focuses on a few screens at a time, not all 12. */
 html[data-mix1] .block-screen-carousel__item {
-  flex: 0 0 min(280px, 70vw);
+  flex: 0 0 calc((100% - 0.3 * var(--gap)) / 1.3);
   aspect-ratio: 1320 / 2868;
   overflow: hidden;
   border-radius: 12px;
   scroll-snap-align: start;
+}
+
+@media screen and (min-width: 560px) {
+  html[data-mix1] .block-screen-carousel__item {
+    flex: 0 0 calc((100% - var(--gap)) / 2);
+  }
+}
+
+@media screen and (min-width: 992px) {
+  html[data-mix1] .block-screen-carousel__item {
+    flex: 0 0 calc((100% - 2 * var(--gap)) / 3);
+  }
 }
 
 html[data-mix1] .block-screen-carousel__item .picture {
