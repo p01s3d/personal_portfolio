@@ -47,7 +47,17 @@ export function ProjectPage() {
               <span>{project.sector}</span>
               <span>/ {project.year}</span>
             </div>
-            <FigureStripes src={project.image} alt={project.name} />
+            {'heroGrid' in project && project.heroGrid.length > 0 ? (
+              <div className="hero-project__screen-grid" aria-label={`${project.name} — screen grid`}>
+                {project.heroGrid.map((src, i) => (
+                  <div key={i} className="hero-project__screen-grid-item">
+                    <Picture src={src} alt="" className="picture--cover" />
+                  </div>
+                ))}
+              </div>
+            ) : (
+              <FigureStripes src={project.image} alt={project.name} />
+            )}
           </div>
           <div className="hero-project__services-readtime">
             <div className="hero-project__services">

@@ -617,6 +617,9 @@ export const mix1Projects = [
     service: 'Leadership',
     readTime: 4,
     image: '/images/portfolio/gf-blockfi.jpg',
+    // Placeholder frames, framed at the iPhone 17 Pro Max's screen ratio (1320x2868)
+    // pending real card screens — swap each src once sourced (see TODO above).
+    heroGrid: Array.from({ length: 12 }, () => '/images/portfolio/gf-blockfi.jpg'),
     headline: 'Scoping and shipping the mobile experience behind the world’s first Bitcoin rewards credit card',
     intro:
       "BlockFi's Bitcoin Rewards Visa card wasn't a marketing bet — it was a product bet on a category no issuer had shipped: a credit card that paid rewards in Bitcoin instead of points or cashback. Before launch it had already pulled a waitlist of roughly 400,000 signups (Dec 2020–Jul 2021), which meant the mobile experience — enrollment, card management, and rewards tracking — had to hold up under real demand from day one, not iterate its way there.",
@@ -644,7 +647,7 @@ export const mix1Projects = [
     ],
     mockups: ['/images/portfolio/gf-blockfi.jpg'],
     closingLead:
-      'Led mobile design for BlockFi’s Bitcoin Rewards Visa card — enrollment, card management, and rewards tracking — for a launch that reached 50,000+ active cardholders within 90 days, averaging $30,000/year in spend (450% above the ~$5,000 industry norm) and pacing toward $2B+ in annualized volume (BlockFi, Oct 2021), by owning the zero-to-one native experience — UX, wireframes, prototypes, and iteration, with marketing and engineering input and every cross-functional stakeholder in the loop — which [the downstream effect].',
+      '“Crypto rewards programs are a compelling way to engage consumers in the crypto economy. We’re excited to see programs like the BlockFi Rewards Visa Card, which offer rewards that are relevant to the growing community of digital currency adopters.” — Forbes, Jul 6 2021',
     stats: [
       { name: 'Pre-launch waitlist', description: 'Accumulated Dec 2020–Jul 2021, ahead of national launch (Forbes; PR Newswire, Jul 2021).', value: '~400,000' },
       { name: 'Active cardholders', description: 'Within the first 90 days of national launch (BlockFi, GlobeNewswire, Oct 13 2021).', value: '50,000+' },

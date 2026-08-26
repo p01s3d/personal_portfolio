@@ -1094,6 +1094,31 @@ html[data-mix1] .hero-project__figure .picture {
   aspect-ratio: 99 / 124;
 }
 
+/* 3x4 grid of mobile screens, sized to the iPhone 17 Pro Max's screen ratio
+   (1320 x 2868 px, 6.9", confirmed via Apple's published specs — not a guess). */
+html[data-mix1] .hero-project__screen-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--gap);
+}
+
+html[data-mix1] .hero-project__screen-grid-item {
+  aspect-ratio: 1320 / 2868;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+html[data-mix1] .hero-project__screen-grid-item .picture {
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 767px) {
+  html[data-mix1] .hero-project__screen-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 html[data-mix1] .hero-project__services-readtime {
   grid-area: s;
   display: flex;
