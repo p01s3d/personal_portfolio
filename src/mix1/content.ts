@@ -74,7 +74,7 @@ export const mix1Work = {
     {
       name: 'BlockFi — Credit Card Rewards (Mobile)',
       headline: 'Scoping and shipping the mobile experience behind the world’s first Bitcoin rewards credit card',
-      desc: 'Performed as lead product designer for the world’s first Bitcoin rewards credit card, owning the zero-to-one native experience — UX, wireframes, prototypes, and iteration — with marketing, engineering, and every cross-functional stakeholder in the loop. Reached 50,000+ active cardholders within 90 days of national launch, spending 450% above the card industry average and pacing toward $2B+ in annualized volume (BlockFi, Oct 2021).',
+      desc: 'Performed as lead product designer for the world’s first Bitcoin rewards credit card — building the design system and implementing the native experience against a web version, reusing the same components across both to stave off design debt and create a unified cross-platform experience. Reached 50,000+ active cardholders within 90 days of national launch, spending 450% above the card industry average and pacing toward $2B+ in annualized volume (BlockFi, Oct 2021).',
       image: '/images/portfolio/gf-blockfi.jpg',
       service: 'leadership',
       sector: 'fintech',
@@ -630,7 +630,7 @@ export const mix1Projects = [
         richTitle: 'Scope and role',
         body: [
           'Lead designer, mobile, for the BlockFi Rewards Card experience. The card launched nationally in mid-2021 on the Visa network, issued by Evolve Bank & Trust and powered by Deserve’s card platform, converting a ~400K-signup waitlist into an active cardholder base.',
-          'Owned the zero-to-one native experience end to end — UX, wireframes, prototypes, and iteration — incorporating marketing and engineering input, with every cross-functional stakeholder in the loop throughout.',
+          'Built the design system and implemented the native experience against a web version — the same components reused across both platforms rather than diverging.',
         ],
         images: ['/images/portfolio/gf-blockfi.jpg'],
       },
@@ -639,9 +639,7 @@ export const mix1Projects = [
         richTitle: 'Launch and adoption',
         body: [
           'By December 2021, cardholders had grown past 70,000 — a secondary source (Shorty Awards), cited with lighter confidence than BlockFi’s own release above. Rewards distribution reached 120+ BTC (~$6.8M) as of October 12, 2021 (BlockFi, GlobeNewswire).',
-          // TODO: fill in the downstream effect of the design decision above — what it
-          // unlocked, per the Extended XYZ formula’s "which [unlocked what]" clause.
-          '[DOWNSTREAM EFFECT — fill in: what the decision above unlocked, to complete the Extended XYZ impact line.]',
+          'That reuse staved off design debt and created a unified cross-platform experience — one system driving both native and web, not two drifting apart.',
         ],
         images: ['/images/portfolio/gf-blockfi.jpg'],
       },
