@@ -618,8 +618,9 @@ export const mix1Projects = [
     readTime: 4,
     image: '/images/portfolio/gf-blockfi.jpg',
     // Placeholder frames, framed at the iPhone 17 Pro Max's screen ratio (1320x2868)
-    // pending real card screens — swap each src once sourced (see TODO above).
-    heroGrid: Array.from({ length: 12 }, () => '/images/portfolio/gf-blockfi.jpg'),
+    // pending real card screens — swap each src once sourced (see TODO above). Rendered
+    // as a body carousel (see ProjectPage.tsx), not in the hero.
+    screenCarousel: Array.from({ length: 12 }, () => '/images/portfolio/gf-blockfi.jpg'),
     headline: 'Scoping and shipping the mobile experience behind the world’s first Bitcoin rewards credit card',
     intro:
       "BlockFi's Bitcoin Rewards Visa card wasn't a marketing bet — it was a product bet on a category no issuer had shipped: a credit card that paid rewards in Bitcoin instead of points or cashback. Before launch it had already pulled a waitlist of roughly 400,000 signups (Dec 2020–Jul 2021), which meant the mobile experience — enrollment, card management, and rewards tracking — had to hold up under real demand from day one, not iterate its way there.",

@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { Navigate, useParams } from 'react-router-dom';
 import { mix1Projects } from '../content';
 import { Mix1Contact } from '../Contact';
@@ -9,6 +9,8 @@ export function ProjectPage() {
   const { slug } = useParams<{ slug: string }>();
   const project = mix1Projects.find((p) => p.slug === slug);
   const heroRef = useRef<HTMLElement>(null);
+  const carouselTrackRef = useRef<HTMLDivElement>(null);
+  const [carouselActive, setCarouselActive] = useState(0);
 
   useEffect(() => {
     const hero = heroRef.current;
@@ -24,6 +26,19 @@ export function ProjectPage() {
       observer.disconnect();
       document.documentElement.classList.remove('mix1-hero-visible');
     };
+  }, []);
+
+  // Same scroll-snap + active-index mechanism as Studio's vision-slider
+  // (src/studio/pages/AgencyPage.tsx) — reused, not rebuilt.
+  useEffect(() => {
+    const track = carouselTrackRef.current;
+    if (!track) return;
+    const onScroll = () => {
+      const width = track.clientWidth || 1;
+      setCarouselActive(Math.round(track.scrollLeft / width));
+    };
+    track.addEventListener('scroll', onScroll, { passive: true });
+    return () => track.removeEventListener('scroll', onScroll);
   }, []);
 
   if (!project) return <Navigate to="/mix1/work" replace />;
@@ -47,17 +62,7 @@ export function ProjectPage() {
               <span>{project.sector}</span>
               <span>/ {project.year}</span>
             </div>
-            {'heroGrid' in project && project.heroGrid.length > 0 ? (
-              <div className="hero-project__screen-grid" aria-label={`${project.name} — screen grid`}>
-                {project.heroGrid.map((src, i) => (
-                  <div key={i} className="hero-project__screen-grid-item">
-                    <Picture src={src} alt="" className="picture--cover" />
-                  </div>
-                ))}
-              </div>
-            ) : (
-              <FigureStripes src={project.image} alt={project.name} />
-            )}
+            <FigureStripes src={project.image} alt={project.name} />
           </div>
           <div className="hero-project__services-readtime">
             <div className="hero-project__services">
@@ -107,6 +112,37 @@ export function ProjectPage() {
             </div>
           </div>
         ))}
+
+        {/* Block Screen Carousel — reuses Studio's vision-slider scroll-snap mechanism */}
+        {'screenCarousel' in project && project.screenCarousel.length > 0 && (
+          <div className="block block--safe-area block--bg-light block-screen-carousel">
+            <div className="block-screen-carousel__slider">
+              <div className="block-screen-carousel__track" ref={carouselTrackRef}>
+                {project.screenCarousel.map((src, i) => (
+                  <div key={i} className="block-screen-carousel__item">
+                    <Picture src={src} alt="" className="picture--cover" />
+                  </div>
+                ))}
+              </div>
+            </div>
+            <div className="block-screen-carousel__nav">
+              {project.screenCarousel.map((_, i) => (
+                <button
+                  key={i}
+                  type="button"
+                  className={`block-screen-carousel__nav-button${i === carouselActive ? ' block-screen-carousel__nav-button--active' : ''}`}
+                  onClick={() => {
+                    const target = carouselTrackRef.current?.children[i] as HTMLElement | undefined;
+                    target?.scrollIntoView({ behavior: 'smooth', inline: 'start', block: 'nearest' });
+                  }}
+                  aria-label={`Go to screen ${i + 1}`}
+                >
+                  {String(i + 1).padStart(2, '0')}
+                </button>
+              ))}
+            </div>
+          </div>
+        )}
 
         {/* Block Motion Demos — reference clips illustrating the motion principles behind the work */}
         {project.motionDemos.length > 0 && (
