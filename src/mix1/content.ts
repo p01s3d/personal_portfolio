@@ -635,7 +635,6 @@ export const mix1Projects = [
         richTitle: 'Launch and adoption',
         body: [
           'By December 2021, cardholders had grown past 70,000 — a secondary source (Shorty Awards), cited with lighter confidence than BlockFi’s own release above. Rewards distribution reached 120+ BTC (~$6.8M) as of October 12, 2021 (BlockFi, GlobeNewswire).',
-          'The card program paused following BlockFi’s bankruptcy filing on Nov 28, 2022, with no new cards issued after — a company-level wind-down, not a product or design failure (NerdWallet).',
           // TODO: fill in the downstream effect of the design decision above — what it
           // unlocked, per the Extended XYZ formula’s "which [unlocked what]" clause.
           '[DOWNSTREAM EFFECT — fill in: what the decision above unlocked, to complete the Extended XYZ impact line.]',
