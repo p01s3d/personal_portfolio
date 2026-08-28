@@ -43,7 +43,7 @@ export const mix1Work = {
       name: 'Mezo Clay Design System',
       headline: 'Converting design debt into product infrastructure',
       desc: 'Led Mezo design system migration across three product phases (legacy, testnet, mainnet); post-launch audit established 70% component integration and identified systemic overrides from premature styling as the primary implementation bottleneck, informing governance decisions. Managed a direct report and an engineering contributor from execution through deployment. Partnered with the contributing designer to set quality standards and pattern library conventions, building out Uber Base into a React, WCAG 2.2-compliant library purpose-built for the Thesis BitcoinFi suite. Managed, built, and tested 2,000+ variants across 50+ base components, establishing the single source of truth every product surface shipped: the infrastructure behind $322M in testnet deposits, 154K transactions, and $151M TVL at mainnet, peaking at $200M+.',
-      image: '/images/portfolio/mock-thesis-systems.png',
+      image: '/images/blank.png?was=mock-thesis-systems',
       service: 'systems',
       sector: 'crypto',
     },
@@ -51,7 +51,7 @@ export const mix1Work = {
       name: 'Deposit on Mezo',
       headline: 'Improving the deposit flow that unlocked Mezo’s liquidity',
       desc: 'Depositing Bitcoin to Mezo wasn’t a standard transfer — users were bridging assets across chains into a protocol where a wrong address meant permanent loss of funds. Research confirmed the existing deposit flow was fundamentally broken — perceived as risky and confusing. The redesign introduced upfront deposit instructions, surfaced network context and minimum thresholds before commitment, and provided unambiguous success states so users knew their funds had arrived safely. The deposit flow became the primary on-ramp enabling liquidity for vaults, pools, and rewards — contributing to Mezo’s growth to $200M+ TVL.',
-      image: '/images/portfolio/project-hero-coinbase.png',
+      image: '/images/blank.png?was=project-hero-coinbase',
       service: 'product',
       sector: 'crypto',
     },
@@ -59,7 +59,7 @@ export const mix1Work = {
       name: 'Borrow MUSD on Mezo',
       headline: 'Making high-stakes borrowing feel safe, not complex',
       desc: 'MUSD borrowing required users to understand collateralization, liquidation risk, and variable APR simultaneously — concepts that had no mainstream equivalent. The design challenge wasn’t simplification for its own sake; it was making consequential financial decisions feel appropriately weighted without overwhelming users into inaction. The redesign introduced progressive disclosure, consolidated error handling to a single inline signal, and leaned on benchmarked design patterns to reduce DeFi complexity for a larger addressable market.',
-      image: '/images/portfolio/project-01-borrow.png',
+      image: '/images/blank.png?was=project-01-borrow',
       service: 'product',
       sector: 'crypto',
     },
@@ -67,7 +67,7 @@ export const mix1Work = {
       name: 'BlockFi Mobile',
       headline: 'Redefining mobile trading to drive 200%+ transaction volume in 90 days',
       desc: 'BlockFi’s mobile trading experience was scoped too narrowly — USD denomination was the surface problem, but the deeper opportunity was rebuilding the entire flow around how users actually trade. As Director, I pushed back on the original brief using product benchmarking and heuristic evaluation, moving buy/sell intent before the amount screen to eliminate a segmented control that was adding cognitive load, making room for surfacing recurring trades earlier in the flow — previously buried at the summary screen. Both decisions were validated through user testing before implementation, and applied consistently across web and mobile. Trades grew 200%+ within 90 days of launch — outpacing web-based trades for the first time — and contributed directly to BlockFi’s growth in service of 225K+ clients.',
-      image: '/images/portfolio/gf-blockfi.jpg',
+      image: '/images/blank.png?was=gf-blockfi',
       service: 'leadership',
       sector: 'fintech',
     },
@@ -75,7 +75,7 @@ export const mix1Work = {
       name: 'BlockFi — Credit Card Rewards (Mobile)',
       headline: 'Scoping and shipping the mobile experience behind the world’s first Bitcoin rewards credit card',
       desc: 'Performed as lead product designer for the world’s first Bitcoin rewards credit card — building the design system and implementing the native experience against a web version, reusing the same components across both to stave off design debt and create a unified cross-platform experience. Reached 50,000+ active cardholders within 90 days of national launch, spending 450% above the card industry average and pacing toward $2B+ in annualized volume (BlockFi, Oct 2021).',
-      image: '/images/portfolio/gf-blockfi.jpg',
+      image: '/images/blank.png?was=gf-blockfi',
       service: 'leadership',
       sector: 'fintech',
     },
@@ -83,7 +83,7 @@ export const mix1Work = {
       name: 'C@SH Native App',
       headline: 'Zero-to-one product design that informed a strategic pivot',
       desc: 'At an a16z Crypto portfolio company, I established the design function from zero — customizing Uber Base into a branded component library before a single internal designer was hired, doubling engineering speed and giving the team infrastructure to build with from day one. The VC principal set a high bar: a premium product resonating with an urban audience. We met it — validated through affinity testing — delivering a full light and dark mode experience. The same research surfaced a harder finding: the market hadn’t matured enough for a social wallet. That insight informed a strategic pivot, preserving capital that would otherwise have been burned against a product without sufficient traction.',
-      image: '/images/portfolio/gf-cash.png',
+      image: '/images/blank.png?was=gf-cash',
       service: 'leadership',
       sector: 'crypto',
     },
@@ -91,7 +91,7 @@ export const mix1Work = {
       name: 'EASI Food Delivery',
       headline: 'Rearchitecting EASI to win a second audience — and a $500M valuation',
       desc: 'EASI had a strong market position in Australian diaspora communities, but poor usability, frequent crashes, and a sub-3.0 App Store rating were capping their TAM. In six weeks, I used benchmarking to build stakeholder confidence for a full redesign, then rebuilt core ordering flow in parallel with engineering’s re-architecture — prototyping and testing each decision before handoff. App Store rating climbed from below 3.0 to 4.5 stars. EASI surpassed 1M+ users, reached a $500M+ valuation, and was acquired by HungryPanda in 2022 — whose acquisition rationale mirrored the market strategy the redesign was built around.',
-      image: '/images/portfolio/gf-easi.jpg',
+      image: '/images/blank.png?was=gf-easi',
       service: 'consultant',
       sector: 'consumer',
     },
@@ -99,7 +99,7 @@ export const mix1Work = {
       name: 'Krisp AI',
       headline: 'Product innovation for Krisp.ai’s noise cancelling desktop application',
       desc: 'Krisp had built strong utility as a consumer noise-cancellation tool, but the desktop experience hadn’t kept pace with what AI-native software was starting to look like. Engaged as principal design consultant, I redesigned the application around a modern UI system — introducing branded components to accelerate implementation, reduce design debt, and establish a visual foundation capable of scaling with the product. The engagement paused when COVID-19 created market uncertainty across the space. Krisp would later pivot into meeting intelligence and recording — a shift toward enterprise aesthetics and a design brief the original work wasn’t built to serve.',
-      image: '/images/portfolio/gf-krisp.jpg',
+      image: '/images/blank.png?was=gf-krisp',
       service: 'consultant',
       sector: 'ai',
     },
@@ -107,7 +107,7 @@ export const mix1Work = {
       name: 'Zalando Stories',
       headline: 'One motion language for a platform built on a proven bet',
       desc: 'Zalando’s majority stake in Highsnobiety had already proven the model — 80+ curated drops reaching 7M+ unique users before the platform had a name. Turning that into a permanent feature meant solving motion first: every editorial format needed transitions that felt consistent across app and web, and motion was still a pile of one-off files. Led a design-sprint week to define a platform-agnostic system — timing and easing as shared tokens, composed into a primitive set (sheet, enter/exit, press, swipe-up) any format could adopt instead of reinventing. Stories launched Sept 14, 2023 across 11 markets with five formats, and has scaled to 500+ stories and 700+ brands since.',
-      image: '/images/portfolio/gf-fennel.png',
+      image: '/images/blank.png?was=gf-fennel',
       service: 'systems',
       sector: 'consumer',
     },
@@ -121,8 +121,8 @@ export const mix1About = {
   teamIntro: 'Osandi Sekoú Robinson — product & design leader.',
   teamBody:
     'Startup founder turned design executive with 14 years building products and the orgs that ship them — across fintech, crypto, and consumer mobile.',
-  portrait: '/images/osandi-portrait-anime.png',
-  capabilitiesFigure: '/images/portfolio/mock-poised.png',
+  portrait: '/images/blank.png?was=osandi-portrait-anime',
+  capabilitiesFigure: '/images/blank.png?was=mock-poised',
   team: [{ name: 'Osandi Sekoú Robinson', role: 'Product & design leader' }],
   capabilities: [
     {
@@ -195,7 +195,7 @@ export const mix1About = {
     {
       name: 'Discover',
       copy: 'Discovery determines whether a team is solving the right problem before anyone commits to a solution. Widen the aperture before narrowing toward anything buildable. The output is alignment on the problem, the evidence needed, and why it matters to the business.',
-      image: '/images/studio/agency-01-9b4387d5aa.webp',
+      image: '/images/blank.png?was=agency-01-9b4387d5aa',
       methods: [
         'Customer feedback',
         'Quant data analysis',
@@ -212,13 +212,13 @@ export const mix1About = {
     {
       name: 'Explore',
       copy: 'With the evidential problem in sight, artifacts and written context align stakeholders — connecting hypotheses and objectives to human needs and business goals.',
-      image: '/images/studio/agency-05-6ff4e85875.webp',
+      image: '/images/blank.png?was=agency-05-6ff4e85875',
       methods: ['Diagram', 'Journey map', 'Wireframe', 'Prompt design & prototyping'],
     },
     {
       name: 'Validate',
       copy: 'Validation can occur at multiple touchpoints with an array of artifacts, ensuring the work addresses the needs of users — and, inevitably, the business.',
-      image: '/images/studio/agency-06-c2c1790069.webp',
+      image: '/images/blank.png?was=agency-06-c2c1790069',
       methods: [
         'Card sorting',
         'Design reviews',
@@ -235,7 +235,7 @@ export const mix1About = {
     {
       name: 'Implement',
       copy: 'Collaborate closely with engineers for design alignment and capture details pre-release. For new components, ensure awareness for product consistency. Cross-functional stakeholders are informed via Loom and case-study briefs before final sign-off — including how we measure design intent.',
-      image: '/images/studio/agency-07-a0986e9d3f.webp',
+      image: '/images/blank.png?was=agency-07-a0986e9d3f',
       methods: [
         'Feasibility sign-off',
         'Compliance sign-off',
@@ -377,7 +377,7 @@ export const mix1Projects = [
     year: '2023',
     service: 'Systems',
     readTime: 4,
-    image: '/images/portfolio/mock-thesis-systems.png',
+    image: '/images/blank.png?was=mock-thesis-systems',
     headline: 'Converting design debt into product infrastructure',
     intro:
       'What starts as a styling override always becomes a system problem. At Mezo, three product phases — legacy, testnet, mainnet — had accumulated enough inconsistency to slow every team touching the product. The work was infrastructure first, interface second.',
@@ -389,7 +389,7 @@ export const mix1Projects = [
           "Led the full migration to Mezo Clay — partnering with Uber Base as the foundation and building a WCAG 2.2-compliant React library purpose-built for the Thesis BitcoinFi suite. Managed a direct report and an engineering contributor from execution through deployment.",
           "The post-launch audit identified premature styling as the primary implementation bottleneck — a pattern that shows up in every fast-moving crypto team. The fix wasn't more components; it was clearer rules about when to override them.",
         ],
-        images: ['/images/portfolio/mock-thesis-systems.png', '/images/portfolio/mezo-hero.png'],
+        images: ['/images/blank.png?was=mock-thesis-systems', '/images/blank.png?was=mezo-hero'],
       },
       {
         lead: '2,000+ variants. 50+ base components. One source of truth.',
@@ -398,7 +398,7 @@ export const mix1Projects = [
           "Partnered with the contributing designer to set quality standards and pattern library conventions. Built and tested every variant against the Mezo product surfaces — deposit, borrow, wallet, explore — so each could ship without a separate design review cycle.",
           "The system became the infrastructure behind $322M in testnet deposits, 154K transactions, and $151M TVL at mainnet, peaking at $200M+.",
         ],
-        images: ['/images/portfolio/mezo-wallet.png', '/images/portfolio/mezo-explore.png', '/images/portfolio/mezo-borrow.png'],
+        images: ['/images/blank.png?was=mezo-wallet', '/images/blank.png?was=mezo-explore', '/images/blank.png?was=mezo-borrow'],
       },
       {
         lead: 'Design debt compounds silently until it stops shipping features.',
@@ -407,13 +407,13 @@ export const mix1Projects = [
           "A 70% component integration rate at post-launch audit sounds like success. It is — but the 30% that wasn't integrated told the real story: premature styling decisions made during testnet were being maintained as one-off overrides instead of being resolved back into the system.",
           "The governance decisions informed by that audit — when to override, when to extend, when to propose a new component — were as important as the components themselves.",
         ],
-        images: ['/images/portfolio/mock-thesis-systems.png', '/images/portfolio/mezo-borrow.png'],
+        images: ['/images/blank.png?was=mock-thesis-systems', '/images/blank.png?was=mezo-borrow'],
       },
     ],
     mockups: [
-      '/images/portfolio/mock-thesis-systems.png',
-      '/images/portfolio/mezo-hero.png',
-      '/images/portfolio/mezo-wallet.png',
+      '/images/blank.png?was=mock-thesis-systems',
+      '/images/blank.png?was=mezo-hero',
+      '/images/blank.png?was=mezo-wallet',
     ],
     closingLead: 'Infrastructure that outlasts the sprint cycle is the difference between a design system and a component dump.',
     stats: [
@@ -447,7 +447,7 @@ export const mix1Projects = [
     year: '2023',
     service: 'Product',
     readTime: 3,
-    image: '/images/portfolio/project-hero-coinbase.png',
+    image: '/images/blank.png?was=project-hero-coinbase',
     headline: "Improving the deposit flow that unlocked Mezo's liquidity",
     intro:
       "Depositing Bitcoin to Mezo wasn't a standard transfer. Users were bridging assets across chains into a protocol where a wrong address meant permanent loss of funds. The bar for clarity wasn't high — it was non-negotiable.",
@@ -459,7 +459,7 @@ export const mix1Projects = [
           "The existing deposit flow was perceived as risky and confusing — no upfront context, no network guidance, no unambiguous success state. Users had to infer what was happening at every step.",
           "The redesign introduced upfront deposit instructions before any commitment, surfaced network context and minimum thresholds early, and delivered success states specific enough that users knew their funds had arrived safely — not just that a transaction had fired.",
         ],
-        images: ['/images/portfolio/project-hero-coinbase.png', '/images/portfolio/project-after-coinbase.png'],
+        images: ['/images/blank.png?was=project-hero-coinbase', '/images/blank.png?was=project-after-coinbase'],
       },
       {
         lead: 'The deposit flow became the primary on-ramp for all of Mezo\'s liquidity.',
@@ -468,10 +468,10 @@ export const mix1Projects = [
           "Vaults, pools, and rewards all depended on a working deposit experience. The redesign unblocked each of them — contributing directly to Mezo's growth to $200M+ TVL.",
           "Sprint completion held at 98% across the engagement, which meant the research and design process ran fast enough to stay ahead of engineering.",
         ],
-        images: ['/images/portfolio/mezo-hero.png', '/images/portfolio/mezo-explore.png'],
+        images: ['/images/blank.png?was=mezo-hero', '/images/blank.png?was=mezo-explore'],
       },
     ],
-    mockups: ['/images/portfolio/project-hero-coinbase.png', '/images/portfolio/project-after-coinbase.png', '/images/portfolio/mezo-hero.png'],
+    mockups: ['/images/blank.png?was=project-hero-coinbase', '/images/blank.png?was=project-after-coinbase', '/images/blank.png?was=mezo-hero'],
     closingLead: 'Clarity at the point of commitment is not a UX nicety in a protocol where a wrong address means permanent loss.',
     stats: [
       { name: 'TVL at mainnet', description: 'Deposit flow was the primary on-ramp for all Mezo liquidity growth.', value: '$200M+' },
@@ -502,7 +502,7 @@ export const mix1Projects = [
     year: '2023',
     service: 'Product',
     readTime: 3,
-    image: '/images/portfolio/project-01-borrow.png',
+    image: '/images/blank.png?was=project-01-borrow',
     headline: 'Making high-stakes borrowing feel safe, not complex',
     intro:
       'MUSD borrowing required users to hold collateralization ratio, liquidation threshold, and variable APR in their heads simultaneously. None of those concepts have mainstream equivalents. The design problem was weight, not simplification.',
@@ -514,7 +514,7 @@ export const mix1Projects = [
           "Progressive disclosure let us surface complexity only when it was relevant to the decision at hand. A user setting their collateral ratio doesn't need to see APR mechanics at the same moment.",
           "Error handling was consolidated to a single inline signal. Before the redesign, errors appeared in multiple places with inconsistent framing — adding cognitive load at the worst possible moment.",
         ],
-        images: ['/images/portfolio/project-01-borrow.png', '/images/portfolio/project-02-loan.png'],
+        images: ['/images/blank.png?was=project-01-borrow', '/images/blank.png?was=project-02-loan'],
       },
       {
         lead: 'Benchmarking against established DeFi patterns reduced the learning curve.',
@@ -523,10 +523,10 @@ export const mix1Projects = [
           "The redesign borrowed interaction models from familiar financial interfaces — not to hide the complexity of DeFi, but to lower the entry cost for users coming from traditional finance.",
           "The borrow flow shipped as part of the mainnet launch suite, contributing to Mezo's $200M+ TVL and supporting expansion into a broader addressable market beyond early adopters.",
         ],
-        images: ['/images/portfolio/project-03-wallet.png', '/images/portfolio/project-04-marketplace.png'],
+        images: ['/images/blank.png?was=project-03-wallet', '/images/blank.png?was=project-04-marketplace'],
       },
     ],
-    mockups: ['/images/portfolio/project-01-borrow.png', '/images/portfolio/project-02-loan.png', '/images/portfolio/project-03-wallet.png'],
+    mockups: ['/images/blank.png?was=project-01-borrow', '/images/blank.png?was=project-02-loan', '/images/blank.png?was=project-03-wallet'],
     closingLead: 'The job isn\'t to make DeFi simple. It\'s to make consequential decisions feel proportionally weighted.',
     stats: [
       { name: 'TVL at mainnet', description: 'Borrow flow contributed to Mezo\'s liquidity growth alongside deposit and wallet.', value: '$200M+' },
@@ -556,7 +556,7 @@ export const mix1Projects = [
     year: '2021',
     service: 'Leadership',
     readTime: 4,
-    image: '/images/portfolio/gf-blockfi.jpg',
+    image: '/images/blank.png?was=gf-blockfi',
     headline: 'Redefining mobile trading to drive 200%+ transaction volume in 90 days',
     intro:
       "BlockFi's mobile trading had a surface problem and a structural one. USD denomination was the thing people complained about. The real issue was a flow built around what engineering found easiest to implement, not how traders actually think.",
@@ -568,7 +568,7 @@ export const mix1Projects = [
           "Product benchmarking and heuristic evaluation surfaced a pattern no one had named yet: the segmented control forcing users to choose denomination before intent was the single biggest source of drop-off. Moving buy/sell intent before the amount screen eliminated it.",
           "Recurring trades had been buried at the summary screen — three steps too late. Surfacing them earlier required a structural change to the flow that the original brief hadn't scoped. Both decisions were validated through user testing before implementation.",
         ],
-        images: ['/images/portfolio/gf-blockfi.jpg', '/images/portfolio/mock-bbu.png'],
+        images: ['/images/blank.png?was=gf-blockfi', '/images/blank.png?was=mock-bbu'],
       },
       {
         lead: 'Trades grew 200%+ in 90 days. Mobile outpaced web for the first time.',
@@ -577,10 +577,10 @@ export const mix1Projects = [
           "The same changes were applied consistently across web and mobile — not as a one-off mobile fix but as a rethought trading interaction model. The consistency mattered as much as the individual improvements.",
           "The result contributed directly to BlockFi's growth in service of 225K+ clients and $50M monthly revenue — and validated the case for design having a seat at product strategy decisions, not just execution.",
         ],
-        images: ['/images/portfolio/gf-blockfi.jpg', '/images/portfolio/gf-fennel.png'],
+        images: ['/images/blank.png?was=gf-blockfi', '/images/blank.png?was=gf-fennel'],
       },
     ],
-    mockups: ['/images/portfolio/gf-blockfi.jpg', '/images/portfolio/mock-bbu.png', '/images/portfolio/gf-fennel.png'],
+    mockups: ['/images/blank.png?was=gf-blockfi', '/images/blank.png?was=mock-bbu', '/images/blank.png?was=gf-fennel'],
     closingLead: 'The brief was too small. Pushing back on it was the design work.',
     stats: [
       { name: 'Trades in 90 days', description: 'Mobile outpaced web-based trades for the first time following launch.', value: '+200%' },
@@ -616,11 +616,11 @@ export const mix1Projects = [
     year: '2021',
     service: 'Leadership',
     readTime: 4,
-    image: '/images/portfolio/gf-blockfi.jpg',
+    image: '/images/blank.png?was=gf-blockfi',
     // Placeholder frames, framed at the iPhone 17 Pro Max's screen ratio (1320x2868)
     // pending real card screens — swap each src once sourced (see TODO above). Rendered
     // as a body carousel (see ProjectPage.tsx), not in the hero.
-    screenCarousel: Array.from({ length: 12 }, () => '/images/portfolio/gf-blockfi.jpg'),
+    screenCarousel: Array.from({ length: 12 }, () => '/images/blank.png?was=gf-blockfi'),
     headline: 'Scoping and shipping the mobile experience behind the world’s first Bitcoin rewards credit card',
     intro:
       "BlockFi's Bitcoin Rewards Visa card wasn't a marketing bet — it was a product bet on a category no issuer had shipped: a credit card that paid rewards in Bitcoin instead of points or cashback. Before launch it had already pulled a waitlist of roughly 400,000 signups (Dec 2020–Jul 2021), which meant the mobile experience — enrollment, card management, and rewards tracking — had to hold up under real demand from day one, not iterate its way there.",
@@ -632,7 +632,7 @@ export const mix1Projects = [
           'Lead designer, mobile, for the BlockFi Rewards Card experience. The card launched nationally in mid-2021 on the Visa network, issued by Evolve Bank & Trust and powered by Deserve’s card platform, converting a ~400K-signup waitlist into an active cardholder base.',
           'Built the design system and implemented the native experience against a web version — the same components reused across both platforms rather than diverging.',
         ],
-        images: ['/images/portfolio/gf-blockfi.jpg'],
+        images: ['/images/blank.png?was=gf-blockfi'],
       },
       {
         lead: '50,000+ active cardholders within 90 days of national launch, spending 450% above the card industry average and pacing toward $2B+ in annualized volume.',
@@ -641,10 +641,10 @@ export const mix1Projects = [
           'By December 2021, cardholders had grown past 70,000 — a secondary source (Shorty Awards), cited with lighter confidence than BlockFi’s own release above. Rewards distribution reached 120+ BTC (~$6.8M) as of October 12, 2021 (BlockFi, GlobeNewswire).',
           'That reuse staved off design debt and created a unified cross-platform experience — one system driving both native and web, not two drifting apart.',
         ],
-        images: ['/images/portfolio/gf-blockfi.jpg'],
+        images: ['/images/blank.png?was=gf-blockfi'],
       },
     ],
-    mockups: ['/images/portfolio/gf-blockfi.jpg'],
+    mockups: ['/images/blank.png?was=gf-blockfi'],
     closingLead:
       '“Crypto rewards programs are a compelling way to engage consumers in the crypto economy. We’re excited to see programs like the BlockFi Rewards Visa Card, which offer rewards that are relevant to the growing community of digital currency adopters.” — Forbes, Jul 6 2021',
     stats: [
@@ -679,7 +679,7 @@ export const mix1Projects = [
     year: '2022',
     service: 'Leadership',
     readTime: 3,
-    image: '/images/portfolio/gf-cash.png',
+    image: '/images/blank.png?was=gf-cash',
     headline: 'Zero-to-one product design that informed a strategic pivot',
     intro:
       "Building a design function before the first hire means every decision compounds. The component library you build becomes the product. The research you run becomes the strategy.",
@@ -691,7 +691,7 @@ export const mix1Projects = [
           "Customized Uber Base into a branded library that doubled engineering speed and gave the team a shared vocabulary to build with from day one. The VC principal set a high bar — a premium product resonating with an urban audience — and we met it, validated through affinity testing.",
           "Full light and dark mode shipped. The same research surfaced a harder finding: the market hadn't matured enough for a social wallet.",
         ],
-        images: ['/images/portfolio/gf-cash.png', '/images/portfolio/mock-vinyl-crate.png'],
+        images: ['/images/blank.png?was=gf-cash', '/images/blank.png?was=mock-vinyl-crate'],
       },
       {
         lead: "The research that shaped the pivot preserved capital that would otherwise have been spent.",
@@ -700,10 +700,10 @@ export const mix1Projects = [
           "Identifying insufficient market traction before over-investing in the product direction was the most valuable output of the engagement. The design foundation remained intact for the company's next direction.",
           "Building 0→1 means the research has to do double duty — validating the product and validating the strategy. Here, it did both.",
         ],
-        images: ['/images/portfolio/mock-a16z.png', '/images/portfolio/gf-cash.png'],
+        images: ['/images/blank.png?was=mock-a16z', '/images/blank.png?was=gf-cash'],
       },
     ],
-    mockups: ['/images/portfolio/gf-cash.png', '/images/portfolio/mock-a16z.png', '/images/portfolio/mock-vinyl-crate.png'],
+    mockups: ['/images/blank.png?was=gf-cash', '/images/blank.png?was=mock-a16z', '/images/blank.png?was=mock-vinyl-crate'],
     closingLead: 'The most valuable deliverable was the research that stopped us from building the wrong thing.',
     stats: [
       { name: 'Design function', description: 'Built from zero before the first internal design hire.', value: '0 → 1' },
@@ -733,7 +733,7 @@ export const mix1Projects = [
     year: '2020',
     service: 'Consultant',
     readTime: 4,
-    image: '/images/portfolio/gf-easi.jpg',
+    image: '/images/blank.png?was=gf-easi',
     headline: 'Rearchitecting EASI to win a second audience — and a $500M valuation',
     intro:
       "EASI had a real market and a broken product. A sub-3.0 App Store rating and frequent crashes weren't edge cases — they were capping the total addressable market. The problem wasn't the audience; it was the experience they were being asked to tolerate.",
@@ -745,7 +745,7 @@ export const mix1Projects = [
           "Six weeks. Skeptical stakeholders. A team that had shipped the original product and wasn't sure anything needed to change. Benchmarking gave us a shared language for what 'good' looked like — not opinions, but patterns from products the team already respected.",
           "Once the case was made, the redesign ran in parallel with engineering's re-architecture — prototyping and testing each decision before handoff, so no one was waiting on anyone.",
         ],
-        images: ['/images/portfolio/gf-easi.jpg', '/images/portfolio/mock-ubiquiti.png'],
+        images: ['/images/blank.png?was=gf-easi', '/images/blank.png?was=mock-ubiquiti'],
       },
       {
         lead: 'App Store rating: below 3.0 to 4.5. Acquired for $500M+.',
@@ -754,10 +754,10 @@ export const mix1Projects = [
           "EASI surpassed 1M+ users and reached a $500M+ valuation. HungryPanda's acquisition rationale in 2022 mirrored the market strategy the redesign was built around — expanding from diaspora communities into a broader urban audience.",
           "The six-week timeline wasn't a constraint. It was the discipline that kept the scope focused on what would move the numbers.",
         ],
-        images: ['/images/portfolio/gf-easi.jpg', '/images/portfolio/gf-blinkist.jpg'],
+        images: ['/images/blank.png?was=gf-easi', '/images/blank.png?was=gf-blinkist'],
       },
     ],
-    mockups: ['/images/portfolio/gf-easi.jpg', '/images/portfolio/gf-blinkist.jpg', '/images/portfolio/mock-ubiquiti.png'],
+    mockups: ['/images/blank.png?was=gf-easi', '/images/blank.png?was=gf-blinkist', '/images/blank.png?was=mock-ubiquiti'],
     closingLead: 'A 4.5-star rating is a market signal. The $500M acquisition validated the strategy the redesign was built around.',
     stats: [
       { name: 'App Store rating', description: 'Climbed from below 3.0 to 4.5 stars following the redesign launch.', value: '3.0→4.5' },
@@ -788,7 +788,7 @@ export const mix1Projects = [
     year: '2020',
     service: 'Consultant',
     readTime: 3,
-    image: '/images/portfolio/gf-krisp.jpg',
+    image: '/images/blank.png?was=gf-krisp',
     headline: "Product innovation for Krisp.ai's noise cancelling desktop application",
     intro:
       "Krisp had strong utility and a dated interface. The noise cancellation worked. The desktop experience hadn't kept pace with what AI-native software was starting to look like — and that gap was starting to matter.",
@@ -800,7 +800,7 @@ export const mix1Projects = [
           "Engaged as principal design consultant, I redesigned the application around a cohesive UI system — introducing branded components to accelerate implementation, reduce design debt, and establish a visual foundation capable of scaling with the product.",
           "The work ran until COVID-19 created market uncertainty across the consumer audio space. What was scoped as a foundation for growth became a foundation for a pivot.",
         ],
-        images: ['/images/portfolio/gf-krisp.jpg', '/images/portfolio/mock-early-flow.png'],
+        images: ['/images/blank.png?was=gf-krisp', '/images/blank.png?was=mock-early-flow'],
       },
       {
         lead: 'Krisp pivoted into meeting intelligence. The structural work held.',
@@ -809,10 +809,10 @@ export const mix1Projects = [
           "The shift toward enterprise aesthetics and recording features was a different design brief than the original work was built to serve. But the component layer and the system thinking behind it gave the team a structured starting point for that evolution.",
           "That's the value of system work over surface work — it outlives the original brief.",
         ],
-        images: ['/images/portfolio/gf-krisp.jpg', '/images/portfolio/mock-apple-genius.png'],
+        images: ['/images/blank.png?was=gf-krisp', '/images/blank.png?was=mock-apple-genius'],
       },
     ],
-    mockups: ['/images/portfolio/gf-krisp.jpg', '/images/portfolio/mock-early-flow.png', '/images/portfolio/mock-apple-genius.png'],
+    mockups: ['/images/blank.png?was=gf-krisp', '/images/blank.png?was=mock-early-flow', '/images/blank.png?was=mock-apple-genius'],
     closingLead: 'System work outlives the brief it was built for. That\'s the difference between components and infrastructure.',
     stats: [
       { name: 'Engagement type', description: 'Engaged as principal design consultant for the desktop UI system redesign.', value: 'Principal' },
@@ -840,7 +840,7 @@ export const mix1Projects = [
     year: '2023',
     service: 'Systems',
     readTime: 4,
-    image: '/images/portfolio/gf-fennel.png',
+    image: '/images/blank.png?was=gf-fennel',
     headline: 'One motion language for a platform built on a proven bet',
     intro:
       "In 2022, Zalando took a majority stake in Highsnobiety, betting that editorial content — not just catalog browsing — could drive commerce at scale. The bet was already working: over 80 curated product drops run together had reached 7 million+ unique users before the platform even had a name. Stories was the next step — turning that into a permanent feature, not a one-off collaboration.",
@@ -852,7 +852,7 @@ export const mix1Projects = [
           'Getting there meant solving a less glamorous problem first. Every editorial format — a cover story, a style guide, a guest edit — needed transitions that felt consistent whether someone hit them on the app or the web. Motion was still a pile of individual files; the same gesture read differently depending on where you encountered it.',
           'An eight-step sprint opened by naming that fragmentation, then mapped every existing motion instance across the product before setting a bar for what a shared system would need to cover.',
         ],
-        images: ['/images/portfolio/project-02-loan.png', '/images/portfolio/project-03-wallet.png'],
+        images: ['/images/blank.png?was=project-02-loan', '/images/blank.png?was=project-03-wallet'],
       },
       {
         lead: 'Timing tokens, then a short list of primitives that compose into any format.',
@@ -861,10 +861,10 @@ export const mix1Projects = [
           'What shipped: tokens defining raw timing and easing, primitives — sheet, enter/exit, press, swipe-up — defining reusable interaction patterns built from those tokens, and patterns combining primitives into on-screen behaviors editors and engineers could reach for without re-deriving anything. Swipe-up, the gesture that opens a Story full-screen, became the reference example: specified once, used everywhere a story needed to expand.',
           'Design and engineering stopped trading animation files. A new format now borrows motion from the token layer instead of inventing its own.',
         ],
-        images: ['/images/portfolio/project-04-marketplace.png', '/images/portfolio/project-after-coinbase.png'],
+        images: ['/images/blank.png?was=project-04-marketplace', '/images/blank.png?was=project-after-coinbase'],
       },
     ],
-    mockups: ['/images/portfolio/gf-fennel.png', '/images/portfolio/project-02-loan.png', '/images/portfolio/project-04-marketplace.png'],
+    mockups: ['/images/blank.png?was=gf-fennel', '/images/blank.png?was=project-02-loan', '/images/blank.png?was=project-04-marketplace'],
     closingLead: 'Stories launched September 14, 2023, across 11 European markets with five recurring formats. The motion system is what let that scale to 500+ stories and 700+ brands without the consistency breaking — the difference between a one-off content experiment and a durable platform.',
     stats: [
       { name: 'Pre-launch reach', description: '80+ curated product drops with Highsnobiety, before Stories had a name.', value: '7M+ users' },

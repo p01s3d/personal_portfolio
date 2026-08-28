@@ -32,8 +32,8 @@ export function AboutPage() {
           <img
             src={
               founder === 1
-                ? 'https://cms.obys.agency/uploads/small_Olha_Olianishyna_daa86dc654.webp'
-                : 'https://cms.obys.agency/uploads/small_Viacheslav_Olianishyn_4a08c4c093.webp'
+                ? '/images/blank.png?was=Olha_Olianishyna'
+                : '/images/blank.png?was=Viacheslav_Olianishyn'
             }
             alt={founder === 1 ? 'Olha Olianishyna (Creative Director)' : 'Viacheslav Olianishyn (Design Director)'}
           />

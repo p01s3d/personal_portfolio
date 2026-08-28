@@ -41,7 +41,7 @@ export function BuildPage() {
             Pixel button
           </a>
           <span className="mix1-pxbtn mix1-pxbtn--chip">[01]</span>
-          <img className="mix1-build__swatch" src="/images/portfolio/mock-poised.png" alt="" />
+          <img className="mix1-build__swatch" src="/images/blank.png?was=mock-poised" alt="" />
         </div>
         <ul className="mix1-build__list">
           {mix1Build.keep.items.map((item) => (

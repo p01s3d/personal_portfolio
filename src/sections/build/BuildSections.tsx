@@ -92,7 +92,7 @@ export function SystemShowcase() {
 
         <article className="build-specimen">
           <MonoText>MediaFrame</MonoText>
-          <MediaFrame src="/images/portfolio/project-01-borrow.png" alt="Sample media frame" ratio="16 / 9" />
+          <MediaFrame src="/images/blank.png?was=project-01-borrow" alt="Sample media frame" ratio="16 / 9" />
           <p className="build-specimen-note">{build.primitives[6].note}</p>
         </article>
 

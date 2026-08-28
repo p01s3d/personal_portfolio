@@ -13,7 +13,7 @@ export const about = {
     titleB: 'develops.',
     copy: 'Every role in this archive started as a brief and came out the other side as a shipped product. Scroll, and watch the process the same way.',
     hint: 'SCROLL — BRIEF → ITERATION → SHIP',
-    image: '/images/osandi-portrait-anime.png',
+    image: '/images/blank.png?was=osandi-portrait-anime',
   },
   bio: {
     kicker: 'The short version',

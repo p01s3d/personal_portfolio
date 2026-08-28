@@ -4,15 +4,15 @@ export const hero = {
   title: 'POISED ARCHIVE',
   desc: 'As the Zero-to-One design leader, I spearhead product design, research, content, and operations — nurturing the conditions that let teams ship excellence. Twelve years filed the way it happened: numbered, dated, and kept.',
   hint: 'SCROLL TO DEVELOP — CASE STUDY BELOW',
-  backdrop: '/images/portfolio/project-hero-coinbase.png',
+  backdrop: '/images/blank.png?was=project-hero-coinbase',
   cells: [
-    '/images/portfolio/project-01-borrow.png',
-    '/images/portfolio/gf-blockfi.jpg',
-    '/images/portfolio/gf-cash.png',
-    '/images/portfolio/gf-fennel.png',
-    '/images/portfolio/gf-blinkist.jpg',
-    '/images/portfolio/mock-vinyl-crate.png',
-    '/images/portfolio/gf-krisp.jpg',
+    '/images/blank.png?was=project-01-borrow',
+    '/images/blank.png?was=gf-blockfi',
+    '/images/blank.png?was=gf-cash',
+    '/images/blank.png?was=gf-fennel',
+    '/images/blank.png?was=gf-blinkist',
+    '/images/blank.png?was=mock-vinyl-crate',
+    '/images/blank.png?was=gf-krisp',
   ],
 } as const;
 
@@ -22,11 +22,11 @@ export const roll = {
   title: 'The BitcoinFi Suite',
   sub: 'JUN 2025 — JUN 2026 · $200M+ TVL · 25K+ USERS',
   desc: 'Four product surfaces — MUSD borrowing, swaps, vault deposits, and marketplace — designed to validate the circular Bitcoin economy, with AI accelerating research synthesis across all of them.',
-  stage: '/images/portfolio/project-01-borrow.png',
+  stage: '/images/blank.png?was=project-01-borrow',
   angles: [
-    { no: '02', image: '/images/portfolio/project-02-loan.png' },
-    { no: '03', image: '/images/portfolio/project-03-wallet.png' },
-    { no: '04', image: '/images/portfolio/project-04-marketplace.png' },
+    { no: '02', image: '/images/blank.png?was=project-02-loan' },
+    { no: '03', image: '/images/blank.png?was=project-03-wallet' },
+    { no: '04', image: '/images/blank.png?was=project-04-marketplace' },
   ],
 } as const;
 
@@ -35,7 +35,7 @@ export const aboutTeaser = {
   titleA: 'Twelve years',
   titleB: 'shipping product',
   lede: 'I work at the intersection of design and organizational infrastructure — building the conditions that let design teams do their best work, then measuring whether those conditions actually mattered. Currently building with AI agents as direct collaborators on top of 12+ years of experience.',
-  portrait: '/images/osandi-portrait-anime.png',
+  portrait: '/images/blank.png?was=osandi-portrait-anime',
   stats: [
     { value: '12+', caption: 'Years in product design' },
     { value: '9', caption: 'Companies & ventures' },
