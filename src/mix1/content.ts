@@ -120,7 +120,7 @@ export const mix1About = {
     'I build the conditions for great product work — org infrastructure, delivery systems, and cross-functional standards that make design a measurable driver of business outcomes across 0→1 builds and iterative product evolution.',
   teamIntro: 'Osandi Sekoú Robinson — product & design leader.',
   teamBody:
-    'Startup founder turned design executive with 14 years building products and the orgs that ship them — across fintech, crypto, and consumer mobile.',
+    'I am product fanatic, music producer, entrepreneur, leader and perpetual student. My passion is in generating disruptive product/service ideas with extraordinary uses of technology while delivering products that find a place in the hearts of those who use them.',
   portrait: '/images/osandi-portrait-anime.png',
   capabilitiesFigure: '/images/portfolio/mock-poised.png',
   team: [{ name: 'Osandi Sekoú Robinson', role: 'Product & design leader' }],

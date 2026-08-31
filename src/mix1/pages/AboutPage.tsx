@@ -39,7 +39,7 @@ export function AboutPage() {
       <section className="team">
         <div className="team__inner">
           <header className="team__header">
-            <h2 className="heading heading--xl">Team</h2>
+            <h2 className="heading heading--xl">Hi</h2>
           </header>
           <p className="team__intro">{mix1About.teamIntro}</p>
           <div className="team__description">
