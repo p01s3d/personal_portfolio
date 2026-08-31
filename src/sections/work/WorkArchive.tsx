@@ -1,12 +1,25 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { archive, type Category } from '../../content/archive';
+import { archive, type ArchiveFrame, type Category } from '../../content/archive';
 import { POISED_BASE } from '../../content/site';
 import { Chip, Eyebrow, MediaFrame, MonoText, Title } from '../../components/primitives';
+import { useTestImage } from '../../hooks/usePlaceholderAssets';
 import './work.css';
 
 const CATEGORIES: Category[] = ['Leadership', 'Product', 'Systems', 'Research'];
 type View = 'grid' | 'ledger';
+
+function WorkCard({ frame }: { frame: ArchiveFrame }) {
+  const src = useTestImage(frame.image, '4:5', frame.frame);
+  return (
+    <Link to={`${POISED_BASE}/project`} className="work-card">
+      <MediaFrame src={src} alt={frame.name} />
+      <div className="work-card-meta">
+        <span className="work-card-name">{frame.name}</span>
+      </div>
+    </Link>
+  );
+}
 
 export function WorkArchive() {
   const [filter, setFilter] = useState<Category | 'All'>('All');
@@ -58,12 +71,7 @@ export function WorkArchive() {
       {view === 'grid' ? (
         <section key={`${filter}-grid`} className="work-grid" aria-label="Archive grid">
           {frames.map((frame) => (
-            <Link key={frame.frame} to={`${POISED_BASE}/project`} className="work-card">
-              <MediaFrame src={frame.image} alt={frame.name} />
-              <div className="work-card-meta">
-                <span className="work-card-name">{frame.name}</span>
-              </div>
-            </Link>
+            <WorkCard key={frame.frame} frame={frame} />
           ))}
         </section>
       ) : (

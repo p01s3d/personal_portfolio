@@ -5,6 +5,7 @@ import { FullscreenMenu } from './FullscreenMenu';
 import { ScrollProgressRail } from './ScrollProgressRail';
 import { FootCTA } from './FootCTA';
 import { SiteFooter } from './SiteFooter';
+import { PlaceholderToggle } from './PlaceholderToggle';
 import './chrome.css';
 
 export function SiteShell() {
@@ -25,6 +26,7 @@ export function SiteShell() {
       <FootCTA />
       <SiteFooter />
       <ScrollProgressRail />
+      <PlaceholderToggle />
     </>
   );
 }

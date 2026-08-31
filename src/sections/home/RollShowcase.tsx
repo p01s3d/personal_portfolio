@@ -2,6 +2,29 @@ import { useState } from 'react';
 import { roll } from '../../content/home';
 import { Eyebrow, MonoText, Title } from '../../components/primitives';
 import { useInView } from '../../hooks/useInView';
+import { useTestImage } from '../../hooks/usePlaceholderAssets';
+
+function AngleThumb({
+  src,
+  no,
+  label,
+  active,
+  onClick,
+}: {
+  src: string;
+  no: string;
+  label: string;
+  active: boolean;
+  onClick: () => void;
+}) {
+  const thumbSrc = useTestImage(src, 'square', no);
+  return (
+    <button type="button" className={`angle-thumb${active ? ' is-active' : ''}`} onClick={onClick} aria-label={label}>
+      <img src={thumbSrc} alt="" />
+      <span className="angle-no">{no}</span>
+    </button>
+  );
+}
 
 export function RollShowcase() {
   const [stage, setStage] = useState<string>(roll.stage);
@@ -37,26 +60,22 @@ export function RollShowcase() {
 
         <div className="roll-thumbs" role="group" aria-label="Angles">
           <MonoText className="mono">ANGLES</MonoText>
-          <button
-            type="button"
-            className={`angle-thumb${stage === roll.stage ? ' is-active' : ''}`}
+          <AngleThumb
+            src={roll.stage}
+            no="01"
+            label="View main frame"
+            active={stage === roll.stage}
             onClick={() => setStage(roll.stage)}
-            aria-label="View main frame"
-          >
-            <img src={roll.stage} alt="" />
-            <span className="angle-no">01</span>
-          </button>
+          />
           {roll.angles.map((angle) => (
-            <button
+            <AngleThumb
               key={angle.no}
-              type="button"
-              className={`angle-thumb${stage === angle.image ? ' is-active' : ''}`}
+              src={angle.image}
+              no={angle.no}
+              label={`View alternate angle ${angle.no}`}
+              active={stage === angle.image}
               onClick={() => setStage(angle.image)}
-              aria-label={`View alternate angle ${angle.no}`}
-            >
-              <img src={angle.image} alt="" />
-              <span className="angle-no">{angle.no}</span>
-            </button>
+            />
           ))}
         </div>
       </div>

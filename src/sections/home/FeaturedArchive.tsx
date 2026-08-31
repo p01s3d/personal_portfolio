@@ -6,6 +6,20 @@ import { featured } from '../../content/archive';
 import { POISED_BASE } from '../../content/site';
 import { Eyebrow, MediaFrame, TextLink, Title } from '../../components/primitives';
 import { usePrefersReducedMotion } from '../../hooks/usePrefersReducedMotion';
+import { useTestImage } from '../../hooks/usePlaceholderAssets';
+
+function FeaturedCard({ item }: { item: (typeof featured)[number] }) {
+  const src = useTestImage(item.image, '4:5', item.frame);
+  return (
+    <Link to={`${POISED_BASE}/work`} className="featured-card">
+      <MediaFrame src={src} alt={item.name} />
+      <div className="featured-data">
+        <span className="featured-name">{item.name}</span>
+        <span className="mono">{item.frame}</span>
+      </div>
+    </Link>
+  );
+}
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -55,13 +69,7 @@ export function FeaturedArchive() {
         <div className="featured-viewport">
           <div ref={trackRef} className="featured-track">
             {featured.map((item) => (
-              <Link key={item.frame} to={`${POISED_BASE}/work`} className="featured-card">
-                <MediaFrame src={item.image} alt={item.name} />
-                <div className="featured-data">
-                  <span className="featured-name">{item.name}</span>
-                  <span className="mono">{item.frame}</span>
-                </div>
-              </Link>
+              <FeaturedCard key={item.frame} item={item} />
             ))}
             <div className="featured-end">
               <span className="mono">END OF SELECTION</span>

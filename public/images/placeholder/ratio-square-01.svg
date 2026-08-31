@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2560" height="2560" viewBox="0 0 2560 2560">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1c1a1a"/>
+      <stop offset="100%" stop-color="#0c0b0b"/>
+    </linearGradient>
+    <pattern id="grid" width="213" height="213" patternUnits="userSpaceOnUse">
+      <path d="M 213 0 L 0 0 0 213" fill="none" stroke="rgba(234,230,221,0.06)" stroke-width="2"/>
+    </pattern>
+  </defs>
+  <rect width="2560" height="2560" fill="url(#g)"/>
+  <rect width="2560" height="2560" fill="url(#grid)"/>
+  <rect x="64" y="64" width="2432" height="2432" fill="none" stroke="#ff3b3b" stroke-width="8" stroke-dasharray="42 21"/>
+  <circle cx="1280" cy="1098" r="116" fill="none" stroke="#ff3b3b" stroke-width="10"/>
+  <line x1="1189" y1="1098" x2="1371" y2="1098" stroke="#ff3b3b" stroke-width="10"/>
+  <line x1="1280" y1="1007" x2="1280" y2="1189" stroke="#ff3b3b" stroke-width="10"/>
+  <text x="50%" y="1564" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="98" fill="#eae6dd" letter-spacing="2">PLACEHOLDER</text>
+  <text x="50%" y="1714" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="75" fill="rgba(234,230,221,0.5)" letter-spacing="2">1:1 · #01</text>
+  <text x="50%" y="2444" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="64" fill="rgba(234,230,221,0.35)" letter-spacing="1">TEST ASSET · ISSUE #62 · 2560x2560</text>
+</svg>

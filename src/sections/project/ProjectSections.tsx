@@ -3,6 +3,7 @@ import { project } from '../../content/project';
 import { Eyebrow, MediaFrame, MonoText, Quote, Title } from '../../components/primitives';
 import { Lightbox } from '../../components/overlays/Lightbox';
 import { useInView } from '../../hooks/useInView';
+import { useTestImage } from '../../hooks/usePlaceholderAssets';
 import './project.css';
 
 export function ProjectOpen() {
@@ -52,9 +53,10 @@ export function ProjectBrief() {
 
 export function ProjectStillOne() {
   const { stillOne } = project;
+  const src = useTestImage(stillOne.image, '16:10', 'still-one');
   return (
     <section className="p-still" aria-label={stillOne.caption}>
-      <MediaFrame src={stillOne.image} alt={stillOne.caption} />
+      <MediaFrame src={src} alt={stillOne.caption} />
       <div className="p-cap">
         <MonoText>{stillOne.caption}</MonoText>
         <MonoText>{stillOne.index}</MonoText>
@@ -63,13 +65,18 @@ export function ProjectStillOne() {
   );
 }
 
+function TwoUpImage({ img }: { img: (typeof project.twoUp.images)[number] }) {
+  const src = useTestImage(img.src, '4:5');
+  return <MediaFrame src={src} alt={img.alt} />;
+}
+
 export function ProjectTwoUp() {
   const { twoUp } = project;
   return (
     <section className="p-still" aria-label={twoUp.caption}>
       <div className="p-still--two">
         {twoUp.images.map((img) => (
-          <MediaFrame key={img.src} src={img.src} alt={img.alt} />
+          <TwoUpImage key={img.src} img={img} />
         ))}
       </div>
       <div className="p-cap">
@@ -82,14 +89,36 @@ export function ProjectTwoUp() {
 
 export function ProjectStillTwo() {
   const { stillTwo } = project;
+  const src = useTestImage(stillTwo.image, '16:10', 'still-two');
   return (
     <section className="p-still" aria-label={stillTwo.caption}>
-      <MediaFrame src={stillTwo.image} alt={stillTwo.caption} />
+      <MediaFrame src={src} alt={stillTwo.caption} />
       <div className="p-cap">
         <MonoText>{stillTwo.caption}</MonoText>
         <MonoText>{stillTwo.index}</MonoText>
       </div>
     </section>
+  );
+}
+
+function SheetThumb({
+  frame,
+  onOpen,
+}: {
+  frame: { frame: string; image: string };
+  onOpen: (frame: { frame: string; image: string }) => void;
+}) {
+  const src = useTestImage(frame.image, 'square', frame.frame);
+  return (
+    <button
+      type="button"
+      className="sheet-thumb"
+      onClick={() => onOpen({ frame: frame.frame, image: src })}
+      aria-label={`Enlarge ${frame.frame}`}
+    >
+      <img src={src} alt={frame.frame} loading="lazy" />
+      <span className="mono">{frame.frame}</span>
+    </button>
   );
 }
 
@@ -111,16 +140,7 @@ export function ContactSheet() {
 
       <div className="sheet-grid">
         {sheet.frames.map((frame) => (
-          <button
-            key={frame.frame}
-            type="button"
-            className="sheet-thumb"
-            onClick={() => setOpenFrame(frame)}
-            aria-label={`Enlarge ${frame.frame}`}
-          >
-            <img src={frame.image} alt={frame.frame} loading="lazy" />
-            <span className="mono">{frame.frame}</span>
-          </button>
+          <SheetThumb key={frame.frame} frame={frame} onOpen={setOpenFrame} />
         ))}
       </div>
 

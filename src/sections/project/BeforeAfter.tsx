@@ -1,6 +1,7 @@
 import { useRef, useState } from 'react';
 import { project } from '../../content/project';
 import { Eyebrow, MonoText, Title } from '../../components/primitives';
+import { useTestImage } from '../../hooks/usePlaceholderAssets';
 
 const clamp = (v: number) => Math.min(92, Math.max(8, v));
 
@@ -8,6 +9,8 @@ export function BeforeAfter() {
   const [pos, setPos] = useState(50);
   const stageRef = useRef<HTMLDivElement>(null);
   const { beforeAfter: ba } = project;
+  const beforeSrc = useTestImage(ba.beforeImage, '16:9', 'before');
+  const afterSrc = useTestImage(ba.afterImage, '16:9', 'after');
 
   const fromPointer = (clientX: number) => {
     const rect = stageRef.current!.getBoundingClientRect();
@@ -33,8 +36,8 @@ export function BeforeAfter() {
           if (e.buttons > 0) fromPointer(e.clientX);
         }}
       >
-        <img className="ba-before" src={ba.beforeImage} alt={ba.beforeLabel} />
-        <img className="ba-after" src={ba.afterImage} alt={ba.afterLabel} />
+        <img className="ba-before" src={beforeSrc} alt={ba.beforeLabel} />
+        <img className="ba-after" src={afterSrc} alt={ba.afterLabel} />
         <div className="ba-divider" aria-hidden />
         <button
           type="button"
