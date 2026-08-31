@@ -41,7 +41,7 @@ export function ProjectPage() {
     return () => track.removeEventListener('scroll', onScroll);
   }, []);
 
-  if (!project) return <Navigate to="/mix1/work" replace />;
+  if (!project) return <Navigate to="/work" replace />;
 
   return (
     <article className="page page-project mix1-project">

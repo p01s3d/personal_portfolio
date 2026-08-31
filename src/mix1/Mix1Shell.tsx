@@ -1,6 +1,7 @@
 import { useLayoutEffect } from 'react';
 import { Outlet, useLocation, useNavigate } from 'react-router-dom';
 import { Mix1Nav } from './Nav';
+import { isMix1Path } from '../roomPaths';
 import '../craft/styles/craft.css';
 import '../craft/styles/home.css';
 import '../studio/styles/wkhs.css';
@@ -11,7 +12,8 @@ import './styles/mix1.css';
 function mix1Page(pathname: string) {
   if (pathname.includes('/build')) return 'build';
   if (pathname.includes('/about')) return 'about';
-  if (/\/mix1\/work\/.+/.test(pathname)) return 'work-detail';
+  if (pathname.includes('/project')) return 'project';
+  if (/^\/work\/.+/.test(pathname)) return 'work-detail';
   if (pathname.includes('/work')) return 'work';
   return 'home';
 }
@@ -76,7 +78,9 @@ export function Mix1Shell() {
           ? 'Experiences — Osandi Robinson'
           : page === 'build'
             ? 'Build — Osandi Robinson'
-            : 'Osandi — Poised Design Executive';
+            : page === 'project'
+              ? 'Project — Osandi Robinson'
+              : 'Osandi — Poised Design Executive';
     const restoreIcon = setFavicon('/craft/favicon.svg');
     return () => {
       delete root.dataset.mix1;
@@ -100,7 +104,7 @@ export function Mix1Shell() {
       if (anchor.target && anchor.target !== '_self') return;
       const url = new URL(anchor.href, window.location.origin);
       if (url.origin !== window.location.origin) return;
-      if (!url.pathname.startsWith('/mix1')) return;
+      if (!isMix1Path(url.pathname)) return;
       event.preventDefault();
       navigate(`${url.pathname}${url.search}${url.hash}`);
     };

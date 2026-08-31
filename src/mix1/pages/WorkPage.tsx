@@ -57,7 +57,7 @@ export function WorkPage() {
             return project ? (
               <Link
                 key={item.name}
-                to={`/mix1/work/${project.slug}`}
+                to={`/work/${project.slug}`}
                 className={`article ${index % 2 === 0 ? 'article--header-dist-row' : 'article--header-dist-column'}`}
               >
                 {inner}
