@@ -1,5 +1,6 @@
 import { createContext, useCallback, useContext, useEffect, useLayoutEffect, useMemo, useState, type ReactNode } from 'react';
 import { useLocation } from 'react-router-dom';
+import { isMix1Path } from '../roomPaths';
 import './media-blocks.css';
 
 const STORAGE_KEY = 'media-blocks';
@@ -77,7 +78,7 @@ function paint(on: boolean) {
 
 export function MediaBlocksProvider({ children }: { children: ReactNode }) {
   const { pathname } = useLocation();
-  const isMix1 = pathname.startsWith('/mix1');
+  const isMix1 = isMix1Path(pathname);
   const [globalOn, setGlobalOn] = useState(readStored);
   const [mix1On, setMix1On] = useState(readMix1Stored);
   const on = isMix1 ? mix1On : globalOn;
@@ -123,7 +124,7 @@ export function MediaBlocksProvider({ children }: { children: ReactNode }) {
   return (
     <MediaBlocksContext.Provider value={value}>
       {children}
-      {pathname !== '/' ? <MediaBlocksToggle compact /> : null}
+      {pathname !== '/index' ? <MediaBlocksToggle compact /> : null}
     </MediaBlocksContext.Provider>
   );
 }

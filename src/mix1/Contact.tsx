@@ -20,7 +20,7 @@ export function Mix1Contact() {
           Deck
         </a>
         {' · '}
-        <Link to="/mix1/build">Build</Link>
+        <Link to="/build">Build</Link>
       </p>
       <p>Poised LLC © 2026</p>
     </section>

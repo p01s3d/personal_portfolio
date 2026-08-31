@@ -7,10 +7,10 @@ import {
   ContactSheet,
   ProjectQuote,
   NextProject,
-} from '../sections/project/ProjectSections';
-import { BeforeAfter } from '../sections/project/BeforeAfter';
+} from '../../sections/project/ProjectSections';
+import { BeforeAfter } from '../../sections/project/BeforeAfter';
 
-export function ProjectPage() {
+export function CaseStudyPage() {
   return (
     <>
       <ProjectOpen />

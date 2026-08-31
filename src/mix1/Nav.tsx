@@ -1,10 +1,10 @@
 import { NavLink } from 'react-router-dom';
-import { mix1Nav } from './content';
+import { EMAIL, mix1Nav } from './content';
 
 export function Mix1Nav() {
   return (
     <header className="mix1-nav">
-      <NavLink to="/mix1" className="mix1-nav__mark" end>
+      <NavLink to="/" className="mix1-nav__mark" end>
         O§R
       </NavLink>
       <nav className="mix1-nav__links">
@@ -17,6 +17,7 @@ export function Mix1Nav() {
             {item.name}
           </NavLink>
         ))}
+        <a href={`mailto:${EMAIL}`}>Contact</a>
       </nav>
     </header>
   );

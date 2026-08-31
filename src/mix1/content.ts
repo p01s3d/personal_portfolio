@@ -3,8 +3,8 @@ export const LINKEDIN = 'https://www.linkedin.com/in/osandi';
 export const DECK = 'https://bit.ly/osandi_design_deck_2026';
 
 export const mix1Nav = [
-  { name: 'Work', to: '/mix1/work' },
-  { name: 'About', to: '/mix1/about' },
+  { name: 'Work', to: '/work' },
+  { name: 'About', to: '/about' },
 ] as const;
 
 export const mix1Work = {
@@ -262,7 +262,7 @@ export const mix1Build = {
   what: {
     kicker: '01 / Mashup',
     title: 'What mix1 is',
-    body: 'An isolated mini-site at /mix1. Home is Craft: two-line hero, carousel, process sheets, pixel fields. Work and about are Studio layouts with deck copy. /craft and /studio stay frozen. On the index it is room 07.',
+    body: 'The portfolio itself, at the site root. Home is Craft: two-line hero, carousel, process sheets, pixel fields. Work and about are Studio layouts with deck copy. /craft and /studio stay frozen, kept only as reference rooms.',
   },
   spec: {
     kicker: '02 / Spec',
@@ -287,7 +287,7 @@ export const mix1Build = {
       },
       {
         name: 'Color blocks',
-        note: 'On by default for /mix1* only. Session key mix1-media-blocks — not the global media-blocks key.',
+        note: 'On by default for mix1 routes only. Session key mix1-media-blocks — not the global media-blocks key.',
       },
       {
         name: 'Craft home skeleton',
@@ -364,7 +364,7 @@ export const mix1Build = {
       'Keep copy and image paths in a content module.',
     ],
     cta: 'See the work',
-    href: '/mix1/work',
+    href: '/work',
   },
 } as const;
 

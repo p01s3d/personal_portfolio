@@ -1,13 +1,6 @@
-import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
-import { RootShell } from './components/chrome/RootShell';
-import { SiteShell } from './components/chrome/SiteShell';
+import { BrowserRouter, Navigate, Route, Routes, useParams } from 'react-router-dom';
 import { StudioShell } from './studio/StudioShell';
 import { IndexPage } from './pages/IndexPage';
-import { HomePage } from './pages/HomePage';
-import { WorkPage } from './pages/WorkPage';
-import { ProjectPage } from './pages/ProjectPage';
-import { AboutPage } from './pages/AboutPage';
-import { BuildPage } from './pages/BuildPage';
 import { HomePage as StudioHomePage } from './studio/pages/HomePage';
 import { WorkPage as StudioWorkPage } from './studio/pages/WorkPage';
 import { ServicesPage as StudioServicesPage } from './studio/pages/ServicesPage';
@@ -30,31 +23,23 @@ import { WorkPage as Mix1WorkPage } from './mix1/pages/WorkPage';
 import { AboutPage as Mix1AboutPage } from './mix1/pages/AboutPage';
 import { BuildPage as Mix1BuildPage } from './mix1/pages/BuildPage';
 import { ProjectPage as Mix1ProjectPage } from './mix1/pages/ProjectPage';
-import { POISED_BASE } from './content/site';
+import { CaseStudyPage as Mix1CaseStudyPage } from './mix1/pages/CaseStudyPage';
 import { MediaBlocksProvider } from './media-blocks/MediaBlocks';
 import { WireframeProvider } from './wireframe/Wireframe';
 import { usePageFade } from './hooks/usePageFade';
 import './components/chrome/page-fade.css';
+
+function RedirectWorkSlug() {
+  const { slug } = useParams<{ slug: string }>();
+  return <Navigate to={`/work/${slug}`} replace />;
+}
 
 function AppRoutes() {
   const { location, visible } = usePageFade();
   return (
     <div className={`page-fade${visible ? ' is-in' : ''}`}>
       <Routes location={location}>
-        <Route element={<RootShell />}>
-          <Route index element={<IndexPage />} />
-          <Route element={<SiteShell />}>
-            <Route path="poised1" element={<HomePage />} />
-            <Route path="poised1/work" element={<WorkPage />} />
-            <Route path="poised1/project" element={<ProjectPage />} />
-            <Route path="poised1/about" element={<AboutPage />} />
-            <Route path="poised1/build" element={<BuildPage />} />
-          </Route>
-          <Route path="work" element={<Navigate to={`${POISED_BASE}/work`} replace />} />
-          <Route path="project" element={<Navigate to={`${POISED_BASE}/project`} replace />} />
-          <Route path="about" element={<Navigate to={`${POISED_BASE}/about`} replace />} />
-          <Route path="build" element={<Navigate to={`${POISED_BASE}/build`} replace />} />
-        </Route>
+        <Route path="index" element={<IndexPage />} />
         <Route path="studio" element={<StudioShell />}>
           <Route index element={<StudioHomePage />} />
           <Route path="work" element={<StudioWorkPage />} />
@@ -77,13 +62,26 @@ function AppRoutes() {
           <Route path="about" element={<ObsAboutPage />} />
           <Route path="work/:slug" element={<ObsWorkPage />} />
         </Route>
-        <Route path="mix1" element={<Mix1Shell />}>
+        <Route path="/" element={<Mix1Shell />}>
           <Route index element={<Mix1HomePage />} />
           <Route path="work" element={<Mix1WorkPage />} />
           <Route path="work/:slug" element={<Mix1ProjectPage />} />
+          <Route path="project" element={<Mix1CaseStudyPage />} />
           <Route path="about" element={<Mix1AboutPage />} />
           <Route path="build" element={<Mix1BuildPage />} />
         </Route>
+        {/* Retired poised1 site — redirect old links to their mix1 equivalents at the root */}
+        <Route path="poised1" element={<Navigate to="/" replace />} />
+        <Route path="poised1/work" element={<Navigate to="/work" replace />} />
+        <Route path="poised1/project" element={<Navigate to="/project" replace />} />
+        <Route path="poised1/about" element={<Navigate to="/about" replace />} />
+        <Route path="poised1/build" element={<Navigate to="/build" replace />} />
+        {/* mix1 moved off the /mix1 prefix onto the root — redirect old links */}
+        <Route path="mix1" element={<Navigate to="/" replace />} />
+        <Route path="mix1/work" element={<Navigate to="/work" replace />} />
+        <Route path="mix1/work/:slug" element={<RedirectWorkSlug />} />
+        <Route path="mix1/about" element={<Navigate to="/about" replace />} />
+        <Route path="mix1/build" element={<Navigate to="/build" replace />} />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </div>
