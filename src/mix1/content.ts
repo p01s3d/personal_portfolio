@@ -4,7 +4,6 @@ export const DECK = 'https://bit.ly/osandi_design_deck_2026';
 
 export const mix1Nav = [
   { name: 'Work', to: '/work' },
-  { name: 'Project', to: '/project' },
   { name: 'About', to: '/about' },
 ] as const;
 
