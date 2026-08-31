@@ -250,7 +250,7 @@ export const mix1About = {
       ],
     },
   ],
-  clients: ['Apple', 'Square', 'BlockFi', 'Andreessen Horowitz', 'Thesis*', 'Mezo', 'EASI', 'Fennel', 'Krisp.ai', 'Vinyl Crate'],
+  clients: ['Apple', 'Square', 'BlockFi', 'Andreessen Horowitz', 'Thesis*', 'EASI', 'Fennel', 'Krisp.ai', 'Vinyl Crate', 'Layer', 'Direct TV', 'Territory Foods', 'VNYLST'],
   seeking: 'Seeking design leadership roles where product, design, and engineering judgment equally matter.',
   contactLine: 'Got questions? Get in touch.',
 } as const;
