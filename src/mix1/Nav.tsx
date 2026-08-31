@@ -17,9 +17,7 @@ export function Mix1Nav() {
             {item.name}
           </NavLink>
         ))}
-        <a className="mix1-pxbtn mix1-pxbtn--chip" href={`mailto:${EMAIL}`}>
-          Contact
-        </a>
+        <a href={`mailto:${EMAIL}`}>Contact</a>
       </nav>
     </header>
   );
