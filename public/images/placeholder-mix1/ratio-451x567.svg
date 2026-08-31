@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="902" height="1134" viewBox="0 0 902 1134">
-  <rect width="902" height="1134" fill="#f9f8f5"/>
-  <text x="50%" y="48%" text-anchor="middle" dominant-baseline="middle" font-family="ui-monospace, 'IBM Plex Mono', monospace" font-size="45" fill="#090909" letter-spacing="2">451:567</text>
-  <text x="50%" y="56%" text-anchor="middle" dominant-baseline="middle" font-family="ui-monospace, 'IBM Plex Mono', monospace" font-size="26" fill="rgba(9,9,9,0.55)" letter-spacing="2">902x1134</text>
+  <rect width="902" height="1134" fill="#090909"/>
+  <text x="50%" y="48%" text-anchor="middle" dominant-baseline="middle" font-family="ui-monospace, 'IBM Plex Mono', monospace" font-size="45" fill="#f9f8f5" letter-spacing="2">451:567</text>
+  <text x="50%" y="56%" text-anchor="middle" dominant-baseline="middle" font-family="ui-monospace, 'IBM Plex Mono', monospace" font-size="26" fill="rgba(249,248,245,0.55)" letter-spacing="2">902x1134</text>
 </svg>
