@@ -1374,13 +1374,93 @@ html[data-mix1] .block-mockups__mockups .swiper-slide {
   }
 }
 
+/* ── Block Mockups — device render treatments ──────────────
+   Pick one modifier per case study, matched to how the render
+   was exported from the mockup source file. Mutually exclusive.
+
+   (default)  Screen-only capture, no device chrome. Fills the
+              slot, unchanged from before.
+   --plate    Isolated render: the device already floats in its
+              own margin inside the PNG. The slot matches the
+              render's ratio and colour, then zooms into that
+              margin so the device reads large without cropping
+              the device itself.
+   --bleed    Studio render: the backdrop already runs to the edge
+              of the PNG. Fills corner to corner — padding here
+              reads as a mistake.
+   --inset    Bare device on transparency. The slot supplies both
+              the plate and the padding.
+
+   Plate and padding sit on the wrapper, not on .picture: Picture
+   always ships .picture--loaded, which forces background:none
+   !important, so a background set on .picture never paints. */
+
 html[data-mix1] .block-mockups__mockup {
+  --mockup-ar: 9 / 16;
+  --mockup-plate: transparent;
+  --mockup-pad: 0;
+  --mockup-zoom: 1;
   height: 100%;
+  background: var(--mockup-plate);
+  padding: var(--mockup-pad);
+  border-radius: 0.5rem;
+  overflow: hidden;
 }
 
 html[data-mix1] .block-mockups__mockup .picture {
-  aspect-ratio: 9 / 16;
+  aspect-ratio: var(--mockup-ar);
   border-radius: 0.5rem;
+}
+
+/* Renders carry their own margin baked into the PNG, and how much
+   varies by source. --mockup-zoom scales into that margin so the
+   device reads at a usable size without re-exporting: 1 keeps the
+   render exactly as shot, higher crops the surrounding space. The
+   device itself is never cropped as long as the zoom stays under
+   the ratio of canvas height to device height. */
+html[data-mix1] .block-mockups__mockup .picture__img {
+  transform: scale(var(--mockup-zoom));
+}
+
+/* Where the wrapper draws a plate it also owns the corner. */
+html[data-mix1] .block-mockups__mockup--plate .picture,
+html[data-mix1] .block-mockups__mockup--inset .picture {
+  border-radius: 0;
+}
+
+/* Isolated — never crop; the render's own margin is the padding. */
+html[data-mix1] .block-mockups__mockup--plate {
+  --mockup-ar: 4 / 5;
+  --mockup-plate: #fff;
+  --mockup-zoom: 1.35;
+}
+
+html[data-mix1] .block-mockups__mockup--plate .picture__img {
+  object-fit: contain;
+}
+
+/* Studio — backdrop to the corners. */
+html[data-mix1] .block-mockups__mockup--bleed .picture__img {
+  object-fit: cover;
+}
+
+/* Bare device on alpha — the slot draws plate and padding. */
+html[data-mix1] .block-mockups__mockup--inset {
+  --mockup-ar: 4 / 5;
+  --mockup-plate: var(--color-bg-alt, #f5f4f0);
+  --mockup-pad: clamp(0.5rem, 3%, 1.25rem);
+  --mockup-zoom: 1.2;
+}
+
+html[data-mix1] .block-mockups__mockup--inset .picture__img {
+  object-fit: contain;
+}
+
+/* Studio renders carry their own dark backdrop, so the section has
+   to carry it too — otherwise each slide reads as a dark rectangle
+   dropped onto a light page. Pair with --bleed. */
+html[data-mix1] .block-mockups--studio {
+  background-color: #101010;
 }
 
 /* ── Block Stats ────────────────────────────────────────── */
