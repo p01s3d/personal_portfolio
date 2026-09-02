@@ -173,7 +173,7 @@ export function ProjectPage() {
               <div className="swiper-wrapper">
                 {project.mockups.map((src, i) => (
                   <div key={i} className="swiper-slide">
-                    <div className="block-mockups__mockup">
+                    <div className="block-mockups__mockup block-mockups__mockup--plate">
                       <Picture src={src} alt="" className="picture--cover picture--rounded" />
                     </div>
                   </div>
