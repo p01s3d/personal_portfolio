@@ -12,13 +12,25 @@ export function IndexPage() {
         <WireframeToggle />
       </div>
       <nav className="directory-rooms" aria-label="Sites">
-        {site.directory.rooms.map((room) => (
-          <Link key={room.to} to={room.to} className="directory-room">
-            <span className="directory-no">{room.no}</span>
-            <span className="directory-name">{room.name}</span>
-            <span className="directory-desc">{room.desc}</span>
-          </Link>
-        ))}
+        {site.directory.rooms.map((room) => {
+          const body = (
+            <>
+              <span className="directory-no">{room.no}</span>
+              <span className="directory-name">{room.name}</span>
+              <span className="directory-desc">{room.desc}</span>
+            </>
+          );
+          // Rooms served straight from public/ bypass the router entirely.
+          return 'static' in room && room.static ? (
+            <a key={room.to} href={room.to} className="directory-room">
+              {body}
+            </a>
+          ) : (
+            <Link key={room.to} to={room.to} className="directory-room">
+              {body}
+            </Link>
+          );
+        })}
       </nav>
     </main>
   );
