@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "skills": {
+    "ai-video-generation": {
+      "source": "skills-101/superpowers",
+      "sourceType": "github",
+      "skillPath": "tools/video/ai-video-generation/SKILL.md",
+      "computedHash": "8524cc49ad3dca2a4502903234061b307636e44b08496e982747cdb9590f5556"
+    }
+  }
+}
