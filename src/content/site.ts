@@ -37,6 +37,15 @@ export const site = {
         desc: 'Osandi — the live portfolio, at the site root.',
         to: '/',
       },
+      {
+        no: '07',
+        name: 'andk',
+        desc: 'Andrejs Korovskis — digital designer, Riga. Served as a static 1:1 replica.',
+        to: '/andk/',
+        // Static page under public/, not a React route — the directory must
+        // render a plain <a> so the browser does a real document load.
+        static: true,
+      },
     ],
   },
 } as const;
