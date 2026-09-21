@@ -587,7 +587,7 @@ export const mix1Projects = [
         images: ['/images/placeholder-mix1/ratio-686x868.svg', '/images/placeholder-mix1/ratio-686x868.svg'],
       },
     ],
-    mockups: ['/images/portfolio/mock-blockfi-mobile-01.svg', '/images/portfolio/mock-blockfi-mobile-02.svg', '/images/portfolio/mock-blockfi-mobile-03.svg'],
+    mockups: ['/images/placeholder-mix1/ratio-900x1600.svg', '/images/placeholder-mix1/ratio-900x1600.svg', '/images/placeholder-mix1/ratio-900x1600.svg'],
     closingLead:
       "It's also the strongest evidence in this case study for design proposing strategy, not just executing against a brief — the brief didn't ask for a mobile-first bet; the strategy did.",
     stats: [
