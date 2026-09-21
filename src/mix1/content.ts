@@ -577,6 +577,7 @@ export const mix1Projects = [
           'There was no design system to build from, so I owned that proposal too — and the hire to build and run it, who reported into me. Before headcount scaled, I was the product visionary and executor myself: I brought in a former iOS engineering colleague from my time at Ubiquiti, an expert in native mobile engineering pairing with my expertise in mobile design — a partnership, not a reporting relationship, that let us actually ship. I set the bar of craft through example — demonstrating how to compose UIs against the component library myself, acting as product manager for that effort — then scaled the team to continue delivering on it, rather than stepping back once headcount grew. That combination — the bar set firsthand, then held by a team built to sustain it — closed the feature-parity gap within two quarters, and gave the team the foundation to accelerate the Credit Card Rewards and Interest Account builds on mobile without designing everything twice.',
         ],
         images: ['/images/placeholder-mix1/ratio-686x868.svg', '/images/placeholder-mix1/ratio-686x868.svg'],
+        breakAfter: 'screenCarousel',
       },
       {
         lead: 'Roadmap tooling connected directly to user input, balanced against clear OKRs — the first time that infrastructure had existed at BlockFi.',
@@ -593,6 +594,7 @@ export const mix1Projects = [
           'Before any of this, there was no working definition of done — shipping was loose and ad hoc. The framework I introduced became BlockFi\'s operational roadmap, mapped directly to business goals, and I was the first person at the company to require validation before engineering: user testing against prototypes, run within the product development cycle, rather than validating after something had already shipped.',
         ],
         images: ['/images/placeholder-mix1/ratio-686x868.svg', '/images/placeholder-mix1/ratio-686x868.svg'],
+        breakAfter: 'mockups',
       },
       {
         lead: 'These were the first product principles ever to originate from design at BlockFi, not product management.',
@@ -614,7 +616,17 @@ export const mix1Projects = [
         images: ['/images/placeholder-mix1/ratio-686x868.svg', '/images/placeholder-mix1/ratio-686x868.svg'],
       },
     ],
-    mockups: ['/images/placeholder-mix1/ratio-900x1600.svg', '/images/placeholder-mix1/ratio-900x1600.svg', '/images/placeholder-mix1/ratio-900x1600.svg'],
+    screenCarousel: [
+      '/images/portfolio/blockfi-mobile-surface-trading.svg',
+      '/images/portfolio/blockfi-mobile-surface-rewards.svg',
+      '/images/portfolio/blockfi-mobile-surface-bia.svg',
+      '/images/portfolio/blockfi-mobile-surface-design-system.svg',
+    ],
+    mockups: [
+      '/images/portfolio/mock-blockfi-mobile-01.svg',
+      '/images/portfolio/mock-blockfi-mobile-02.svg',
+      '/images/portfolio/mock-blockfi-mobile-03.svg',
+    ],
     closingLead: 'The brief never asked for a mobile-first bet. The strategy did.',
     stats: [
       { name: 'Trades in 90 days', description: 'Mobile outpaced web-based trades for the first time following launch.', value: '+200%' },

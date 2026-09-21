@@ -43,6 +43,64 @@ export function ProjectPage() {
 
   if (!project) return <Navigate to="/work" replace />;
 
+  const screenCarouselBlock =
+    'screenCarousel' in project && project.screenCarousel.length > 0 ? (
+      <div className="block block--safe-area block--bg-light block-screen-carousel">
+        <div className="block-screen-carousel__slider">
+          <div className="block-screen-carousel__track" ref={carouselTrackRef}>
+            {project.screenCarousel.map((src, i) => (
+              <div key={i} className="block-screen-carousel__item">
+                <Picture src={src} alt="" className="picture--cover" />
+              </div>
+            ))}
+          </div>
+        </div>
+        <div className="block-screen-carousel__nav">
+          {project.screenCarousel.map((_, i) => (
+            <button
+              key={i}
+              type="button"
+              className={`block-screen-carousel__nav-button${i === carouselActive ? ' block-screen-carousel__nav-button--active' : ''}`}
+              onClick={() => {
+                const target = carouselTrackRef.current?.children[i] as HTMLElement | undefined;
+                target?.scrollIntoView({ behavior: 'smooth', inline: 'start', block: 'nearest' });
+              }}
+              aria-label={`Go to screen ${i + 1}`}
+            >
+              {String(i + 1).padStart(2, '0')}
+            </button>
+          ))}
+        </div>
+      </div>
+    ) : null;
+
+  const mockupsBlock = (
+    <div className="block block-mockups block--has-background block-mockups--unique">
+      <div className="block-mockups__mockups">
+        <div className="slider slider-mockups slider--spv-auto">
+          <div className="swiper-wrapper">
+            {project.mockups.map((src, i) => (
+              <div key={i} className="swiper-slide">
+                <div className="block-mockups__mockup">
+                  <Picture src={src} alt="" className="picture--cover picture--rounded" />
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+
+  // A section can pull the screen-carousel or mockups block inline, right after itself,
+  // instead of always at the bottom — lets a case study interleave visual breaks between
+  // text sections. Falls back to the original fixed position when no section claims it,
+  // so every other project's layout is unaffected.
+  const screenCarouselUsedInline = project.featuredSections.some(
+    (s) => 'breakAfter' in s && s.breakAfter === 'screenCarousel'
+  );
+  const mockupsUsedInline = project.featuredSections.some((s) => 'breakAfter' in s && s.breakAfter === 'mockups');
+
   return (
     <article className="page page-project mix1-project">
       {/* ── Hero ─────────────────────────────────────────── */}
@@ -82,67 +140,46 @@ export function ProjectPage() {
 
       {/* ── Blocks ───────────────────────────────────────── */}
       <div className="blocks blocks--ctx-project">
-        {/* Featured rich blocks interleaved with image blocks */}
-        {project.featuredSections.map((section, i) => (
-          <div key={i}>
-            {/* Block Featured Rich */}
-            <div className="block block--safe-area block--bg-light block-featured-rich block-featured-rich--ctx-project">
-              <div className="block-featured-rich__inner">
-                <div className="block-featured-rich__featured">
-                  <p>{section.lead}</p>
-                </div>
-                <div className="block-featured-rich__rich-content">
-                  <div className="rich-content">
-                    <h2>{section.richTitle}</h2>
-                    {section.body.map((para, pi) => (
-                      <p key={pi}>{para}</p>
-                    ))}
+        {/* Featured rich blocks interleaved with image blocks, and optionally a visual break */}
+        {project.featuredSections.map((section, i) => {
+          const breakAfter = 'breakAfter' in section ? section.breakAfter : undefined;
+          return (
+            <div key={i}>
+              {/* Block Featured Rich */}
+              <div className="block block--safe-area block--bg-light block-featured-rich block-featured-rich--ctx-project">
+                <div className="block-featured-rich__inner">
+                  <div className="block-featured-rich__featured">
+                    <p>{section.lead}</p>
+                  </div>
+                  <div className="block-featured-rich__rich-content">
+                    <div className="rich-content">
+                      <h2>{section.richTitle}</h2>
+                      {section.body.map((para, pi) => (
+                        <p key={pi}>{para}</p>
+                      ))}
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
 
-            {/* Block Media — image grid */}
-            <div className="block block-media block--bg-light block--safe-area block-media--cols-2 block-media--ctx-project block-media--expansion-wrapper">
-              {section.images.map((src, ii) => (
-                <div key={ii} className="media block-media__item">
-                  <Picture src={src} alt="" className="picture--cover picture--rounded" />
-                </div>
-              ))}
-            </div>
-          </div>
-        ))}
-
-        {/* Block Screen Carousel — reuses Studio's vision-slider scroll-snap mechanism */}
-        {'screenCarousel' in project && project.screenCarousel.length > 0 && (
-          <div className="block block--safe-area block--bg-light block-screen-carousel">
-            <div className="block-screen-carousel__slider">
-              <div className="block-screen-carousel__track" ref={carouselTrackRef}>
-                {project.screenCarousel.map((src, i) => (
-                  <div key={i} className="block-screen-carousel__item">
-                    <Picture src={src} alt="" className="picture--cover" />
+              {/* Block Media — image grid */}
+              <div className="block block-media block--bg-light block--safe-area block-media--cols-2 block-media--ctx-project block-media--expansion-wrapper">
+                {section.images.map((src, ii) => (
+                  <div key={ii} className="media block-media__item">
+                    <Picture src={src} alt="" className="picture--cover picture--rounded" />
                   </div>
                 ))}
               </div>
+
+              {breakAfter === 'screenCarousel' && screenCarouselBlock}
+              {breakAfter === 'mockups' && mockupsBlock}
             </div>
-            <div className="block-screen-carousel__nav">
-              {project.screenCarousel.map((_, i) => (
-                <button
-                  key={i}
-                  type="button"
-                  className={`block-screen-carousel__nav-button${i === carouselActive ? ' block-screen-carousel__nav-button--active' : ''}`}
-                  onClick={() => {
-                    const target = carouselTrackRef.current?.children[i] as HTMLElement | undefined;
-                    target?.scrollIntoView({ behavior: 'smooth', inline: 'start', block: 'nearest' });
-                  }}
-                  aria-label={`Go to screen ${i + 1}`}
-                >
-                  {String(i + 1).padStart(2, '0')}
-                </button>
-              ))}
-            </div>
-          </div>
-        )}
+          );
+        })}
+
+        {/* Block Screen Carousel — reuses Studio's vision-slider scroll-snap mechanism. Falls back to this
+            fixed position when no section pulls it inline via breakAfter. */}
+        {!screenCarouselUsedInline && screenCarouselBlock}
 
         {/* Block Motion Demos — reference clips illustrating the motion principles behind the work */}
         {project.motionDemos.length > 0 && (
@@ -166,22 +203,8 @@ export function ProjectPage() {
           </div>
         )}
 
-        {/* Block Mockups — slider */}
-        <div className="block block-mockups block--has-background block-mockups--unique">
-          <div className="block-mockups__mockups">
-            <div className="slider slider-mockups slider--spv-auto">
-              <div className="swiper-wrapper">
-                {project.mockups.map((src, i) => (
-                  <div key={i} className="swiper-slide">
-                    <div className="block-mockups__mockup">
-                      <Picture src={src} alt="" className="picture--cover picture--rounded" />
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-        </div>
+        {/* Block Mockups — slider. Falls back to this fixed position when no section pulls it inline. */}
+        {!mockupsUsedInline && mockupsBlock}
 
         {/* Closing featured (no rich content) */}
         <div className="block block--safe-area block--bg-light block-featured-rich block-featured-rich--ctx-project">
