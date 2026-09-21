@@ -616,17 +616,10 @@ export const mix1Projects = [
         images: ['/images/placeholder-mix1/ratio-686x868.svg', '/images/placeholder-mix1/ratio-686x868.svg'],
       },
     ],
-    screenCarousel: [
-      '/images/portfolio/blockfi-mobile-surface-trading.svg',
-      '/images/portfolio/blockfi-mobile-surface-rewards.svg',
-      '/images/portfolio/blockfi-mobile-surface-bia.svg',
-      '/images/portfolio/blockfi-mobile-surface-design-system.svg',
-    ],
-    mockups: [
-      '/images/portfolio/mock-blockfi-mobile-01.svg',
-      '/images/portfolio/mock-blockfi-mobile-02.svg',
-      '/images/portfolio/mock-blockfi-mobile-03.svg',
-    ],
+    // Placeholder frames pending real screens for the surfaces this bet unlocked
+    // (Trading, Credit Card Rewards, BIA, the component system) — swap each src once sourced.
+    screenCarousel: Array.from({ length: 4 }, () => '/images/placeholder-mix1/ratio-1320x2868.svg'),
+    mockups: ['/images/placeholder-mix1/ratio-900x1600.svg', '/images/placeholder-mix1/ratio-900x1600.svg', '/images/placeholder-mix1/ratio-900x1600.svg'],
     closingLead: 'The brief never asked for a mobile-first bet. The strategy did.',
     stats: [
       { name: 'Trades in 90 days', description: 'Mobile outpaced web-based trades for the first time following launch.', value: '+200%' },
