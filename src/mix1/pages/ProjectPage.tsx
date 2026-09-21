@@ -54,7 +54,7 @@ export function ProjectPage() {
         <div className="hero-project__inner">
           <h1 className="heading heading--xl hero-project__title">{project.name}</h1>
           <div className="hero-project__client">
-            <p className="hero-project__client-heading">Client</p>
+            <p className="hero-project__client-heading">Organization</p>
             <p className="hero-project__client-value">{project.client}</p>
           </div>
           <div className="hero-project__figure">
