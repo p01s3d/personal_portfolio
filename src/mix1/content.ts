@@ -568,7 +568,7 @@ export const mix1Projects = [
         images: ['/images/placeholder-mix1/ratio-686x868.svg', '/images/placeholder-mix1/ratio-686x868.svg'],
       },
     ],
-    mockups: ['/images/placeholder-mix1/ratio-900x1600.svg', '/images/placeholder-mix1/ratio-900x1600.svg', '/images/placeholder-mix1/ratio-900x1600.svg'],
+    mockups: ['/images/portfolio/mock-blockfi-mobile-01.svg', '/images/portfolio/mock-blockfi-mobile-02.svg', '/images/portfolio/mock-blockfi-mobile-03.svg'],
     closingLead: 'The brief was too small. Pushing back on it was the design work.',
     stats: [
       { name: 'Trades in 90 days', description: 'Mobile outpaced web-based trades for the first time following launch.', value: '+200%' },
