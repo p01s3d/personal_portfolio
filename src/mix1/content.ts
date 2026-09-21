@@ -543,7 +543,7 @@ export const mix1Projects = [
     sector: 'Fintech',
     year: '2021',
     service: 'Leadership',
-    readTime: 4,
+    readTime: 5,
     image: '/images/placeholder-mix1/ratio-99x124.svg',
     headline: 'Mobile had no parity with web. I was the only designer on it before there was a team to build it with.',
     intro:
@@ -553,17 +553,27 @@ export const mix1Projects = [
         lead: 'Mobile had no parity with web. I was the only designer on it before there was a team to build it with.',
         richTitle: 'The gap',
         body: [
-          "When I joined BlockFi, mobile had no feature parity with web. You could log in, see your assets, and trade — but you couldn't view your Interest Account, opt into Rewards, manage a lost card, or access the Credit Card Rewards account. Core account functions simply didn't exist on the surface most people were reaching for first.",
-          'I was the company\'s first and only designer at the time. Design was mine alone; engineering built what I designed.',
+          "When I joined BlockFi, mobile was largely read-only — you could view your account and perform a handful of tasks, but the features that actually drove the business were relatively small in scope. Web carried significant design and technical debt of its own, and with no design system as a shared source of truth, keeping the two experiences coherent — let alone competitive — only got harder as both surfaces scaled.",
+          "I was the company's first and only designer at the time. Design was mine alone; engineering built what I designed.",
         ],
         images: ['/images/placeholder-mix1/ratio-686x868.svg', '/images/placeholder-mix1/ratio-686x868.svg'],
       },
       {
-        lead: 'There was no design system at the time. I owned the proposal for one — and for the hire to build and run it, who then reported into me.',
+        lead: 'The market had already answered the mobile-versus-web question. I made the case for reading it correctly, without leaving our institutional business behind.',
         richTitle: 'Proposing the bet',
         body: [
-          "Rather than treat mobile as a lighter version of web, I proposed a mobile-first design strategy: rebuild it as BlockFi's primary trading surface, not its secondary one.",
-          "That gave mobile a structural advantage web didn't have: web was carrying significant design and technical debt, and the design system let mobile move faster than a web codebase weighed down by it.",
+          'The market was moving mobile-first — Coinbase and Robinhood were built for mobile users first, with web as the secondary surface. I proposed the same bet for BlockFi: rebuild mobile as the primary trading surface, not the secondary one.',
+          "That didn't mean leaving our institutional investors behind — they still relied on web. It meant choosing a design system that worked for both: we adopted Uber Base and built it out natively for web and mobile, so closing the parity gap wouldn't mean sacrificing one platform for the other.",
+          'There was no design system at the time. I owned the proposal for one — and for the hire to build and run it, who then reported into me.',
+        ],
+        images: ['/images/placeholder-mix1/ratio-686x868.svg', '/images/placeholder-mix1/ratio-686x868.svg'],
+      },
+      {
+        lead: 'The bet paid off within two quarters — mobile reached feature parity with web, on a foundation strong enough to accelerate everything built on it next.',
+        richTitle: 'Closing the gap',
+        body: [
+          "Hiring native engineers alongside design-systems and mobile designers closed the parity gap within my first two quarters — mobile and web reached feature parity for the first time in the company's history.",
+          'That foundation proved itself again almost immediately: it accelerated the build of the Credit Card Rewards and BlockFi Interest Account features, mirroring the web experience on mobile instead of rebuilding it from scratch a second time.',
         ],
         images: ['/images/placeholder-mix1/ratio-686x868.svg', '/images/placeholder-mix1/ratio-686x868.svg'],
       },
@@ -581,8 +591,8 @@ export const mix1Projects = [
         richTitle: 'What changed',
         body: [
           'The same changes were applied consistently across web and mobile: not a one-off mobile fix, but a rethought trading interaction model, built on the design system underneath it.',
-          "The design system also closed a gap that had never been closed before: mobile and web features shipping on the same date, for the first time in the company's history — a direct result of the system giving both surfaces a shared foundation to build from instead of two teams solving the same problem twice.",
-          "The mobile-first bet became the platform's primary trading surface, against the backdrop of BlockFi scaling to 225K+ clients and $50M in monthly revenue.",
+          "Mobile revenue overtook web within my first year at BlockFi — the same design system that closed the feature gap became the platform's primary trading surface, against the backdrop of BlockFi scaling to 225K+ clients and $50M in monthly revenue.",
+          'I scaled the design team from one to five, and introduced the operating fundamentals the function didn\'t have yet: roadmap tooling (ProductBoard, Confluence, Jira), design reviews, prioritization frameworks, user testing, and user research.',
         ],
         images: ['/images/placeholder-mix1/ratio-686x868.svg', '/images/placeholder-mix1/ratio-686x868.svg'],
       },
@@ -595,6 +605,7 @@ export const mix1Projects = [
       { name: 'Monthly revenue', description: 'BlockFi revenue at time of engagement, grown in part through mobile trading volume.', value: '$50M' },
       { name: 'Clients served', description: 'Active BlockFi users at the point the mobile-first strategy took hold.', value: '225K+' },
       { name: 'Mobile/web co-launch', description: 'Design system let mobile and web features ship on the same date for the first time in company history.', value: 'First time ever' },
+      { name: 'Design org growth', description: 'Scaled from sole IC to a 5-person design team within the first two quarters.', value: '1 → 5' },
     ],
     tech: [
       { k: 'Platform', v: 'iOS + Android + Web' },
@@ -605,7 +616,7 @@ export const mix1Projects = [
     credits: [
       {
         role: 'Design strategy & execution',
-        name: "Osandi Robinson — founding/sole designer through the initial build; proposed the design system and the hire to build it, who reported into Osandi; design org scaled to 4 as product surface area grew",
+        name: "Osandi Robinson — founding/sole designer through the initial build; proposed the design system and the hire to build it, who reported into Osandi; design org scaled to 5 as product surface area grew",
       },
       { role: 'Engineering', name: 'BlockFi engineering' },
     ],
