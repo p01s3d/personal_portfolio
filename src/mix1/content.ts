@@ -564,7 +564,7 @@ export const mix1Projects = [
         breakAfter: 'screenCarousel',
       },
       {
-        lead: 'I scaled the design function from one to four within the first year.',
+        lead: 'Scaled the design function within the first year, directed a design system that cut delivery time roughly fourfold, and grounded a vision that helped the team meet a standing 20% year-over-year growth target.',
         richTitle: 'Leadership Impact',
         body: [
           "I scaled the design function from one to four within the first year. The design system I directed cut delivery time on new work by roughly four times. The roadmap I built from the design vision let the team plan against real commitments instead of reacting to scope creep release by release, and the team met and exceeded a standing 20% year-over-year growth target on that footing. On risk and compliance, the limits of the role showed: acting on the gaps I surfaced required prioritization at the VP, CEO, and Head of Operations level, ahead of new feature work, and that prioritization didn't always follow. Raising the flag and having the authority to act on it are different things, and that distinction is part of the record here, not a footnote to it.",
