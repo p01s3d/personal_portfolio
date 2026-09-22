@@ -597,10 +597,10 @@ export const mix1Projects = [
       'BlockFi gave me a company with no design function, no operating discipline, and a category still inventing its own conventions, and asked me to build all three into something that could scale and hold user trust. The design system, the roadmap, and the products I built by hand are the record of that work; the limits I hit on risk and compliance are part of it too, stated as fact rather than smoothed over.',
     stats: [
       { name: 'Design function growth', description: 'Scaled from sole IC to a 4-person design team within the first year.', value: '1 → 4' },
-      { name: 'Platform assets', description: "BlockFi's platform assets during Osandi's tenure as design leader.", value: '$1B → $15B' },
+      { name: 'Platform assets', description: "BlockFi's platform assets over this role's tenure as design leader.", value: '$1B → $15B' },
       { name: 'Monthly revenue', description: "BlockFi's monthly revenue growth during the same period.", value: '$1.5M → $50M' },
-      { name: 'Delivery speed', description: 'Faster delivery on new work after the design system Osandi directed.', value: '~4x' },
-      { name: 'YoY growth target', description: 'Standing growth target the team met and exceeded on the roadmap Osandi built.', value: '20%+' },
+      { name: 'Delivery speed', description: "Faster delivery on new work following the design system's rollout.", value: '~4x' },
+      { name: 'YoY growth target', description: 'Standing growth target the team met and exceeded on the roadmap this role established.', value: '20%+' },
       { name: 'Mobile trade volume', description: 'Mobile outpaced web-based trading for the first time following the recurring-trades redesign.', value: '+200%' },
       { name: 'Active cardholders', description: 'Within the first 90 days of the Credit Card Rewards national launch (BlockFi, GlobeNewswire, Oct 13 2021).', value: '50,000+' },
       { name: 'Annualized card spend pace', description: 'Pacing figure disclosed alongside the 90-day cardholder count (BlockFi, Oct 2021).', value: '$2B+' },
