@@ -64,17 +64,9 @@ export const mix1Work = {
       sector: 'crypto',
     },
     {
-      name: 'BlockFi Mobile',
-      headline: 'Redefining mobile trading to drive 200%+ transaction volume in 90 days',
-      desc: 'BlockFi’s mobile trading experience was scoped too narrowly — USD denomination was the surface problem, but the deeper opportunity was rebuilding the entire flow around how users actually trade. As Director, I pushed back on the original brief using product benchmarking and heuristic evaluation, moving buy/sell intent before the amount screen to eliminate a segmented control that was adding cognitive load, making room for surfacing recurring trades earlier in the flow — previously buried at the summary screen. Both decisions were validated through user testing before implementation, and applied consistently across web and mobile. Trades grew 200%+ within 90 days of launch — outpacing web-based trades for the first time — and contributed directly to BlockFi’s growth in service of 225K+ clients.',
-      image: '/images/placeholder-mix1/ratio-451x567.svg',
-      service: 'leadership',
-      sector: 'fintech',
-    },
-    {
-      name: 'BlockFi — Credit Card Rewards (Mobile)',
-      headline: 'Scoping and shipping the mobile experience behind the world’s first Bitcoin rewards credit card',
-      desc: 'Performed as lead product designer for the world’s first Bitcoin rewards credit card — building the design system and implementing the native experience against a web version, reusing the same components across both to stave off design debt and create a unified cross-platform experience. Reached 50,000+ active cardholders within 90 days of national launch, spending 450% above the card industry average and pacing toward $2B+ in annualized volume (BlockFi, Oct 2021).',
+      name: 'BlockFi — Director of Design',
+      headline: 'Building BlockFi\'s design function from zero, across web, mobile, and credit card rewards',
+      desc: "BlockFi hired me as its first design leader into a company with no in-house design function, no product operations, and no design system. I built all three — directing design across the marketplace, credit card rewards, and BlockFi Interest Accounts for retail and institutional customers, while scaling the design function from one to four within the first year. I designed three product experiences by hand: the native trading app built from the ground up, a premium redesign of the web trading experience that introduced recurring trades, and the credit card rewards product end to end. Recurring trades lifted mobile trading volume by roughly 200% and marked the first time mobile trades outpaced web; the credit card reached 50,000+ active cardholders within 90 days of a 400,000-signup waitlist.",
       image: '/images/placeholder-mix1/ratio-451x567.svg',
       service: 'leadership',
       sector: 'fintech',
@@ -537,172 +529,94 @@ export const mix1Projects = [
     motionDemos: [] as { label: string; src: string }[],
   },
   {
-    slug: 'blockfi-mobile',
-    name: 'BlockFi Mobile',
+    slug: 'blockfi-director-of-design',
+    name: 'BlockFi — Director of Design',
     client: 'BlockFi',
     sector: 'Fintech',
     year: '2021',
     service: 'Leadership',
-    readTime: 5,
+    readTime: 6,
     image: '/images/placeholder-mix1/ratio-99x124.svg',
-    headline: 'Mobile had no parity with web. I was the only designer on it before there was a team to build it with.',
+    headline: 'BlockFi hired me as its first design leader. Before I arrived, the company had no in-house design function.',
     intro:
-      'When I joined BlockFi as its first and only designer, I inherited a stack of problems, not one: mobile had no feature parity with web, there was no design system, and web itself carried significant design and technical debt.',
+      'BlockFi hired me as its first design leader. Before I arrived, the company had no in-house design function — third-party vendors and one junior designer carried the work, and that designer left soon after I joined.',
     featuredSections: [
       {
-        lead: 'Mobile had no parity with web. I was the only designer on it before there was a team to build it with.',
+        lead: 'BlockFi hired me as its first design leader. Before I arrived, the company had no in-house design function.',
         richTitle: 'The Opportunity',
         body: [
-          "When I joined BlockFi as its first and only designer, mobile was years behind web and getting no closer. You could log in, see your assets, and trade — but you couldn't view your Interest Account, opt into Rewards, manage a lost card, or access the Credit Card Rewards account. That gap existed inside a market that had already decided the answer: Coinbase and Robinhood were mobile-first companies with web treated as secondary, and BlockFi was still building the other way around.",
-          "There was no design system to hold the two platforms together, and web itself was carrying significant design and technical debt — so even where features existed on both surfaces, they didn't feel like the same product. There was no native mobile engineering partner to build against, either; closing the gap meant finding one before it meant designing anything.",
-          'Underneath the product gap was an operational one. There was no prioritization infrastructure connecting user signal to what got built, no quarterly cadence for weighing effort against business goals, and no working definition of done — no release cadence, no documentation standards, no roadmap to hold work against. Nothing was validated before engineering built it; testing happened after the fact, if at all.',
-          "And underneath that was a trust gap. Design had no formal partnership with security or compliance, at a company holding other people's money, including institutional clients — and no codified principles to hold the line when shipping pressure pushed against user trust or safety.",
-          'Two problems sat at the center of all of it: a segmented control forcing users to choose denomination before intent — which product benchmarking and heuristic evaluation surfaced as the single biggest source of drop-off — and recurring trades buried three steps too late, at the summary screen.',
+          "BlockFi hired me as its first design leader. Before I arrived, the company had no in-house design function. Third-party vendors and one junior designer carried the work, without a leader who could develop that designer's skills, and the designer left soon after I joined.",
+          "I inherited a company without product operations. No one estimated work, so scope grew mid-flight and releases shipped broken or caused regressions on web. Mobile carried a separate problem: features scoped for web didn't account for mobile's real workload, on a team smaller and less mature than its web counterpart. No documentation standards meant no gated inputs feeding into what got built. No user testing meant we shipped without verifying features solved real problems, so work came back incomplete or unusable. No design system meant the product read as inconsistent, and that inconsistency cost user trust, a currency that mattered more here than at most startups, since users were handing BlockFi their funds in exchange for interest.",
+          "Four disciplines built the product: web, mobile, blockchain, and cybersecurity, with go-to-market running alongside them as its own pillar. Without a real development process, that team found out about releases after the fact and couldn't message features ahead of launch or get ahead of user concerns before they shipped. Cybersecurity couldn't assess risk or compliance exposure on features it never saw coming, a gap serious enough that I later restructured how design partnered with that team. Users filled Zendesk with feedback, but nobody aggregated that sentiment into a view anyone could act on, and BlockFi defaulted to shipping new features over fixing the ones users already flagged as broken.",
+          "I interviewed stakeholders to understand what was costing us churn and the feedback that was surfacing online, rather than assuming I knew. That research, read through Designer Fund's Level Up framework, the tool I've used since to diagnose design-org health, pointed to two structural gaps: no design system meant the product couldn't scale, and no documentation or process meant the team couldn't move at the speed the business needed. The people side told a parallel story. Nothing existed to develop talent, so the company would need to hire people who could mentor or build formal training in its place. Even senior hires needed protected time for one-to-one coaching, because people in high-impact roles still needed room to grow into them. And the company had no shared point of view on what the product was supposed to become.",
+          "None of this made BlockFi unusual. It made the opportunity real. Blockchain, self-custody, and retail crypto trading were new interaction paradigms, not an established category with settled patterns. Coinbase and Robinhood had already set the bar for what good looked like in fintech-grade crypto products. BlockFi's edge was an institutional-investor base neither of them served in the same way, a real foothold in a category where the design language itself was still being invented.",
         ],
         images: ['/images/placeholder-mix1/ratio-686x868.svg', '/images/placeholder-mix1/ratio-686x868.svg'],
       },
       {
-        lead: "I proposed rebuilding mobile as BlockFi's primary surface, not its secondary one.",
-        richTitle: 'The Approach',
+        lead: 'I built the structure the company lacked.',
+        richTitle: 'Leadership',
         body: [
-          "Rather than patch mobile feature by feature, I proposed a mobile-first strategy: rebuild mobile as BlockFi's primary trading surface, not its secondary one, on a design system modeled on Uber's Base design system — a real reference point, open-sourced by Uber in 2018 as the shared language behind every Uber product. Going mobile-first didn't mean leaving web or our institutional investors behind; it meant choosing a system built to serve both.",
-          'There was no design system to build from, so I owned that proposal too — and the hire to build and run it, who reported into me. Before headcount scaled, I was the product visionary and executor myself: I brought in a former iOS engineering colleague from my time at Ubiquiti, an expert in native mobile engineering pairing with my expertise in mobile design — a partnership, not a reporting relationship, that let us actually ship. I set the bar of craft through example — demonstrating how to compose UIs against the component library myself, acting as product manager for that effort — then scaled the team to continue delivering on it, rather than stepping back once headcount grew. That combination — the bar set firsthand, then held by a team built to sustain it — closed the feature-parity gap within two quarters, and gave the team the foundation to accelerate the Credit Card Rewards and Interest Account builds on mobile without designing everything twice.',
+          "I directed design across BlockFi's full product line: the marketplace, credit card rewards, and BlockFi Interest Accounts, covering retail and institutional customers across US and international markets. On native, I owned the mobile conversion of that same suite to full parity with web, across iOS and Android. That work took shape during a period when BlockFi itself scaled fast, growing assets held on its platform from $1B to $15B and monthly revenue from $1.5M to $50M year over year, the broader business context the product and design org operated inside.",
+          "I built the structure the company lacked. BlockFi's one existing designer left as I came on, so I started as the design function's sole contributor. I directed the design system as a standing responsibility, owning its component architecture and implementation as the product grew rather than treating it as a one-time build. I owned a design vision built with the full product development cycle in view: product design, blockchain engineering, front-end and back-end engineering, security, and go-to-market, one that had to hold up across every function expected to execute against it. I also worked as a strategic partner to the go-to-market team, which owned both marketing and creative as one function at BlockFi rather than two. That partnership wasn't a formal design-embedded arm; it was close, ongoing collaboration that let go-to-market shape messaging and creative with real product context, rather than working from the outside once a feature had already shipped. And I pushed for visibility into risk and compliance where none had existed, working to translate that visibility into clear, in-app disclosures for users, including the KYC-related disclosures the product needed.",
         ],
         images: ['/images/placeholder-mix1/ratio-686x868.svg', '/images/placeholder-mix1/ratio-686x868.svg'],
         breakAfter: 'screenCarousel',
       },
       {
-        lead: 'Roadmap tooling connected directly to user input, balanced against clear OKRs — the first time that infrastructure had existed at BlockFi.',
-        richTitle: 'Building the Operating Layer',
+        lead: 'I scaled the design function from one to four within the first year.',
+        richTitle: 'Leadership Impact',
         body: [
-          'I introduced the fundamentals of product design as a function at BlockFi: design reviews, t-shirt sizing against business goals to set quarterly priorities, and formal user testing and research — plus the roadmap tooling, Jira and Productboard, which I connected to Zendesk so we could scope work against clear OKRs balanced directly by user input, the first time that had existed at BlockFi.',
+          "I scaled the design function from one to four within the first year. The design system I directed cut delivery time on new work by roughly four times. The roadmap I built from the design vision let the team plan against real commitments instead of reacting to scope creep release by release, and the team met and exceeded a standing 20% year-over-year growth target on that footing. On risk and compliance, the limits of the role showed: acting on the gaps I surfaced required prioritization at the VP, CEO, and Head of Operations level, ahead of new feature work, and that prioritization didn't always follow. Raising the flag and having the authority to act on it are different things, and that distinction is part of the record here, not a footnote to it.",
         ],
         images: ['/images/placeholder-mix1/ratio-686x868.svg', '/images/placeholder-mix1/ratio-686x868.svg'],
       },
       {
-        lead: 'There was no definition of done at BlockFi. I built one.',
-        richTitle: 'Definition of Done',
+        lead: 'Within that scope, I designed three product experiences by hand.',
+        richTitle: 'Hands On Design Contribution',
         body: [
-          'Before any of this, there was no working definition of done — shipping was loose and ad hoc. The framework I introduced became BlockFi\'s operational roadmap, mapped directly to business goals, and I was the first person at the company to require validation before engineering: user testing against prototypes, run within the product development cycle, rather than validating after something had already shipped.',
+          "Within that scope, I designed three product experiences by hand. I built the native trading experience from the ground up. On web, I owned the update to an existing trading experience, bringing it to a premium, cohesive standard and paying down design debt that had built up before I arrived. Part of that work introduced recurring trades. I also owned the credit card rewards product end to end, on web and mobile, including the information architecture work required to support it. BlockFi's IA had no place for a credit product before this work, so I rebuilt it to hold the new product without breaking what already worked.",
         ],
         images: ['/images/placeholder-mix1/ratio-686x868.svg', '/images/placeholder-mix1/ratio-686x868.svg'],
         breakAfter: 'mockups',
       },
       {
-        lead: 'These were the first product principles ever to originate from design at BlockFi, not product management.',
-        richTitle: 'Principles',
+        lead: 'The credit card launched to an estimated 400,000 pre-launch waitlist signups and reached 50,000+ active cardholders within its first 90 days.',
+        richTitle: 'Individual Contributor Impact',
         body: [
-          "BlockFi's product handled other people's money, including institutional clients whose trust in fund security was existential to the business. Our internal cybersecurity team ran audits to understand the risk in our stack; once I understood what we were up against, I partnered with them directly — reviewing any feature before it was built, not after, and giving their sign-off real authority, including on releases before they went live. They told me they'd never worked with someone so willing to include them, or to treat design scope as something they should see in parallel with product rather than after the fact. That partnership extended to how releases were communicated, too — ensuring compliance in how we positioned releases both in-app and in external collateral like our blog and marketing.",
-          'That shaped three principles the rest of the work was built on: security — ensuring users felt safe, not just were safe — accessibility, and a modular design system that could hold both without compromising either. These were the first product principles ever to originate from design at BlockFi, not product management — and they mattered because of a real, recurring tension with a newer product management pillar that wanted to ship without meeting that bar. Holding the line — on whether a release created even a single doubt about fund security, on user peace of mind, on whether the work would scale — was what those principles were for, quarter after quarter.',
-        ],
-        images: ['/images/placeholder-mix1/ratio-686x868.svg', '/images/placeholder-mix1/ratio-686x868.svg'],
-      },
-      {
-        lead: 'Trades grew 200%+ in 90 days. Mobile outpaced web-based trading for the first time — reversing the exact parity gap that existed when I joined.',
-        richTitle: 'What Changed',
-        body: [
-          "Moving buy/sell intent before the amount screen eliminated the segmented-control drop-off. Surfacing recurring trades earlier required a structural change to the flow the original brief hadn't scoped — both validated through user testing before implementation, run through one person end to end.",
-          'Trades grew 200%+ in 90 days. Mobile outpaced web-based trading for the first time, reversing the exact parity gap that existed when I joined. The same changes were applied consistently across web and mobile — not a one-off mobile fix, but a rethought trading interaction model built on the design system underneath it. That system also closed a gap that had never closed before: mobile and web features shipping on the same date, for the first time in the company\'s history.',
-          "The mobile-first bet was proven by revenue: mobile overtook web within the first year of the strategy, against the backdrop of BlockFi scaling to 225K+ clients and $50M in monthly revenue. The operational rigor behind it didn't stay contained to design, either — it's part of why BlockFi's product director was promoted to VP of Product during this period.",
+          "Recurring trades lifted mobile trading volume by roughly 200%, per internal marketing and business reporting, and marked the first time mobile trades outpaced web, even as a new feature. The credit card launched to an estimated 400,000 pre-launch waitlist signups and reached 50,000+ active cardholders within its first 90 days. Cardholders spent an average of $30,000 a year, about 450% above the typical Amex, Mastercard, and Visa cardholder, pacing the product toward $2B+ in annualized spend and distributing more than 120 BTC in rewards, worth close to $6.8M as of October 2021.",
         ],
         images: ['/images/placeholder-mix1/ratio-686x868.svg', '/images/placeholder-mix1/ratio-686x868.svg'],
       },
     ],
-    // Placeholder frames pending real screens for the surfaces this bet unlocked
-    // (Trading, Credit Card Rewards, BIA, the component system) — swap each src once sourced.
+    // Placeholder frames pending real screens for the surfaces this role covered
+    // (marketplace, credit card rewards, BIA, native trading) — swap each src once sourced.
     screenCarousel: Array.from({ length: 4 }, () => '/images/placeholder-mix1/ratio-1320x2868.svg'),
     mockups: ['/images/placeholder-mix1/ratio-900x1600.svg', '/images/placeholder-mix1/ratio-900x1600.svg', '/images/placeholder-mix1/ratio-900x1600.svg'],
-    closingLead: 'The brief never asked for a mobile-first bet. The strategy did.',
+    closingLead:
+      'BlockFi gave me a company with no design function, no operating discipline, and a category still inventing its own conventions, and asked me to build all three into something that could scale and hold user trust. The design system, the roadmap, and the products I built by hand are the record of that work; the limits I hit on risk and compliance are part of it too, stated as fact rather than smoothed over.',
     stats: [
-      { name: 'Trades in 90 days', description: 'Mobile outpaced web-based trades for the first time following launch.', value: '+200%' },
-      { name: 'Monthly revenue', description: 'BlockFi revenue at time of engagement, grown in part through mobile trading volume.', value: '$50M' },
-      { name: 'Clients served', description: 'Active BlockFi users at the point the mobile-first strategy took hold.', value: '225K+' },
-      { name: 'Mobile/web co-launch', description: 'Design system let mobile and web features ship on the same date for the first time in company history.', value: 'First time ever' },
+      { name: 'Design function growth', description: 'Scaled from sole IC to a 4-person design team within the first year.', value: '1 → 4' },
+      { name: 'Platform assets', description: "BlockFi's platform assets during Osandi's tenure as design leader.", value: '$1B → $15B' },
+      { name: 'Active cardholders', description: 'Within the first 90 days of the Credit Card Rewards national launch (BlockFi, GlobeNewswire, Oct 13 2021).', value: '50,000+' },
+      { name: 'Mobile trade volume', description: 'Mobile outpaced web-based trading for the first time following the recurring-trades redesign.', value: '+200%' },
     ],
     tech: [
       { k: 'Platform', v: 'iOS + Android + Web' },
-      { k: 'Method', v: 'Benchmarking · user testing' },
-      { k: 'Role', v: 'Director of Product Design' },
+      { k: 'Method', v: 'Stakeholder research · Designer Fund Level Up' },
+      { k: 'Role', v: 'Director of Design' },
     ],
-    tags: ['Founding IC', 'Fintech', 'Mobile', 'iOS', 'Android', 'Director'],
+    tags: ['Founding IC', 'Fintech', 'Web', 'Mobile', 'iOS', 'Android', 'Director'],
     credits: [
       {
         role: 'Design strategy & execution',
-        name: 'Osandi Robinson — founding/sole designer through the initial build; proposed the design system and the hire to build it, who reported into Osandi; design org scaled from one to four',
+        name: "Osandi Robinson — founding/sole designer through the initial build; directed the design system and vision across product design, blockchain, front-end, back-end, security, and go-to-market; design org scaled from one to four",
       },
-      { role: 'Native iOS engineering', name: 'Former colleague from Ubiquiti, recruited by Osandi' },
       { role: 'Engineering', name: 'BlockFi engineering' },
     ],
     clientCredits: [
       { role: 'PM', name: 'BlockFi product team' },
       { role: 'Organization', name: 'BlockFi' },
-    ],
-    motionDemos: [] as { label: string; src: string }[],
-  },
-  {
-    // TODO: gf-blockfi.jpg is a placeholder — same generic hero image already used by
-    // 'blockfi-mobile'. This entry needs its own card-specific mockups/photography once
-    // sourced (see open question in the scoping doc: is a dedicated BlockFi card Figma
-    // file already linked from the Work IA disclosure issue, or does it need locating?).
-    slug: 'blockfi-rewards-card',
-    name: 'BlockFi — Credit Card Rewards (Mobile)',
-    client: 'BlockFi',
-    sector: 'Fintech',
-    year: '2021',
-    service: 'Leadership',
-    readTime: 4,
-    image: '/images/placeholder-mix1/ratio-99x124.svg',
-    // Placeholder frames, framed at the iPhone 17 Pro Max's screen ratio (1320x2868)
-    // pending real card screens — swap each src once sourced (see TODO above). Rendered
-    // as a body carousel (see ProjectPage.tsx), not in the hero.
-    screenCarousel: Array.from({ length: 12 }, () => '/images/placeholder-mix1/ratio-1320x2868.svg'),
-    headline: 'Scoping and shipping the mobile experience behind the world’s first Bitcoin rewards credit card',
-    intro:
-      "BlockFi's Bitcoin Rewards Visa card wasn't a marketing bet — it was a product bet on a category no issuer had shipped: a credit card that paid rewards in Bitcoin instead of points or cashback. Before launch it had already pulled a waitlist of roughly 400,000 signups (Dec 2020–Jul 2021), which meant the mobile experience — enrollment, card management, and rewards tracking — had to hold up under real demand from day one, not iterate its way there.",
-    featuredSections: [
-      {
-        lead: 'Performed as lead product designer for the world’s first Bitcoin rewards credit card — owning the mobile surface: enrollment, card management, and rewards tracking.',
-        richTitle: 'Scope and role',
-        body: [
-          'Lead designer, mobile, for the BlockFi Rewards Card experience. The card launched nationally in mid-2021 on the Visa network, issued by Evolve Bank & Trust and powered by Deserve’s card platform, converting a ~400K-signup waitlist into an active cardholder base.',
-          'Built the design system and implemented the native experience against a web version — the same components reused across both platforms rather than diverging.',
-        ],
-        images: ['/images/placeholder-mix1/ratio-686x868.svg'],
-      },
-      {
-        lead: '50,000+ active cardholders within 90 days of national launch, spending 450% above the card industry average and pacing toward $2B+ in annualized volume.',
-        richTitle: 'Launch and adoption',
-        body: [
-          'By December 2021, cardholders had grown past 70,000 — a secondary source (Shorty Awards), cited with lighter confidence than BlockFi’s own release above. Rewards distribution reached 120+ BTC (~$6.8M) as of October 12, 2021 (BlockFi, GlobeNewswire).',
-          'That reuse staved off design debt and created a unified cross-platform experience — one system driving both native and web, not two drifting apart.',
-        ],
-        images: ['/images/placeholder-mix1/ratio-686x868.svg'],
-      },
-    ],
-    mockups: ['/images/placeholder-mix1/ratio-900x1600.svg'],
-    closingLead:
-      '“Crypto rewards programs are a compelling way to engage consumers in the crypto economy. We’re excited to see programs like the BlockFi Rewards Visa Card, which offer rewards that are relevant to the growing community of digital currency adopters.” — Forbes, Jul 6 2021',
-    stats: [
-      { name: 'Pre-launch waitlist', description: 'Accumulated Dec 2020–Jul 2021, ahead of national launch (Forbes; PR Newswire, Jul 2021).', value: '~400,000' },
-      { name: 'Active cardholders', description: 'Within the first 90 days of national launch (BlockFi, GlobeNewswire, Oct 13 2021).', value: '50,000+' },
-      { name: 'Average spend / cardholder', description: '~450% above the ~$5,000 Amex/Mastercard/Visa average (same BlockFi release).', value: '~$30,000/yr' },
-      { name: 'Annualized spend pace', description: 'Pacing figure disclosed alongside the 90-day cardholder count (BlockFi, Oct 2021).', value: '$2B+' },
-      { name: 'Rewards distributed', description: '≈$6.8M in BTC as of Oct 12, 2021 (BlockFi, GlobeNewswire).', value: '120+ BTC' },
-    ],
-    tech: [
-      { k: 'Platform', v: 'iOS + Android' },
-      { k: 'Network / issuer', v: 'Visa · Evolve Bank & Trust · Deserve' },
-      { k: 'Role', v: 'Lead Designer, Mobile' },
-    ],
-    tags: ['Lead', 'Fintech', 'Mobile', 'Credit Card', 'iOS', 'Android'],
-    credits: [
-      { role: 'Lead designer, mobile', name: 'Osandi Robinson' },
-      { role: 'Product designers', name: 'BlockFi design team' },
-      { role: 'Engineering', name: 'BlockFi engineering' },
-    ],
-    clientCredits: [
-      { role: 'Client', name: 'BlockFi' },
-      { role: 'PM', name: 'BlockFi product team' },
     ],
     motionDemos: [] as { label: string; src: string }[],
   },
