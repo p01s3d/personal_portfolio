@@ -535,7 +535,7 @@ export const mix1Projects = [
     sector: 'Fintech',
     year: '2021',
     service: 'Leadership',
-    readTime: 6,
+    readTime: 7,
     image: '/images/placeholder-mix1/ratio-99x124.svg',
     headline: 'BlockFi hired me as its first design leader. Before I arrived, the company had no in-house design function.',
     intro:
@@ -588,19 +588,27 @@ export const mix1Projects = [
         ],
         images: ['/images/placeholder-mix1/ratio-686x868.svg', '/images/placeholder-mix1/ratio-686x868.svg'],
       },
+      {
+        lead: 'Being right about a problem and having the authority to act on it are two different achievements.',
+        richTitle: 'Learnings',
+        body: [
+          'BlockFi handed me a company with no design function, no operating discipline, and a category still inventing its own conventions, and asked me to turn all three into something that could scale and hold user trust. The design system, the roadmap, and the products I built by hand are the record of that work.',
+          'The sharper lesson sits in what happened next. I had an accurate read on the risk, and the standing as design lead to raise it. The organization still needed prioritization at the VP, CEO, and Head of Operations level to convert that read into action, and that prioritization did not consistently follow. Being right about a problem and having the authority to act on it are two different achievements, and the gap between them is where user protection gets decided. That distinction is the one I carry into every design leadership role since: build the case, then build the case for who needs to act on it.',
+        ],
+        images: ['/images/placeholder-mix1/ratio-686x868.svg', '/images/placeholder-mix1/ratio-686x868.svg'],
+      },
     ],
     // Placeholder frames pending real screens for the surfaces this role covered
     // (marketplace, credit card rewards, BIA, native trading) — swap each src once sourced.
     screenCarousel: Array.from({ length: 4 }, () => '/images/placeholder-mix1/ratio-1320x2868.svg'),
     mockups: ['/images/placeholder-mix1/ratio-900x1600.svg', '/images/placeholder-mix1/ratio-900x1600.svg', '/images/placeholder-mix1/ratio-900x1600.svg'],
-    closingLead:
-      'BlockFi gave me a company with no design function, no operating discipline, and a category still inventing its own conventions, and asked me to build all three into something that could scale and hold user trust. The design system, the roadmap, and the products I built by hand are the record of that work; the limits I hit on risk and compliance are part of it too, stated as fact rather than smoothed over.',
+    closingLead: 'Build the case, then build the case for who needs to act on it.',
     stats: [
       { name: 'Design function growth', description: 'Scaled from sole IC to a 4-person design team within the first year.', value: '1 → 4' },
-      { name: 'Platform assets', description: "BlockFi's platform assets during Osandi's tenure as design leader.", value: '$1B → $15B' },
+      { name: 'Platform assets', description: "BlockFi's platform assets over this role's tenure as design leader.", value: '$1B → $15B' },
       { name: 'Monthly revenue', description: "BlockFi's monthly revenue growth during the same period.", value: '$1.5M → $50M' },
-      { name: 'Delivery speed', description: 'Faster delivery on new work after the design system Osandi directed.', value: '~4x' },
-      { name: 'YoY growth target', description: 'Standing growth target the team met and exceeded on the roadmap Osandi built.', value: '20%+' },
+      { name: 'Delivery speed', description: "Faster delivery on new work following the design system's rollout.", value: '~4x' },
+      { name: 'YoY growth target', description: 'Standing growth target the team met and exceeded on the roadmap this role established.', value: '20%+' },
       { name: 'Mobile trade volume', description: 'Mobile outpaced web-based trading for the first time following the recurring-trades redesign.', value: '+200%' },
       { name: 'Active cardholders', description: 'Within the first 90 days of the Credit Card Rewards national launch (BlockFi, GlobeNewswire, Oct 13 2021).', value: '50,000+' },
       { name: 'Annualized card spend pace', description: 'Pacing figure disclosed alongside the 90-day cardholder count (BlockFi, Oct 2021).', value: '$2B+' },
