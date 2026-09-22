@@ -581,7 +581,7 @@ export const mix1Projects = [
         breakAfter: 'mockups',
       },
       {
-        lead: 'The credit card launched to an estimated 400,000 pre-launch waitlist signups and reached 50,000+ active cardholders within its first 90 days.',
+        lead: '"Crypto rewards programs are a compelling way to engage consumers in the crypto economy. We\'re excited to see programs like the BlockFi Rewards Visa Card, which offer rewards that are relevant to the growing community of digital currency adopters." — Forbes, Jul 6 2021',
         richTitle: 'Individual Contributor Impact',
         body: [
           "Recurring trades lifted mobile trading volume by roughly 200%, per internal marketing and business reporting, and marked the first time mobile trades outpaced web, even as a new feature. The credit card launched to an estimated 400,000 pre-launch waitlist signups and reached 50,000+ active cardholders within its first 90 days. Cardholders spent an average of $30,000 a year, about 450% above the typical Amex, Mastercard, and Visa cardholder, pacing the product toward $2B+ in annualized spend and distributing more than 120 BTC in rewards, worth close to $6.8M as of October 2021.",
@@ -598,8 +598,13 @@ export const mix1Projects = [
     stats: [
       { name: 'Design function growth', description: 'Scaled from sole IC to a 4-person design team within the first year.', value: '1 → 4' },
       { name: 'Platform assets', description: "BlockFi's platform assets during Osandi's tenure as design leader.", value: '$1B → $15B' },
-      { name: 'Active cardholders', description: 'Within the first 90 days of the Credit Card Rewards national launch (BlockFi, GlobeNewswire, Oct 13 2021).', value: '50,000+' },
+      { name: 'Monthly revenue', description: "BlockFi's monthly revenue growth during the same period.", value: '$1.5M → $50M' },
+      { name: 'Delivery speed', description: 'Faster delivery on new work after the design system Osandi directed.', value: '~4x' },
+      { name: 'YoY growth target', description: 'Standing growth target the team met and exceeded on the roadmap Osandi built.', value: '20%+' },
       { name: 'Mobile trade volume', description: 'Mobile outpaced web-based trading for the first time following the recurring-trades redesign.', value: '+200%' },
+      { name: 'Active cardholders', description: 'Within the first 90 days of the Credit Card Rewards national launch (BlockFi, GlobeNewswire, Oct 13 2021).', value: '50,000+' },
+      { name: 'Annualized card spend pace', description: 'Pacing figure disclosed alongside the 90-day cardholder count (BlockFi, Oct 2021).', value: '$2B+' },
+      { name: 'BTC rewards distributed', description: '≈$6.8M in BTC as of Oct 12, 2021 (BlockFi, GlobeNewswire).', value: '120+ BTC' },
     ],
     tech: [
       { k: 'Platform', v: 'iOS + Android + Web' },
