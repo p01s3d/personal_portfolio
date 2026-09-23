@@ -40,7 +40,7 @@ export const mix1Work = {
   ],
   items: [
     {
-      name: 'Mezo Design Operations',
+      name: 'Mezo: 30%→40% Conversion',
       headline: 'Building the operational discipline Mezo needed to scale product delivery without shipping broken builds',
       desc: "Mezo had never built the operational discipline to scale product delivery without shipping broken builds. I ran the team through Designer Fund's Level Up framework and found gaps at every level — no design system, no documented standards, no growth path for designers. I introduced Linear, built the org's first documentation standards and definition of done, and partnered with a former direct report to ship a 1,000+ component design system in two months, cutting product development time 4x ahead of a mainnet transition processing $322M in testnet deposits and $1.8B in MUSD borrowed. Sprint completion held at 98%. I rebuilt design headcount net +3 against a new skills matrix, and the org's first validated OKR, a 30% conversion target, was overshot at roughly 40%.",
       image: '/images/placeholder-mix1/ratio-451x567.svg',
@@ -48,7 +48,7 @@ export const mix1Work = {
       sector: 'crypto',
     },
     {
-      name: 'Mezo Clay Design System',
+      name: 'Mezo Clay: $200M+ TVL',
       headline: 'Converting design debt into product infrastructure',
       desc: 'Led Mezo design system migration across three product phases (legacy, testnet, mainnet); post-launch audit established 70% component integration and identified systemic overrides from premature styling as the primary implementation bottleneck, informing governance decisions. Managed a direct report and an engineering contributor from execution through deployment. Partnered with the contributing designer to set quality standards and pattern library conventions, building out Uber Base into a React, WCAG 2.2-compliant library purpose-built for the Thesis BitcoinFi suite. Managed, built, and tested 2,000+ variants across 50+ base components, establishing the single source of truth every product surface shipped: the infrastructure behind $322M in testnet deposits, 154K transactions, and $151M TVL at mainnet, peaking at $200M+.',
       image: '/images/placeholder-mix1/ratio-451x567.svg',
@@ -56,7 +56,7 @@ export const mix1Work = {
       sector: 'crypto',
     },
     {
-      name: 'Mezo Deposit Flow',
+      name: 'Mezo Deposits: $200M+ TVL',
       headline: 'Improving the deposit flow that unlocked Mezo’s liquidity',
       desc: 'Depositing Bitcoin to Mezo wasn’t a standard transfer — users were bridging assets across chains into a protocol where a wrong address meant permanent loss of funds. Research confirmed the existing deposit flow was fundamentally broken — perceived as risky and confusing. The redesign introduced upfront deposit instructions, surfaced network context and minimum thresholds before commitment, and provided unambiguous success states so users knew their funds had arrived safely. The deposit flow became the primary on-ramp enabling liquidity for vaults, pools, and rewards — contributing to Mezo’s growth to $200M+ TVL.',
       image: '/images/placeholder-mix1/ratio-451x567.svg',
@@ -64,7 +64,7 @@ export const mix1Work = {
       sector: 'crypto',
     },
     {
-      name: 'Mezo Borrow Flow',
+      name: 'Mezo Borrow: 25K+ Users',
       headline: 'Making high-stakes borrowing feel safe, not complex',
       desc: 'MUSD borrowing required users to understand collateralization, liquidation risk, and variable APR simultaneously — concepts that had no mainstream equivalent. The design challenge wasn’t simplification for its own sake; it was making consequential financial decisions feel appropriately weighted without overwhelming users into inaction. The redesign introduced progressive disclosure, consolidated error handling to a single inline signal, and leaned on benchmarked design patterns to reduce DeFi complexity for a larger addressable market.',
       image: '/images/placeholder-mix1/ratio-451x567.svg',
@@ -72,7 +72,7 @@ export const mix1Work = {
       sector: 'crypto',
     },
     {
-      name: 'BlockFi Design Leadership',
+      name: 'BlockFi: $1.5M→$50M/mo',
       headline: 'Building BlockFi\'s design function from zero, across web, mobile, and credit card rewards',
       desc: "BlockFi hired me as its first design leader into a company with no in-house design function, no product operations, and no design system. I built all three — directing design across the marketplace, credit card rewards, and BlockFi Interest Accounts for retail and institutional customers, while scaling the design function from one to four within the first year. I designed three product experiences by hand: the native trading app built from the ground up, a premium redesign of the web trading experience that introduced recurring trades, and the credit card rewards product end to end. Recurring trades lifted mobile trading volume by roughly 200% and marked the first time mobile trades outpaced web; the credit card reached 50,000+ active cardholders within 90 days of a 400,000-signup waitlist.",
       image: '/images/placeholder-mix1/ratio-451x567.svg',
@@ -80,7 +80,7 @@ export const mix1Work = {
       sector: 'fintech',
     },
     {
-      name: 'C@SH Native App',
+      name: 'C@SH: 0→1 Design Function',
       headline: 'Zero-to-one product design that informed a strategic pivot',
       desc: 'At an a16z Crypto portfolio company, I established the design function from zero — customizing Uber Base into a branded component library before a single internal designer was hired, doubling engineering speed and giving the team infrastructure to build with from day one. The VC principal set a high bar: a premium product resonating with an urban audience. We met it — validated through affinity testing — delivering a full light and dark mode experience. The same research surfaced a harder finding: the market hadn’t matured enough for a social wallet. That insight informed a strategic pivot, preserving capital that would otherwise have been burned against a product without sufficient traction.',
       image: '/images/placeholder-mix1/ratio-451x567.svg',
@@ -88,7 +88,7 @@ export const mix1Work = {
       sector: 'crypto',
     },
     {
-      name: 'EASI Food Delivery',
+      name: 'EASI: $500M+ Valuation',
       headline: 'Rearchitecting EASI to win a second audience — and a $500M valuation',
       desc: 'EASI had a strong market position in Australian diaspora communities, but poor usability, frequent crashes, and a sub-3.0 App Store rating were capping their TAM. In six weeks, I used benchmarking to build stakeholder confidence for a full redesign, then rebuilt core ordering flow in parallel with engineering’s re-architecture — prototyping and testing each decision before handoff. App Store rating climbed from below 3.0 to 4.5 stars. EASI surpassed 1M+ users, reached a $500M+ valuation, and was acquired by HungryPanda in 2022 — whose acquisition rationale mirrored the market strategy the redesign was built around.',
       image: '/images/placeholder-mix1/ratio-451x567.svg',
@@ -363,7 +363,7 @@ export const mix1Build = {
 export const mix1Projects = [
   {
     slug: 'mezo-design-operations-leadership',
-    name: 'Mezo Design Operations',
+    name: 'Mezo: 30%→40% Conversion',
     client: 'Mezo / Thesis',
     sector: 'Crypto',
     year: '2024–2026',
@@ -372,7 +372,7 @@ export const mix1Projects = [
     image: '/images/placeholder-mix1/ratio-99x124.svg',
     headline: 'Building the operational discipline Mezo needed to scale product delivery without shipping broken builds',
     intro:
-      "Mezo had never built the operational discipline to scale product delivery without shipping broken builds. An audit against Designer Fund's Level Up framework found gaps at every level — no design system, no documented standards, no growth path for designers — ahead of a mainnet transition that would go on to process $322M in testnet deposits and $1.8B in MUSD borrowed.",
+      "As Senior Design Operations Manager, later Senior Principal Designer, I found that Mezo had never built the operational discipline to scale product delivery without shipping broken builds. An audit against Designer Fund's Level Up framework found gaps at every level — no design system, no documented standards, no growth path for designers — ahead of a mainnet transition that would go on to process $322M in testnet deposits and $1.8B in MUSD borrowed.",
     featuredSections: [
       {
         lead: 'The audit found gaps at every level, including leadership.',
@@ -445,7 +445,7 @@ export const mix1Projects = [
     ],
     tags: ['Design operations', 'Leadership', 'Crypto', 'Design systems', 'Hiring', 'Linear'],
     credits: [
-      { role: 'Design operations & leadership', name: 'Osandi Robinson' },
+      { role: 'Senior Design Operations Manager → Senior Principal Designer', name: 'Osandi Robinson' },
       { role: 'Design systems', name: 'Poised LLC' },
     ],
     clientCredits: [
@@ -456,7 +456,7 @@ export const mix1Projects = [
   },
   {
     slug: 'mezo-clay',
-    name: 'Mezo Clay Design System',
+    name: 'Mezo Clay: $200M+ TVL',
     client: 'Mezo / Thesis',
     sector: 'Crypto',
     year: '2023',
@@ -523,7 +523,7 @@ export const mix1Projects = [
   },
   {
     slug: 'deposit-on-mezo',
-    name: 'Mezo Deposit Flow',
+    name: 'Mezo Deposits: $200M+ TVL',
     client: 'Mezo / Thesis',
     sector: 'Crypto',
     year: '2023',
@@ -586,7 +586,7 @@ export const mix1Projects = [
   },
   {
     slug: 'borrow-musd',
-    name: 'Mezo Borrow Flow',
+    name: 'Mezo Borrow: 25K+ Users',
     client: 'Mezo / Thesis',
     sector: 'Crypto',
     year: '2023',
@@ -640,7 +640,7 @@ export const mix1Projects = [
   },
   {
     slug: 'blockfi-director-of-design',
-    name: 'BlockFi Design Leadership',
+    name: 'BlockFi: $1.5M→$50M/mo',
     client: 'BlockFi',
     sector: 'Fintech',
     year: '2021',
@@ -745,7 +745,7 @@ export const mix1Projects = [
   },
   {
     slug: 'cash-native-app',
-    name: 'C@SH Native App',
+    name: 'C@SH: 0→1 Design Function',
     client: 'a16z Crypto portfolio',
     sector: 'Crypto',
     year: '2022',
@@ -799,7 +799,7 @@ export const mix1Projects = [
   },
   {
     slug: 'easi-food-delivery',
-    name: 'EASI Food Delivery',
+    name: 'EASI: $500M+ Valuation',
     client: 'EASI',
     sector: 'Consumer',
     year: '2020',
