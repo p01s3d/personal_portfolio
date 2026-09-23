@@ -56,7 +56,7 @@ export const mix1Work = {
       sector: 'crypto',
     },
     {
-      name: 'Deposit on Mezo',
+      name: 'Mezo Deposit Flow',
       headline: 'Improving the deposit flow that unlocked Mezo’s liquidity',
       desc: 'Depositing Bitcoin to Mezo wasn’t a standard transfer — users were bridging assets across chains into a protocol where a wrong address meant permanent loss of funds. Research confirmed the existing deposit flow was fundamentally broken — perceived as risky and confusing. The redesign introduced upfront deposit instructions, surfaced network context and minimum thresholds before commitment, and provided unambiguous success states so users knew their funds had arrived safely. The deposit flow became the primary on-ramp enabling liquidity for vaults, pools, and rewards — contributing to Mezo’s growth to $200M+ TVL.',
       image: '/images/placeholder-mix1/ratio-451x567.svg',
@@ -64,7 +64,7 @@ export const mix1Work = {
       sector: 'crypto',
     },
     {
-      name: 'Borrow MUSD on Mezo',
+      name: 'Mezo Borrow Flow',
       headline: 'Making high-stakes borrowing feel safe, not complex',
       desc: 'MUSD borrowing required users to understand collateralization, liquidation risk, and variable APR simultaneously — concepts that had no mainstream equivalent. The design challenge wasn’t simplification for its own sake; it was making consequential financial decisions feel appropriately weighted without overwhelming users into inaction. The redesign introduced progressive disclosure, consolidated error handling to a single inline signal, and leaned on benchmarked design patterns to reduce DeFi complexity for a larger addressable market.',
       image: '/images/placeholder-mix1/ratio-451x567.svg',
@@ -72,7 +72,7 @@ export const mix1Work = {
       sector: 'crypto',
     },
     {
-      name: 'BlockFi — Director of Design',
+      name: 'BlockFi Design Leadership',
       headline: 'Building BlockFi\'s design function from zero, across web, mobile, and credit card rewards',
       desc: "BlockFi hired me as its first design leader into a company with no in-house design function, no product operations, and no design system. I built all three — directing design across the marketplace, credit card rewards, and BlockFi Interest Accounts for retail and institutional customers, while scaling the design function from one to four within the first year. I designed three product experiences by hand: the native trading app built from the ground up, a premium redesign of the web trading experience that introduced recurring trades, and the credit card rewards product end to end. Recurring trades lifted mobile trading volume by roughly 200% and marked the first time mobile trades outpaced web; the credit card reached 50,000+ active cardholders within 90 days of a 400,000-signup waitlist.",
       image: '/images/placeholder-mix1/ratio-451x567.svg',
@@ -96,7 +96,7 @@ export const mix1Work = {
       sector: 'consumer',
     },
     {
-      name: 'Krisp AI',
+      name: 'Krisp Desktop Redesign',
       headline: 'Product innovation for Krisp.ai’s noise cancelling desktop application',
       desc: 'Krisp had built strong utility as a consumer noise-cancellation tool, but the desktop experience hadn’t kept pace with what AI-native software was starting to look like. Engaged as principal design consultant, I redesigned the application around a modern UI system — introducing branded components to accelerate implementation, reduce design debt, and establish a visual foundation capable of scaling with the product. The engagement paused when COVID-19 created market uncertainty across the space. Krisp would later pivot into meeting intelligence and recording — a shift toward enterprise aesthetics and a design brief the original work wasn’t built to serve.',
       image: '/images/placeholder-mix1/ratio-451x567.svg',
@@ -523,7 +523,7 @@ export const mix1Projects = [
   },
   {
     slug: 'deposit-on-mezo',
-    name: 'Deposit on Mezo',
+    name: 'Mezo Deposit Flow',
     client: 'Mezo / Thesis',
     sector: 'Crypto',
     year: '2023',
@@ -586,7 +586,7 @@ export const mix1Projects = [
   },
   {
     slug: 'borrow-musd',
-    name: 'Borrow MUSD on Mezo',
+    name: 'Mezo Borrow Flow',
     client: 'Mezo / Thesis',
     sector: 'Crypto',
     year: '2023',
@@ -640,7 +640,7 @@ export const mix1Projects = [
   },
   {
     slug: 'blockfi-director-of-design',
-    name: 'BlockFi — Director of Design',
+    name: 'BlockFi Design Leadership',
     client: 'BlockFi',
     sector: 'Fintech',
     year: '2021',
@@ -854,7 +854,7 @@ export const mix1Projects = [
   },
   {
     slug: 'krisp-ai',
-    name: 'Krisp AI',
+    name: 'Krisp Desktop Redesign',
     client: 'Krisp',
     sector: 'AI',
     year: '2020',
