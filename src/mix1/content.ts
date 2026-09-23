@@ -40,6 +40,14 @@ export const mix1Work = {
   ],
   items: [
     {
+      name: 'Mezo — Design Operations & Leadership',
+      headline: 'Building the operational discipline Mezo needed to scale product delivery without shipping broken builds',
+      desc: "Mezo had never built the operational discipline to scale product delivery without shipping broken builds. I ran the team through Designer Fund's Level Up framework and found gaps at every level — no design system, no documented standards, no growth path for designers. I introduced Linear, built the org's first documentation standards and definition of done, and partnered with a former direct report to ship a 1,000+ component design system in two months, cutting product development time 4x ahead of a mainnet transition processing $322M in testnet deposits and $1.8B in MUSD borrowed. Sprint completion held at 98%. I rebuilt design headcount net +3 against a new skills matrix, and the org's first validated OKR, a 30% conversion target, was overshot at roughly 40%.",
+      image: '/images/placeholder-mix1/ratio-451x567.svg',
+      service: 'leadership',
+      sector: 'crypto',
+    },
+    {
       name: 'Mezo Clay Design System',
       headline: 'Converting design debt into product infrastructure',
       desc: 'Led Mezo design system migration across three product phases (legacy, testnet, mainnet); post-launch audit established 70% component integration and identified systemic overrides from premature styling as the primary implementation bottleneck, informing governance decisions. Managed a direct report and an engineering contributor from execution through deployment. Partnered with the contributing designer to set quality standards and pattern library conventions, building out Uber Base into a React, WCAG 2.2-compliant library purpose-built for the Thesis BitcoinFi suite. Managed, built, and tested 2,000+ variants across 50+ base components, establishing the single source of truth every product surface shipped: the infrastructure behind $322M in testnet deposits, 154K transactions, and $151M TVL at mainnet, peaking at $200M+.',
@@ -354,6 +362,99 @@ export const mix1Build = {
 
 export const mix1Projects = [
   {
+    slug: 'mezo-design-operations-leadership',
+    name: 'Mezo — Design Operations & Leadership',
+    client: 'Mezo / Thesis',
+    sector: 'Crypto',
+    year: '2024–2026',
+    service: 'Leadership',
+    readTime: 6,
+    image: '/images/placeholder-mix1/ratio-99x124.svg',
+    headline: 'Building the operational discipline Mezo needed to scale product delivery without shipping broken builds',
+    intro:
+      "Mezo had never built the operational discipline to scale product delivery without shipping broken builds. An audit against Designer Fund's Level Up framework found gaps at every level — no design system, no documented standards, no growth path for designers — ahead of a mainnet transition that would go on to process $322M in testnet deposits and $1.8B in MUSD borrowed.",
+    featuredSections: [
+      {
+        lead: 'The audit found gaps at every level, including leadership.',
+        richTitle: 'The opportunity',
+        body: [
+          "I ran the team through Designer Fund's Level Up framework, benchmarking design teams against high performers, to get an honest read on process maturity, the design system, documentation, and growth paths for design talent. The audit found gaps at every level, including leadership: no design system, no documented standards, no defined path for designers to grow, and no shared understanding of what was expected of them. This wasn't unique to Mezo — Nielsen Norman Group's research on DesignOps maturity found most organizations complete only 22% of recommended practices and have no dedicated role for it at all. What made Mezo's version urgent was timing: the company was heading into a mainnet transition that would go on to process $322M in testnet deposits and $1.8B in MUSD borrowed.",
+          "The gap showed up in how the org worked, not just in what it lacked. Without a shared design language or a defined standard for scope and done-readiness, the team couldn't run sprints with any consistency. Feedback scattered across Discord threads with no record of decisions, and cross-functional partners like legal had no visibility into product work until it was ready to ship — the point at which catching an issue costs a rebuild instead of a conversation.",
+        ],
+        images: ['/images/placeholder-mix1/ratio-686x868.svg', '/images/placeholder-mix1/ratio-686x868.svg'],
+      },
+      {
+        lead: 'A style guide is paint. A design system is the plumbing and wiring behind the wall.',
+        richTitle: 'Tooling, process, and the design system',
+        body: [
+          "I introduced Linear starting narrow, design work first, rather than a company-wide rollout that would have met resistance before proving its value. On top of it, I built the org's first documentation standards: templating, sizing, priority, a bi-weekly sprint cadence, and a definition of done paired with cross-functional sign-off, turning \"done\" into a standard the team could hold each other to.",
+          "Designers on the team had treated design systems as visual exercises. I brought on a former direct report, and over two months, largely through the Christmas holiday, we shipped a full component library — over 1,000 components counting variants, documented, tested, and verifiable, cutting product development time by a factor of four. I managed that sprint to 98% completion, the org's first proof that planned work could ship on schedule without blowing capacity.",
+        ],
+        images: ['/images/placeholder-mix1/ratio-686x868.svg', '/images/placeholder-mix1/ratio-686x868.svg'],
+      },
+      {
+        lead: "The Level Up findings didn't just shape the system. They shaped who we hired next.",
+        richTitle: 'Research, craft, and growth',
+        body: [
+          "The org had substantial user research that had never been synthesized into anything usable. I used AI to surface relevant insight from existing studies before new feature work started, and separately to aggregate survey input from internal testing, which informed the rewards and incentives program, modeled on Aerodrome's vote-escrow approach. Before I came on, there was no design critique and no formal weekly planning; I introduced both, along with documentation standards for design scope, open office hours, and prototyping for early and internal feedback.",
+          "I defined the skills a Mezo designer needed, mapped to business goals, wrote the job requirements, and ran the hiring process myself. Three designers who predated me left within my first six months, work the team judged hadn't grown into the standard the role now required. I rebuilt to net +3 headcount across growth design, product design, and design systems, using the same skills matrix as the growth-path framework the original assessment had flagged as missing.",
+        ],
+        images: ['/images/placeholder-mix1/ratio-686x868.svg', '/images/placeholder-mix1/ratio-686x868.svg'],
+      },
+      {
+        lead: 'I influenced the roadmap through partnership, not by contesting it in open leadership meetings.',
+        richTitle: 'Cross-functional reach',
+        body: [
+          "I co-built the pitch for Claude accounts for the design team and won approval despite the org's lean-tooling stance. When Mezo let its product manager go, I covered both the product manager and design manager functions until a replacement came on, then stayed on as strategic partner to incoming PMs.",
+          "I took ownership of the Coda-to-Linear transition my boss handed me, which gave the whole company top-down visibility into product work and a direct benefit to marketing's go-to-market communication. My Head of Design was direct: the team wished they'd adopted Linear sooner, and I was, in his words, the most operationally fluent person on the team, across product as a whole, not design alone.",
+        ],
+        images: ['/images/placeholder-mix1/ratio-686x868.svg', '/images/placeholder-mix1/ratio-686x868.svg'],
+      },
+      {
+        lead: '1,000+ component variants shipped in two months. 98% sprint completion. Net +3 design headcount.',
+        richTitle: 'Impact',
+        body: [
+          "The design system shipped ahead of a mainnet transition processing $322M in testnet deposits and $1.8B in MUSD borrowed, cutting product development time 4x. Sprint completion held at 98%, the org's first working proof that Agile could function there. An internal audit run when I stepped into an IC role showed fewer design-system overrides, faster shipping, and lower component counts per build — evidence the team was reaching for standard, reusable patterns. The same pattern surfaced independently in a follow-up Level Up assessment.",
+          "The org's first validated OKR, a 30% conversion target, was overshot at roughly 40% — the result of the design system, my shift into an IC role, and close partnership with marketing together. It's the clearest evidence the \"potential scheme\" perception had shifted toward a product users trusted enough to convert on, backed by a custom survey I wrote with a researcher.",
+        ],
+        images: ['/images/placeholder-mix1/ratio-686x868.svg', '/images/placeholder-mix1/ratio-686x868.svg'],
+      },
+      {
+        lead: 'A vision has to be concrete and demonstrated, not declared.',
+        richTitle: 'Learnings',
+        body: [
+          "An organization responding to different expectations top-down and bottom-up starts to bifurcate, and that split is what makes alignment hard. Being async-first and treating meetings as unnecessary is legitimate, but without a clear sense of when a real conversation is warranted, the principle becomes a liability — that stayed a real, unresolved struggle at Mezo.",
+          "\"Supernormal\" meant something different to everyone because leadership described it in abstractions instead of explicit benchmarks. I pushed for a real design vision and put it in the backlog for the Head of Design to own, since it wasn't something I could build alone. It never got built. Sequencing mattered everywhere else in this work — tooling before scaling, infrastructure before argument — but vision is the one piece that can't be sequenced around.",
+        ],
+        images: ['/images/placeholder-mix1/ratio-686x868.svg', '/images/placeholder-mix1/ratio-686x868.svg'],
+      },
+    ],
+    mockups: ['/images/placeholder-mix1/ratio-900x1600.svg', '/images/placeholder-mix1/ratio-900x1600.svg', '/images/placeholder-mix1/ratio-900x1600.svg'],
+    closingLead: "Operational discipline before scale isn't process theater. It's what makes the design system, the sprint cadence, and everything downstream possible to trust.",
+    stats: [
+      { name: 'Component variants shipped', description: 'Shipped in two months, largely over the Christmas holiday, ahead of a mainnet transition.', value: '1,000+' },
+      { name: 'Product development speed', description: "Cut by a factor of four once the design system's infrastructure was in place.", value: '4x' },
+      { name: 'Sprint completion', description: "The org's first working proof that Agile could function at Mezo.", value: '98%' },
+      { name: 'Design headcount rebuilt', description: 'Net growth across growth design, product design, and design systems, against a new skills matrix.', value: '+3' },
+      { name: 'Conversion OKR', description: "The org's first validated OKR, a 30% target, overshot at roughly 40%.", value: '~40%' },
+    ],
+    tech: [
+      { k: 'Tooling', v: 'Coda → Linear' },
+      { k: 'Framework', v: "Designer Fund Level Up" },
+      { k: 'Team', v: 'PM + product designer + visual designer' },
+    ],
+    tags: ['Design operations', 'Leadership', 'Crypto', 'Design systems', 'Hiring', 'Linear'],
+    credits: [
+      { role: 'Design operations & leadership', name: 'Osandi Robinson' },
+      { role: 'Design systems', name: 'Poised LLC' },
+    ],
+    clientCredits: [
+      { role: 'Client', name: 'Mezo / Thesis' },
+      { role: 'Head of Design', name: 'Mezo design leadership' },
+    ],
+    motionDemos: [] as { label: string; src: string }[],
+  },
+  {
     slug: 'mezo-clay',
     name: 'Mezo Clay Design System',
     client: 'Mezo / Thesis',
@@ -390,6 +491,7 @@ export const mix1Projects = [
         body: [
           "A 70% component integration rate at post-launch audit sounds like success. It is — but the 30% that wasn't integrated told the real story: premature styling decisions made during testnet were being maintained as one-off overrides instead of being resolved back into the system.",
           "The governance decisions informed by that audit — when to override, when to extend, when to propose a new component — were as important as the components themselves.",
+          "The system behind that 70% came together in two months, largely over the Christmas holiday, ahead of a mainnet transition the org couldn't afford to miss. Before it existed, designers on the team treated design systems as a visual exercise, a style guide with a different name. The distinction that changed that: a style guide is paint; a design system is the plumbing and wiring behind the wall, the reason a pattern exists and where else it applies. Once that infrastructure was in place, it cut product development time by a factor of four.",
         ],
         images: ['/images/placeholder-mix1/ratio-686x868.svg', '/images/placeholder-mix1/ratio-686x868.svg'],
       },
@@ -447,6 +549,14 @@ export const mix1Projects = [
         body: [
           "Vaults, pools, and rewards all depended on a working deposit experience. The redesign unblocked each of them — contributing directly to Mezo's growth to $200M+ TVL.",
           "Sprint completion held at 98% across the engagement, which meant the research and design process ran fast enough to stay ahead of engineering.",
+        ],
+        images: ['/images/placeholder-mix1/ratio-686x868.svg', '/images/placeholder-mix1/ratio-686x868.svg'],
+      },
+      {
+        lead: "A wrong address here doesn't produce a support ticket. It produces a permanent loss.",
+        richTitle: 'What the flow had to solve for',
+        body: [
+          "This flow shipped under the same definition-of-done standard applied company-wide, cross-functional sign-off, not just a design review, because a wrong address here doesn't produce a support ticket. It produces a permanent loss. That standard came out of a broader operational rebuild at Mezo: before it existed, the org had no shared scope or done-readiness definition at all, and couldn't ship consistently as a result.",
         ],
         images: ['/images/placeholder-mix1/ratio-686x868.svg', '/images/placeholder-mix1/ratio-686x868.svg'],
       },
