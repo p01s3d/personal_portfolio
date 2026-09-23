@@ -40,7 +40,7 @@ export const mix1Work = {
   ],
   items: [
     {
-      name: 'Mezo — Design Operations & Leadership',
+      name: 'Mezo Design Operations',
       headline: 'Building the operational discipline Mezo needed to scale product delivery without shipping broken builds',
       desc: "Mezo had never built the operational discipline to scale product delivery without shipping broken builds. I ran the team through Designer Fund's Level Up framework and found gaps at every level — no design system, no documented standards, no growth path for designers. I introduced Linear, built the org's first documentation standards and definition of done, and partnered with a former direct report to ship a 1,000+ component design system in two months, cutting product development time 4x ahead of a mainnet transition processing $322M in testnet deposits and $1.8B in MUSD borrowed. Sprint completion held at 98%. I rebuilt design headcount net +3 against a new skills matrix, and the org's first validated OKR, a 30% conversion target, was overshot at roughly 40%.",
       image: '/images/placeholder-mix1/ratio-451x567.svg',
@@ -363,7 +363,7 @@ export const mix1Build = {
 export const mix1Projects = [
   {
     slug: 'mezo-design-operations-leadership',
-    name: 'Mezo — Design Operations & Leadership',
+    name: 'Mezo Design Operations',
     client: 'Mezo / Thesis',
     sector: 'Crypto',
     year: '2024–2026',
