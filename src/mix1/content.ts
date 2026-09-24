@@ -111,6 +111,14 @@ export const mix1Work = {
       service: 'leadership',
       sector: 'crypto',
     },
+    {
+      name: 'Mezo Leadership — v9',
+      headline: 'Problem, Goals, and Hypothesis realigned; redundant callouts dropped; two emphasized callouts kept where they earn their place',
+      desc: "A realignment pass on v8: Problem, Goals, and Hypothesis now map to each other in sequence, the growth-path gap is named honestly without a goal implying it was resolved, and the two callouts that fully duplicated body copy on this page (What the system actually was, What it moved) are dropped in favor of the paragraphs they were pulled from. What the stakes were and What the audit found stay, since neither repeats anything else on the page.",
+      image: '/images/placeholder-mix1/ratio-451x567.svg',
+      service: 'leadership',
+      sector: 'crypto',
+    },
   ],
 } as const;
 
@@ -1093,6 +1101,182 @@ export const mix1Projects = [
       { k: 'Team', v: 'PM + product designer + visual designer' },
     ],
     tags: ['Design operations', 'Leadership', 'Crypto', 'Design systems', 'Hiring', 'v8'],
+    credits: [
+      { role: 'Senior Design Operations Manager → Senior Principal Designer', name: 'Osandi Robinson' },
+      { role: 'Design systems', name: 'Poised LLC' },
+    ],
+    clientCredits: [
+      { role: 'Client', name: 'Mezo / Thesis' },
+      { role: 'Head of Design', name: 'Mezo design leadership' },
+    ],
+    motionDemos: [] as { label: string; src: string }[],
+  },
+  {
+    // Realignment pass on mezo-leadership-v8. v8 stays untouched and live.
+    // Sourced from: claude-code-handoff-callout-redundancy.md,
+    // claude-code-handoff-growth-path-consistency.md,
+    // claude-code-handoff-problem-goals-hypothesis.md, plus in-chat tone
+    // edits to Closing and a factual fix to closingLead. Full diff with
+    // fidelity/redundancy audit notes lives in the session scratchpad.
+    slug: 'mezo-leadership-v9',
+    name: 'Mezo Leadership — v9',
+    client: 'Mezo / Thesis',
+    sector: 'Crypto',
+    year: '2024–2026',
+    service: 'Leadership',
+    readTime: 9,
+    image: '/images/placeholder-mix1/ratio-99x124.svg',
+    headline: 'Building the operational discipline Mezo needed to scale product delivery without shipping broken builds',
+    intro:
+      'A realignment pass: Problem, Goals, and Hypothesis now trace to each other in sequence, and the two callouts that fully duplicated body copy on this page are gone. What the stakes were and What the audit found stay, since neither repeats anything else here.',
+    featuredSections: [
+      {
+        lead: 'Senior Design Operations Manager to Senior Principal Designer, Mezo (Thesis). Led a team of one product designer and one visual designer, partnered with a product manager, reporting to the Head of Design.',
+        richTitle: 'Overview',
+        body: [
+          'Mezo (Thesis) is a Bitcoin Layer 2, a ten-year-old crypto studio that had never built the operational discipline to ship digital product at scale. Mezo\'s business runs on Bitcoin-backed DeFi mechanics: users deposit into Mezo Earn and Mezo Borrow for yield, mint the Bitcoin-collateralized stablecoin MUSD, trade through Mezo Swaps, and lock BTC through veBTC staking ("Proof of HODL"), with an institutional channel, Mezo Prime, deploying BTC at scale. Value and health track to how much moves through those products: deposits, MUSD circulation and lending, swap volume. That\'s what made the operational stakes concrete rather than abstract.',
+          "I joined ahead of a mainnet transition that would process $322M in testnet deposits and $1.8B in MUSD borrowed. Shipping that transition without a shared operating system wasn't viable.",
+        ],
+        images: ['/images/placeholder-mix1/ratio-686x868.svg', '/images/placeholder-mix1/ratio-686x868.svg'],
+      },
+      {
+        lead: 'Everything downstream depended on documentation, collaboration, and a design system existing before the org could trust its own output.',
+        richTitle: 'What the stakes were',
+        body: [
+          "The org couldn't afford to find out mid-transition that nothing was documented, that collaboration and fundamental design practice were unstructured and non-existent, and that a design system was non-negotiable.",
+        ],
+        images: ['/images/placeholder-mix1/ratio-686x868.svg', '/images/placeholder-mix1/ratio-686x868.svg'],
+      },
+      {
+        lead: "Mezo wasn't unique here. Nielsen Norman Group's research on DesignOps maturity found most organizations complete only 22% of recommended practices and have no dedicated role for it at all.",
+        richTitle: 'Problem',
+        body: [
+          'The audit named the gaps directly: no design system, no shared documentation standard, and no clear target tying design work to a specific outcome.',
+          "The gap showed up as much in how the org worked as in what it lacked. Without a shared design language or a defined standard for scope and done-readiness, the team couldn't run sprints with any consistency.",
+          "User feedback and communication were scattered across uncontextualized Discord threads. Partners like legal and go-to-market had no visibility into the work until right before or after it shipped. This forced rebuilds and elevated unnecessary risk of doing business.",
+          "Two more gaps didn't show up in the audit numbers, but showed up in the work itself. The org had user research on hand that had never been synthesized into anything usable, sitting unused while feature work went ahead without it. And builds that shipped before prototyping and testing were standard practice carried heuristic and accessibility issues that only surfaced after release, not before it.",
+        ],
+        images: ['/images/placeholder-mix1/ratio-686x868.svg', '/images/placeholder-mix1/ratio-686x868.svg'],
+      },
+      {
+        lead: "I ran the team through Designer Fund's Level Up framework to get an honest read on process maturity, the design system, documentation, state of collaboration, and growth paths for design talent.",
+        richTitle: 'What the audit found',
+        body: [
+          'A Level Up assessment found gaps at every level, including leadership: a nascent-to-non-existent cross-collaborative product development cadence, no design system, no standards, no defined growth path, and no shared understanding of what was expected from contributors.',
+        ],
+        images: ['/images/placeholder-mix1/ratio-686x868.svg', '/images/placeholder-mix1/ratio-686x868.svg'],
+      },
+      {
+        lead: 'If the team had documented standards, a real design system, collaboration built into the process, and research and testing running inside the product cycle instead of around it, the org could ship reliably at the scale the mainnet transition demanded, hit specific user and business targets instead of shipping and hoping, and catch quality and access issues before release instead of after.',
+        richTitle: 'Goals',
+        body: [
+          "How might we build a design system that scales output fast enough to be ready before mainnet? How might we make documentation, and a shared standard for scope and done-readiness, the default instead of the exception? How might we give designers a clear target, tied to a specific user outcome and a specific business outcome, not just a shipped feature?",
+          "How might we get people building on each other's work instead of working in isolation? How might we give cross-functional partners, legal and engineering, visibility into product work before it's too late to change course?",
+          "How might we catch heuristic and accessibility issues before a build ships, not after? How might we learn faster and cheaper by putting existing research and testing inside the product cycle instead of leaving it unused?",
+        ],
+        images: ['/images/placeholder-mix1/ratio-686x868.svg', '/images/placeholder-mix1/ratio-686x868.svg'],
+      },
+      {
+        lead: 'Linear started narrow, design work first, rather than a company-wide rollout that would have met resistance before proving its value.',
+        richTitle: 'Tooling',
+        body: [
+          'I introduced Linear starting narrow, design work first, rather than a company-wide rollout that would have met resistance before proving its value. Issue and sub-issue tracking let us quantify rollover and compare planned work against headcount, turning planning into a signal instead of a guess.',
+        ],
+        images: ['/images/placeholder-mix1/ratio-686x868.svg', '/images/placeholder-mix1/ratio-686x868.svg'],
+      },
+      {
+        lead: '"Done" went from an individual judgment call to a standard the team could hold each other to.',
+        richTitle: 'Documentation and rituals',
+        body: [
+          'On top of the tooling, I built the org\'s first documentation standards: issue and design-request templating, sizing, priority, a bi-weekly sprint cadence, and a definition of done paired with cross-functional sign-off. The pairing mattered specifically because it turned "done" from an individual judgment call into a standard the team could hold each other to.',
+          'Before I came on, there was no design critique and no formal weekly planning. I introduced both, along with open office hours and prototyping for early, internal feedback, none of which existed before.',
+        ],
+        images: ['/images/placeholder-mix1/ratio-686x868.svg', '/images/placeholder-mix1/ratio-686x868.svg'],
+      },
+      {
+        lead: 'A former direct report and I shipped a full component library over two months, through the Christmas holiday.',
+        richTitle: 'The design system',
+        body: [
+          'Designers on the team treated design systems as visual exercises. I put the distinction in plain terms: a style guide is paint; a design system is the plumbing and wiring behind the wall. I brought on a former direct report, and over two months, through the Christmas holiday, we shipped a full component library: over 1,000 components counting variants, documented, tested, and verifiable, cutting product development time by a factor of four.',
+          "I managed that sprint to 98% completion, the org's first proof that planned work could ship on schedule without blowing capacity.",
+        ],
+        images: ['/images/placeholder-mix1/ratio-686x868.svg', '/images/placeholder-mix1/ratio-686x868.svg'],
+      },
+      {
+        lead: 'Research that had been sitting unused became an input the team actually reached for.',
+        richTitle: 'Closing the research gap',
+        body: [
+          "I used AI to process existing studies and surface relevant insight automatically when the team started new feature work, turning research that had been sitting unused into an input the team actually reached for.",
+          "I used the same approach to aggregate survey input from internal testing, which directly informed the rewards and incentives program, modeled on Aerodrome's vote-escrow approach.",
+        ],
+        images: ['/images/placeholder-mix1/ratio-686x868.svg', '/images/placeholder-mix1/ratio-686x868.svg'],
+      },
+      {
+        lead: "It wasn't frictionless. The resistance was visible to anyone watching. But it was the first signal in product design that doing things correctly was repeatable, not a one-off.",
+        richTitle: 'Prototyping as standard',
+        body: [
+          "With no dedicated feedback tool, the org stayed lean on tooling. I used Discord to pool users for prototype testing instead, a practice that didn't exist before I introduced it.",
+          "When I stepped into an individual-contributor role after the team's attrition, I held that standard through craft rather than argument. Rather than concede a direction under pushback, I built out multiple prototype versions and let stakeholders see the trade-offs directly.",
+          "I held the team, and myself, to a UX standard I brought in independently: a HEART framework (Happiness, Engagement, Adoption, Retention, Task Success) paired with Jobs To Be Done, so every shipped build had a stated line to the specific metric it was meant to move, not just a feature shipped and hoped for. Combined with correct reuse of the design system's components, that discipline meant work addressed the business goal and cleared sign-off from every stakeholder before shipping.",
+        ],
+        images: ['/images/placeholder-mix1/ratio-686x868.svg', '/images/placeholder-mix1/ratio-686x868.svg'],
+      },
+      {
+        lead: "Three designers who predated me left within my first six months, work the team judged hadn't grown into the standard the role now required.",
+        richTitle: 'Hiring and growth',
+        body: [
+          'The Level Up findings shaped who we hired next. I defined the skills a Mezo designer needed, mapped to business goals, wrote the job requirements, and ran the hiring process myself.',
+          "I rebuilt to net +3 headcount across growth design, product design, and design systems, using that same skills matrix to inform who we hired.",
+        ],
+        images: ['/images/placeholder-mix1/ratio-686x868.svg', '/images/placeholder-mix1/ratio-686x868.svg'],
+      },
+      {
+        lead: "I co-built the pitch for Claude accounts for the design team and won approval despite the org's lean-tooling stance.",
+        richTitle: 'Cross-functional reach',
+        body: [
+          'When Mezo let its product manager go, I covered both the product manager and design manager functions until a replacement came on, then stayed on as strategic partner to incoming PMs.',
+          "I took ownership of the Coda-to-Linear transition my boss handed me, which gave the whole company top-down visibility into product work and a direct benefit to marketing's go-to-market communication.",
+        ],
+        images: ['/images/placeholder-mix1/ratio-686x868.svg', '/images/placeholder-mix1/ratio-686x868.svg'],
+      },
+      {
+        lead: 'An internal audit run when my report and I stepped into IC roles showed fewer design-system overrides, faster shipping, and lower component counts per build, and a collaboration uptick.',
+        richTitle: 'Outcomes',
+        body: [
+          "That's evidence the team reached for standard, reusable patterns instead of one-off builds. The visibility we'd built into the process meant we shared components with each other more, not less. The same override and reuse pattern surfaced again, independently, in a follow-up Level Up assessment.",
+          'The org\'s first validated OKR, a 30% conversion target, was overshot at roughly 40%, the result of the design system, my shift into an IC role, and close partnership with marketing together. It\'s the clearest evidence the "potential scheme" perception had shifted toward a product users trusted enough to convert on, backed by a custom survey I wrote with a researcher.',
+          'The pushback to prototyping-first, HEART/JTBD-anchored work wasn\'t quiet, but the signal underneath it was real: positive user feedback on social channels, task success gains, OKR movement, and rising component reuse across the system, four independent indicators pointing the same direction.',
+        ],
+        images: ['/images/placeholder-mix1/ratio-686x868.svg', '/images/placeholder-mix1/ratio-686x868.svg'],
+      },
+      {
+        lead: "Being the exception has a cost. Structural gaps don't close because one person works around them. They get absorbed into that person's workload instead.",
+        richTitle: 'Closing — what I learned',
+        body: [
+          'Transparency has to run in both directions. An organization responding to different expectations top-down and bottom-up starts to bifurcate, and that split is what makes alignment hard.',
+          'Operating principles need room to flex. Being async-first and treating meetings as unnecessary is legitimate, but without a clear sense of when a real conversation is warranted, the principle becomes a liability. This stayed a real, unresolved struggle at Mezo.',
+          'A vision has to be concrete and demonstrated, not declared. "Supernormal" meant something different to everyone because leadership described it in abstractions instead of explicit benchmarks. Sequencing mattered everywhere else in this work: tooling before scaling, infrastructure before argument. Vision is the one piece that can\'t be sequenced around. Without it, everything downstream inherits the ambiguity.',
+          "Growth-path resolution never happened at Mezo, for anyone, not just design. Meaningful OKRs didn't exist company-wide until the final quarter of my tenure. After attrition, my direct hire report and I ran product design between us as the exception to how the org was structured, not the plan for it. Being the exception has a cost. Structural gaps don't close because one person works around them. They get absorbed into that person's workload instead.",
+        ],
+        images: ['/images/placeholder-mix1/ratio-686x868.svg', '/images/placeholder-mix1/ratio-686x868.svg'],
+      },
+    ],
+    mockups: ['/images/placeholder-mix1/ratio-900x1600.svg', '/images/placeholder-mix1/ratio-900x1600.svg', '/images/placeholder-mix1/ratio-900x1600.svg'],
+    closingLead:
+      "What shipped: a documented operating system for design at Mezo, none of it in place when I joined. Tooling, standards, and a 1,000+ variant design system went live ahead of the mainnet transition the org needed to enter prepared for. The team rebuild came after, within that same tenure, and the system is still what the team builds on.",
+    stats: [
+      { name: 'Component variants shipped', description: 'Shipped in two months, largely over the Christmas holiday, ahead of a mainnet transition.', value: '1,000+' },
+      { name: 'Product development speed', description: "Cut by a factor of four once the design system's infrastructure was in place.", value: '4x' },
+      { name: 'Sprint completion', description: "The org's first working proof that Agile could function at Mezo.", value: '98%' },
+      { name: 'Design headcount rebuilt', description: 'Net growth across growth design, product design, and design systems.', value: '+3' },
+      { name: 'Conversion OKR', description: "The org's first validated OKR, a 30% target, overshot at roughly 40%.", value: '~40%' },
+    ],
+    tech: [
+      { k: 'Tooling', v: 'Coda → Linear' },
+      { k: 'Framework', v: 'Designer Fund Level Up · HEART + JTBD' },
+      { k: 'Team', v: 'PM + product designer + visual designer' },
+    ],
+    tags: ['Design operations', 'Leadership', 'Crypto', 'Design systems', 'Hiring', 'v9'],
     credits: [
       { role: 'Senior Design Operations Manager → Senior Principal Designer', name: 'Osandi Robinson' },
       { role: 'Design systems', name: 'Poised LLC' },
