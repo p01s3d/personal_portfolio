@@ -52,7 +52,7 @@ explains what the work actually covered.
 
 ## Canonical role labels
 
-Twelve labels currently in use, kept distinct rather than merged. Two
+Eleven labels currently in use, kept distinct rather than merged. Two
 pairs look similar enough to invite silent merging — resolved here so
 they don't get accidentally collapsed later:
 
