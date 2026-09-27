@@ -27,15 +27,15 @@ this site weren't client work at all (Mezo, BlockFi were full-time
 roles), and "Client" misrepresents those. Every `clientCredits` entry
 should use `Organization`, not `Client`.
 
-## The Industry field
+## Industry / category classification
 
-Not yet part of the schema (tracked separately). When added, it's a
-short, open-ended classification of what kind of company/product the
-project was for — e.g. `fintech`, `DeFi`, `food delivery`,
-`cybersecurity`, `voice AI` — derived from what's actually represented
-across current projects, not a fixed enum. Add a new value when a new
-project needs one; don't force-fit into an existing category if it
-doesn't belong.
+Not a separate field — this is the existing `sector` field on each
+`mixProjects` entry (`'Crypto'`, `'Fintech'`, `'Consumer'`, `'AI'`). A
+proposal to add a dedicated `industry` field was closed as redundant:
+`sector` already renders on the project detail hero
+(`ProjectPage.tsx`, next to the year) and already drives `/work` grid
+filtering via the `sectors` list. Don't add a second classification
+field alongside it.
 
 ## Role & scope
 
