@@ -31,11 +31,11 @@ export const mix1Work = {
     { id: 'ai', label: 'AI' },
   ],
   impact: [
-    { org: 'BlockFi', value: '$50M', label: 'monthly revenue' },
-    { org: 'BlockFi', value: '+200%', label: 'trades / 90 days' },
-    { org: 'Mezo', value: '98%', label: 'sprint completion' },
+    { org: 'BlockFi', value: '$1.5M → $50M', label: 'monthly revenue' },
     { org: 'Mezo', value: '$200M+', label: 'TVL · 25K+ users' },
     { org: 'a16z', value: '0 → 1', label: 'design function' },
+    { org: 'EASI', value: '$500M+', label: 'acquisition valuation' },
+    { org: 'Mezo', value: '~40%', label: 'conversion vs. 30% OKR' },
     { org: 'Vinyl Crate', value: '$250K', label: 'dev cost saved' },
   ],
   items: [
