@@ -423,7 +423,7 @@ export const mix1Projects = [
       { role: 'Engineering', name: 'Thesis engineering' },
     ],
     clientCredits: [
-      { role: 'Client', name: 'Mezo / Thesis' },
+      { role: 'Organization', name: 'Mezo / Thesis' },
       { role: 'PM', name: 'Thesis product team' },
     ],
     motionDemos: [] as { label: string; src: string }[],
@@ -486,7 +486,7 @@ export const mix1Projects = [
       { role: 'Engineering', name: 'Thesis engineering' },
     ],
     clientCredits: [
-      { role: 'Client', name: 'Mezo / Thesis' },
+      { role: 'Organization', name: 'Mezo / Thesis' },
       { role: 'PM', name: 'Thesis product team' },
     ],
     motionDemos: [] as { label: string; src: string }[],
@@ -540,7 +540,7 @@ export const mix1Projects = [
       { role: 'Engineering', name: 'Thesis engineering' },
     ],
     clientCredits: [
-      { role: 'Client', name: 'Mezo / Thesis' },
+      { role: 'Organization', name: 'Mezo / Thesis' },
       { role: 'PM', name: 'Thesis product team' },
     ],
     motionDemos: [] as { label: string; src: string }[],
@@ -696,7 +696,7 @@ export const mix1Projects = [
       { role: 'Engineering', name: 'C@SH engineering' },
     ],
     clientCredits: [
-      { role: 'Client', name: 'a16z Crypto portfolio' },
+      { role: 'Organization', name: 'a16z Crypto portfolio' },
       { role: 'PM', name: 'C@SH product team' },
     ],
     motionDemos: [] as { label: string; src: string }[],
@@ -751,7 +751,7 @@ export const mix1Projects = [
       { role: 'Engineering', name: 'EASI engineering' },
     ],
     clientCredits: [
-      { role: 'Client', name: 'EASI' },
+      { role: 'Organization', name: 'EASI' },
       { role: 'PM', name: 'EASI product team' },
     ],
     motionDemos: [] as { label: string; src: string }[],
@@ -803,7 +803,7 @@ export const mix1Projects = [
       { role: 'Engineering', name: 'Krisp engineering' },
     ],
     clientCredits: [
-      { role: 'Client', name: 'Krisp' },
+      { role: 'Organization', name: 'Krisp' },
       { role: 'PM', name: 'Krisp product team' },
     ],
     motionDemos: [] as { label: string; src: string }[],
@@ -979,7 +979,7 @@ export const mix1Projects = [
       { role: 'Design systems', name: 'Poised LLC' },
     ],
     clientCredits: [
-      { role: 'Client', name: 'Mezo / Thesis' },
+      { role: 'Organization', name: 'Mezo / Thesis' },
       { role: 'Head of Design', name: 'Mezo design leadership' },
     ],
     motionDemos: [] as { label: string; src: string }[],
