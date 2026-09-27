@@ -638,10 +638,7 @@ export const mix1Projects = [
     ],
     tags: ['Founding IC', 'Fintech', 'Web', 'Mobile', 'iOS', 'Android', 'Director'],
     credits: [
-      {
-        role: 'Design strategy & execution',
-        name: "Osandi Robinson — founding/sole designer through the initial build; directed the design system and vision across product design, blockchain, front-end, back-end, security, and go-to-market; design org scaled from one to four",
-      },
+      { role: 'Design strategy & execution', name: 'Osandi Robinson' },
       { role: 'Engineering', name: 'BlockFi engineering' },
     ],
     clientCredits: [
