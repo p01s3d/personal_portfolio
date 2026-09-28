@@ -96,9 +96,9 @@ export const mix1Work = {
       sector: 'ai',
     },
     {
-      name: 'Mezo Leadership — v9',
-      headline: 'Problem, Goals, and Hypothesis realigned; redundant callouts dropped; two emphasized callouts kept where they earn their place',
-      desc: "A realignment pass on v8: Problem, Goals, and Hypothesis now map to each other in sequence, the growth-path gap is named honestly without a goal implying it was resolved, and the two callouts that fully duplicated body copy on this page (What the system actually was, What it moved) are dropped in favor of the paragraphs they were pulled from. What the stakes were and What the audit found stay, since neither repeats anything else on the page.",
+      name: 'Mezo: Product and Design Operations',
+      headline: 'Building the operating system Mezo\'s design org didn\'t have',
+      desc: "No documentation, no design system, and no shared process — before a mainnet transition moving $322M in testnet deposits and $1.8B in MUSD borrowed. I introduced sprint discipline, shipped a 1,000+ variant design system in two months, and cut delivery time roughly fourfold, holding 98% sprint completion along the way.",
       image: '/images/placeholder-mix1/ratio-451x567.svg',
       service: 'leadership',
       sector: 'crypto',
@@ -362,11 +362,15 @@ export const mix1Build = {
 
 export const mix1Projects = [
   {
+    // Problem-validation source (I-7): the styling-debt/inconsistency problem
+    // was verified firsthand while doing this work — no pre-migration audit
+    // or artifact was retained to cite. Confirmed by the author as accurate
+    // from direct contemporaneous knowledge; kept as-is.
     slug: 'mezo-clay',
     name: 'Mezo Clay: $200M+ TVL',
     client: 'Mezo / Thesis',
     sector: 'Crypto',
-    year: '2023',
+    year: '2024–2026',
     service: 'Systems',
     readTime: 4,
     image: '/images/placeholder-mix1/ratio-99x124.svg',
@@ -433,7 +437,7 @@ export const mix1Projects = [
     name: 'Mezo Deposits: $200M+ TVL',
     client: 'Mezo / Thesis',
     sector: 'Crypto',
-    year: '2023',
+    year: '2024–2026',
     service: 'Product',
     readTime: 3,
     image: '/images/placeholder-mix1/ratio-99x124.svg',
@@ -492,11 +496,15 @@ export const mix1Projects = [
     motionDemos: [] as { label: string; src: string }[],
   },
   {
+    // Problem-validation source (I-7): the "no mainstream equivalent"
+    // complexity problem was verified firsthand from direct knowledge of the
+    // product and users at the time — no research artifact or drop-off data
+    // was retained to cite. Confirmed by the author as accurate; kept as-is.
     slug: 'borrow-musd',
     name: 'Mezo Borrow: 25K+ Users',
     client: 'Mezo / Thesis',
     sector: 'Crypto',
-    year: '2023',
+    year: '2024–2026',
     service: 'Product',
     readTime: 3,
     image: '/images/placeholder-mix1/ratio-99x124.svg',
@@ -546,7 +554,7 @@ export const mix1Projects = [
     motionDemos: [] as { label: string; src: string }[],
   },
   {
-    slug: 'blockfi-director-of-design',
+    slug: 'blockfi-product-design-leader',
     name: 'BlockFi: $1.5M→$50M/mo',
     client: 'BlockFi',
     sector: 'Fintech',
@@ -574,7 +582,7 @@ export const mix1Projects = [
         lead: 'I built the structure the company lacked.',
         richTitle: 'Leadership',
         body: [
-          "I directed design across BlockFi's full product line: the marketplace, credit card rewards, and BlockFi Interest Accounts, covering retail and institutional customers across US and international markets. On native, I owned the mobile conversion of that same suite to full parity with web, across iOS and Android. That work took shape during a period when BlockFi itself scaled fast, growing assets held on its platform from $1B to $15B and monthly revenue from $1.5M to $50M year over year, the broader business context the product and design org operated inside.",
+          "I directed design across BlockFi's full product line: the marketplace, credit card rewards, and BlockFi Interest Accounts, covering retail and institutional customers across US and international markets. On native, I owned the mobile conversion of that same suite to full parity with web, across iOS and Android. That work took shape during a period when BlockFi itself scaled fast — a $350M Series D at a $3B valuation in March 2021, assets on the platform growing from $1B to $15B across 225K+ clients, and monthly revenue climbing from $1.5M to $50M year over year — the broader business context the product and design org operated inside.",
           "I built the structure the company lacked. BlockFi's one existing designer left as I came on, so I started as the design function's sole contributor. I directed the design system as a standing responsibility, owning its component architecture and implementation as the product grew rather than treating it as a one-time build. I owned a design vision built with the full product development cycle in view: product design, blockchain engineering, front-end and back-end engineering, security, and go-to-market, one that had to hold up across every function expected to execute against it. I also worked as a strategic partner to the go-to-market team, which owned both marketing and creative as one function at BlockFi rather than two. That partnership wasn't a formal design-embedded arm; it was close, ongoing collaboration that let go-to-market shape messaging and creative with real product context, rather than working from the outside once a feature had already shipped. And I pushed for visibility into risk and compliance where none had existed, working to translate that visibility into clear, in-app disclosures for users, including the KYC-related disclosures the product needed.",
         ],
         images: ['/images/placeholder-mix1/ratio-686x868.svg', '/images/placeholder-mix1/ratio-686x868.svg'],
@@ -634,7 +642,7 @@ export const mix1Projects = [
     tech: [
       { k: 'Platform', v: 'iOS + Android + Web' },
       { k: 'Method', v: 'Stakeholder research · Designer Fund Level Up' },
-      { k: 'Role', v: 'Director of Design' },
+      { k: 'Role', v: 'Director of Product Design' },
     ],
     tags: ['Founding IC', 'Fintech', 'Web', 'Mobile', 'iOS', 'Android', 'Director'],
     credits: [
@@ -692,7 +700,7 @@ export const mix1Projects = [
     ],
     tags: ['0→1', 'Lead', 'Crypto', 'Mobile', 'iOS', 'Android', 'Design systems'],
     credits: [
-      { role: 'Design lead', name: 'Osandi Robinson' },
+      { role: 'Founding Head of Design', name: 'Osandi Robinson' },
       { role: 'Engineering', name: 'C@SH engineering' },
     ],
     clientCredits: [
@@ -702,6 +710,12 @@ export const mix1Projects = [
     motionDemos: [] as { label: string; src: string }[],
   },
   {
+    // Problem-validation source (I-7): the sub-3.0 rating and crash-rate
+    // figures below were verified firsthand while contracted on this
+    // engagement — no App Store historical snapshot exists to cite (no
+    // public rating-history log for this period). Confirmed by the author
+    // as accurate from direct contemporaneous knowledge; kept as-is rather
+    // than softened or removed.
     slug: 'easi-food-delivery',
     name: 'EASI: $500M+ Valuation',
     client: 'EASI',
@@ -757,6 +771,10 @@ export const mix1Projects = [
     motionDemos: [] as { label: string; src: string }[],
   },
   {
+    // Problem-validation source (I-7): the interface-lagging-behind problem
+    // was known directly from the engagement itself — no retrievable client
+    // feedback or audit artifact was retained to cite. Confirmed by the
+    // author as accurate; kept as-is.
     slug: 'krisp-ai',
     name: 'Krisp Desktop Redesign',
     client: 'Krisp',
@@ -790,9 +808,13 @@ export const mix1Projects = [
     ],
     mockups: ['/images/placeholder-mix1/ratio-900x1600.svg', '/images/placeholder-mix1/ratio-900x1600.svg', '/images/placeholder-mix1/ratio-900x1600.svg'],
     closingLead: 'System work outlives the brief it was built for. That\'s the difference between components and infrastructure.',
-    stats: [
-      { name: 'Engagement type', description: 'Engaged as principal design consultant for the desktop UI system redesign.', value: 'Principal' },
-    ],
+    // "Principal" was a level of engagement, not an internal title (confirmed
+    // by the author) — already stated correctly in prose above ("Engaged as
+    // principal design consultant"). A standalone stat tile gave it more
+    // formality than that, reading like a title classification next to
+    // quantified metrics on sibling entries. Dropped rather than kept as a
+    // bare, unsupported value.
+    stats: [],
     tech: [
       { k: 'Platform', v: 'Desktop (macOS + Windows)' },
       { k: 'Method', v: 'UI system · component library' },
@@ -811,12 +833,11 @@ export const mix1Projects = [
   {
     // Canonical Mezo leadership entry (issue #95). mezo-design-operations-leadership
     // and mezo-leadership-v8 were removed as duplicates — see git history for
-    // their content if needed. Realigned from v8 per claude-code-handoff-callout-redundancy.md,
-    // claude-code-handoff-growth-path-consistency.md, and
-    // claude-code-handoff-problem-goals-hypothesis.md, plus in-chat tone
-    // edits to Closing and a factual fix to closingLead.
-    slug: 'mezo-leadership-v9',
-    name: 'Mezo Leadership — v9',
+    // their content if needed. Renamed from mezo-leadership-v9 once I-6 settled
+    // on the real title — "v9" was a draft-review version marker that had
+    // leaked into the live slug/title/tags.
+    slug: 'mezo-product-design-ops-leader',
+    name: 'Mezo: Product and Design Operations',
     client: 'Mezo / Thesis',
     sector: 'Crypto',
     year: '2024–2026',
@@ -825,7 +846,7 @@ export const mix1Projects = [
     image: '/images/placeholder-mix1/ratio-99x124.svg',
     headline: 'Building the operational discipline Mezo needed to scale product delivery without shipping broken builds',
     intro:
-      'A realignment pass: Problem, Goals, and Hypothesis now trace to each other in sequence, and the two callouts that fully duplicated body copy on this page are gone. What the stakes were and What the audit found stay, since neither repeats anything else here.',
+      "Mezo had no design system, no documentation standards, and no shared process when I joined — ahead of a mainnet transition that would move $322M in testnet deposits and $1.8B in MUSD borrowed. Shipping that without a shared operating system wasn't viable.",
     featuredSections: [
       {
         lead: 'Senior Design Operations Manager to Senior Principal Designer, Mezo (Thesis). Led a team of one product designer and one visual designer, partnered with a product manager, reporting to the Head of Design.',
@@ -973,7 +994,7 @@ export const mix1Projects = [
       { k: 'Framework', v: 'Designer Fund Level Up · HEART + JTBD' },
       { k: 'Team', v: 'PM + product designer + visual designer' },
     ],
-    tags: ['Design operations', 'Leadership', 'Crypto', 'Design systems', 'Hiring', 'v9'],
+    tags: ['Design operations', 'Leadership', 'Crypto', 'Design systems', 'Hiring'],
     credits: [
       { role: 'Senior Design Operations Manager → Senior Principal Designer', name: 'Osandi Robinson' },
       { role: 'Design systems', name: 'Poised LLC' },

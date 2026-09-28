@@ -61,8 +61,7 @@ they don't get accidentally collapsed later:
   specific flow, no team or system ownership implied
   (`deposit-on-mezo`, `borrow-musd`). `Design lead` is used where the
   role owned a system and managed collaborators (`mezo-clay`:
-  direct report + engineering contributor; `cash-native-app`: sole 0→1
-  lead).
+  direct report + engineering contributor).
 - **`Design strategy & execution` vs. `Design lead`** — also distinct,
   and merging them would understate the broader role. `Design
   strategy & execution` (`blockfi-director-of-design`) covers a
@@ -77,11 +76,12 @@ Full list:
 |---|---|---|
 | `Senior Design Operations Manager → Senior Principal Designer` | credits | `mezo-leadership-v9` (real title change, see **Role & scope**) |
 | `Design systems` | credits | `mezo-leadership-v9` |
-| `Design lead` | credits | `mezo-clay`, `cash-native-app` |
+| `Design lead` | credits | `mezo-clay` |
 | `Contributing designer` | credits | `mezo-clay` |
 | `Engineering` | credits | most projects |
 | `Product design` | credits | `deposit-on-mezo`, `borrow-musd` |
 | `Design strategy & execution` | credits | `blockfi-director-of-design` |
+| `Founding Head of Design` | credits | `cash-native-app` (real title, confirmed by the author — see `01-inputs-to-fill.md` I-13) |
 | `Design consultant` | credits | `easi-food-delivery`, `krisp-ai` |
 | `Organization` | clientCredits | see **The Organization field** |
 | `Head of Design` | clientCredits | `mezo-leadership-v9` |
