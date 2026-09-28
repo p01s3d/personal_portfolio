@@ -52,9 +52,9 @@ explains what the work actually covered.
 
 ## Canonical role labels
 
-Eleven labels currently in use, kept distinct rather than merged. Two
-pairs look similar enough to invite silent merging — resolved here so
-they don't get accidentally collapsed later:
+Eleven labels currently in use, kept distinct rather than merged. One
+pair looks similar enough to invite silent merging — resolved here so
+it doesn't get accidentally collapsed later:
 
 - **`Product design` vs. `Design lead`** — different scope, not a
   naming inconsistency. `Product design` is individual-craft work on a
@@ -62,29 +62,32 @@ they don't get accidentally collapsed later:
   (`deposit-on-mezo`, `borrow-musd`). `Design lead` is used where the
   role owned a system and managed collaborators (`mezo-clay`:
   direct report + engineering contributor).
-- **`Design strategy & execution` vs. `Design lead`** — also distinct,
-  and merging them would understate the broader role. `Design
-  strategy & execution` (`blockfi-director-of-design`) covers a
-  founding/sole design leader directing vision across product design,
-  blockchain, front-end, back-end, security, and go-to-market while
-  scaling the org 1→4 — a wider, more senior mandate than `Design
-  lead` implies elsewhere on the site.
+
+`blockfi-product-design-leader` previously used `Design strategy &
+execution` here — a scope description standing in for the title,
+against the **Role & scope** rule directly above it. Corrected to the
+confirmed real title, `Director of Product Design` (see
+`01-inputs-to-fill.md` I-1). The broader mandate that label was trying
+to capture — directing vision across product design, blockchain,
+front-end, back-end, security, and go-to-market while scaling the org
+1→4 — belongs in the case study's own prose, which already covers it
+in the "Leadership" section, not in a Credits label doing double duty.
 
 Full list:
 
 | Label | Side | Used on |
 |---|---|---|
-| `Senior Design Operations Manager → Senior Principal Designer` | credits | `mezo-leadership-v9` (real title change, see **Role & scope**) |
-| `Design systems` | credits | `mezo-leadership-v9` |
+| `Senior Design Operations Manager → Senior Principal Designer` | credits | `mezo-product-design-ops-leader` (real title change, see **Role & scope**) |
+| `Design systems` | credits | `mezo-product-design-ops-leader` |
 | `Design lead` | credits | `mezo-clay` |
 | `Contributing designer` | credits | `mezo-clay` |
 | `Engineering` | credits | most projects |
 | `Product design` | credits | `deposit-on-mezo`, `borrow-musd` |
-| `Design strategy & execution` | credits | `blockfi-director-of-design` |
+| `Director of Product Design` | credits | `blockfi-product-design-leader` (real title, confirmed — see `01-inputs-to-fill.md` I-1) |
 | `Founding Head of Design` | credits | `cash-native-app` (real title, confirmed by the author — see `01-inputs-to-fill.md` I-13) |
 | `Design consultant` | credits | `easi-food-delivery`, `krisp-ai` |
 | `Organization` | clientCredits | see **The Organization field** |
-| `Head of Design` | clientCredits | `mezo-leadership-v9` |
+| `Head of Design` | clientCredits | `mezo-product-design-ops-leader` |
 | `PM` | clientCredits | most projects |
 
 ## Status

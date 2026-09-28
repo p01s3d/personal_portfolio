@@ -677,7 +677,7 @@ export const mix1Projects = [
     ],
     tags: ['Founding IC', 'Fintech', 'Web', 'Mobile', 'iOS', 'Android', 'Director'],
     credits: [
-      { role: 'Design strategy & execution', name: 'Osandi Robinson' },
+      { role: 'Director of Product Design', name: 'Osandi Robinson' },
       { role: 'Engineering', name: 'BlockFi engineering' },
     ],
     clientCredits: [
