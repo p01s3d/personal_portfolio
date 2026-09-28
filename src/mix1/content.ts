@@ -99,7 +99,7 @@ export const mix1Work = {
       sector: 'ai',
     },
     {
-      name: 'Mezo: Product and Design Operations',
+      name: 'Mezo: 4x Faster Product Delivery',
       headline: 'Building the operating system Mezo\'s design org didn\'t have',
       desc: "No documentation, no design system, and no shared process — before a mainnet transition moving $322M in testnet deposits and $1.8B in MUSD borrowed. I introduced sprint discipline, shipped a 1,000+ variant design system over four sprint cycles, and cut delivery time roughly fourfold, holding 98% sprint completion along the way.",
       image: '/images/placeholder-mix1/ratio-451x567.svg',
@@ -893,7 +893,7 @@ export const mix1Projects = [
     // on the real title — "v9" was a draft-review version marker that had
     // leaked into the live slug/title/tags.
     slug: 'mezo-product-design-ops-leader',
-    name: 'Mezo: Product and Design Operations',
+    name: 'Mezo: 4x Faster Product Delivery',
     client: 'Mezo / Thesis',
     sector: 'Crypto',
     year: '2024–2026',
