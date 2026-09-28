@@ -406,6 +406,15 @@ export const mix1Projects = [
         ],
         images: ['/images/placeholder-mix1/ratio-686x868.svg', '/images/placeholder-mix1/ratio-686x868.svg'],
       },
+      {
+        lead: 'Engineering came, but it didn\'t stay.',
+        richTitle: 'What I\'d do differently',
+        body: [
+          "We lost a dedicated engineer to a new product priority early on, and could never get consistent attendance at working sessions or planning from the rest of the team — capacity was thin and the roadmap kept shifting under pivots. Frequent organizational restructuring compounded it, limiting how much dedicated design capacity could contribute and blocking the pattern-library buildout that would have cleaned up work that was poorly implemented both before and after the attrition.",
+          "This tracks with the field more broadly, not just this team: a first-year review of design-system adoption data (zeroheight, via Design Systems Collective) found adoption mattered more than technical elegance. Stakeholders often expect instant adoption against legacy products that can't easily absorb it that fast — a staggered rollout usually fits better, and some resistance from product teams is normal even after a pitch is approved.",
+        ],
+        images: ['/images/placeholder-mix1/ratio-686x868.svg', '/images/placeholder-mix1/ratio-686x868.svg'],
+      },
     ],
     mockups: ['/images/placeholder-mix1/ratio-900x1600.svg', '/images/placeholder-mix1/ratio-900x1600.svg', '/images/placeholder-mix1/ratio-900x1600.svg'],
     closingLead: 'Infrastructure that outlasts the sprint cycle is the difference between a design system and a component dump.',
@@ -471,6 +480,15 @@ export const mix1Projects = [
         ],
         images: ['/images/placeholder-mix1/ratio-686x868.svg', '/images/placeholder-mix1/ratio-686x868.svg'],
       },
+      {
+        lead: 'Deposit work should have been sequenced with the mainnet build itself, not after it.',
+        richTitle: 'What I\'d do differently',
+        body: [
+          "The debt this flow carried was inherited legacy technical debt, and depositing was the necessary next step after account creation before a user could touch MUSD or spend in the market at all. Planning it alongside the mainnet build, instead of catching up to it afterward, likely would have lifted the earliest revenue metrics.",
+          "What we did ship — mobile-first patterns that deviated from what the team had used pre-attrition — would have addressed that inherited design debt on its own terms. It came after the team had already lost the capacity to carry it all the way through.",
+        ],
+        images: ['/images/placeholder-mix1/ratio-686x868.svg', '/images/placeholder-mix1/ratio-686x868.svg'],
+      },
     ],
     mockups: ['/images/placeholder-mix1/ratio-900x1600.svg', '/images/placeholder-mix1/ratio-900x1600.svg', '/images/placeholder-mix1/ratio-900x1600.svg'],
     closingLead: 'Clarity at the point of commitment is not a UX nicety in a protocol where a wrong address means permanent loss.',
@@ -527,6 +545,15 @@ export const mix1Projects = [
         body: [
           "The redesign borrowed interaction models from familiar financial interfaces — not to hide the complexity of DeFi, but to lower the entry cost for users coming from traditional finance.",
           "The borrow flow shipped as part of the mainnet launch suite, contributing to Mezo's $200M+ TVL and supporting expansion into a broader addressable market beyond early adopters.",
+        ],
+        images: ['/images/placeholder-mix1/ratio-686x868.svg', '/images/placeholder-mix1/ratio-686x868.svg'],
+      },
+      {
+        lead: 'We shipped Borrow without fully verifying utility first.',
+        richTitle: 'What I\'d do differently',
+        body: [
+          "Testing prototypes with the designers who'd worked on this earlier could have given us a better signal than shipping blindly. Neither time nor resources were allocated for it, and research that did exist was produced in a silo and never fully used.",
+          "Borrow needed clearer alignment on its real-world value proposition before build. The better sequence: build for one verifiable segment first, learn from it, then pursue mainstream adoption once the product actually fit that broader market.",
         ],
         images: ['/images/placeholder-mix1/ratio-686x868.svg', '/images/placeholder-mix1/ratio-686x868.svg'],
       },
@@ -683,6 +710,14 @@ export const mix1Projects = [
         body: [
           "Identifying insufficient market traction before over-investing in the product direction was the most valuable output of the engagement. The design foundation remained intact for the company's next direction.",
           "Building 0→1 means the research has to do double duty — validating the product and validating the strategy. Here, it did both.",
+        ],
+        images: ['/images/placeholder-mix1/ratio-686x868.svg', '/images/placeholder-mix1/ratio-686x868.svg'],
+      },
+      {
+        lead: 'I\'d have asked for the investor principal\'s visibility into the team earlier.',
+        richTitle: 'What I\'d do differently',
+        body: [
+          "Inviting them into planning sessions and roadmap shaping directly, rather than after the fact, would have gotten them to understand the dependencies sooner — and made the eventual pivot conversation land faster.",
         ],
         images: ['/images/placeholder-mix1/ratio-686x868.svg', '/images/placeholder-mix1/ratio-686x868.svg'],
       },
