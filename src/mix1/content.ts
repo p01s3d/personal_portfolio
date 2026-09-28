@@ -965,10 +965,10 @@ export const mix1Projects = [
         images: ['/images/placeholder-mix1/ratio-686x868.svg', '/images/placeholder-mix1/ratio-686x868.svg'],
       },
       {
-        lead: 'A former direct report and I shipped a full component library over two months, through the Christmas holiday.',
+        lead: 'A former direct report and I shipped a full component library over four sprint cycles.',
         richTitle: 'The design system',
         body: [
-          'Designers on the team treated design systems as visual exercises. I put the distinction in plain terms: a style guide is paint; a design system is the plumbing and wiring behind the wall. I brought on a former direct report, and over two months, through the Christmas holiday, we shipped a full component library: over 1,000 components counting variants, documented, tested, and verifiable, cutting product development time by a factor of four.',
+          'Designers on the team treated design systems as visual exercises. I put the distinction in plain terms: a style guide is paint; a design system is the plumbing and wiring behind the wall. I brought on a former direct report, and over four sprint cycles, we shipped a full component library: over 1,000 components counting variants, documented, tested, and verifiable. Feature builds that had taken roughly four times as long before it existed dropped to two to three weeks, zero to one, once it was in place.',
           "I managed that sprint to 98% completion, the org's first proof that planned work could ship on schedule without blowing capacity.",
         ],
         images: ['/images/placeholder-mix1/ratio-686x868.svg', '/images/placeholder-mix1/ratio-686x868.svg'],
@@ -1035,8 +1035,13 @@ export const mix1Projects = [
     mockups: ['/images/placeholder-mix1/ratio-900x1600.svg', '/images/placeholder-mix1/ratio-900x1600.svg', '/images/placeholder-mix1/ratio-900x1600.svg'],
     closingLead:
       "What shipped: a documented operating system for design at Mezo, none of it in place when I joined. Tooling, standards, and a 1,000+ variant design system went live ahead of the mainnet transition the org needed to enter prepared for. The team rebuild came after, within that same tenure, and the system is still what the team builds on.",
+    // "4x" (below): author-confirmed from direct experience — full 0-to-1 feature
+    // builds ran roughly 2-3 weeks once the design system was in place, versus
+    // roughly four times that long before it existed. Stated internally at the
+    // time; never externally documented, so kept as a rounded multiple rather
+    // than a precise week count.
     stats: [
-      { name: 'Component variants shipped', description: 'Shipped in two months, largely over the Christmas holiday, ahead of a mainnet transition.', value: '1,000+' },
+      { name: 'Component variants shipped', description: 'Shipped over four sprint cycles, ahead of a mainnet transition.', value: '1,000+' },
       { name: 'Product development speed', description: "Cut by a factor of four once the design system's infrastructure was in place.", value: '4x' },
       { name: 'Sprint completion', description: "The org's first working proof that Agile could function at Mezo.", value: '98%' },
       { name: 'Design headcount rebuilt', description: 'Net growth across growth design, product design, and design systems.', value: '+3' },
