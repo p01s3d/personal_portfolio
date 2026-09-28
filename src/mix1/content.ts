@@ -702,6 +702,12 @@ export const mix1Projects = [
     motionDemos: [] as { label: string; src: string }[],
   },
   {
+    // Problem-validation source (I-7): the sub-3.0 rating and crash-rate
+    // figures below were verified firsthand while contracted on this
+    // engagement — no App Store historical snapshot exists to cite (no
+    // public rating-history log for this period). Confirmed by the author
+    // as accurate from direct contemporaneous knowledge; kept as-is rather
+    // than softened or removed.
     slug: 'easi-food-delivery',
     name: 'EASI: $500M+ Valuation',
     client: 'EASI',
@@ -790,9 +796,13 @@ export const mix1Projects = [
     ],
     mockups: ['/images/placeholder-mix1/ratio-900x1600.svg', '/images/placeholder-mix1/ratio-900x1600.svg', '/images/placeholder-mix1/ratio-900x1600.svg'],
     closingLead: 'System work outlives the brief it was built for. That\'s the difference between components and infrastructure.',
-    stats: [
-      { name: 'Engagement type', description: 'Engaged as principal design consultant for the desktop UI system redesign.', value: 'Principal' },
-    ],
+    // "Principal" was a level of engagement, not an internal title (confirmed
+    // by the author) — already stated correctly in prose above ("Engaged as
+    // principal design consultant"). A standalone stat tile gave it more
+    // formality than that, reading like a title classification next to
+    // quantified metrics on sibling entries. Dropped rather than kept as a
+    // bare, unsupported value.
+    stats: [],
     tech: [
       { k: 'Platform', v: 'Desktop (macOS + Windows)' },
       { k: 'Method', v: 'UI system · component library' },
