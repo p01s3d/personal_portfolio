@@ -401,6 +401,7 @@ export const mix1Projects = [
         richTitle: 'What the audit revealed',
         body: [
           "A 70% component integration rate at post-launch audit sounds like success. It is — but the 30% that wasn't integrated told the real story: premature styling decisions made during testnet were being maintained as one-off overrides instead of being resolved back into the system.",
+          "The audit measured delivery three ways: the component inventory itself, design debt checked against actual component usage, and usability evaluated through a heuristic review — not just whether the system shipped, but whether it held up in use.",
           "The governance decisions informed by that audit — when to override, when to extend, when to propose a new component — were as important as the components themselves.",
           "The system behind that 70% came together in two months, largely over the Christmas holiday, ahead of a mainnet transition the org couldn't afford to miss. Before it existed, designers on the team treated design systems as a visual exercise, a style guide with a different name. The distinction that changed that: a style guide is paint; a design system is the plumbing and wiring behind the wall, the reason a pattern exists and where else it applies. Once that infrastructure was in place, it cut product development time by a factor of four.",
         ],
