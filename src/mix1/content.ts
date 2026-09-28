@@ -687,7 +687,7 @@ export const mix1Projects = [
     name: 'C@SH: 0→1 Design Function',
     client: 'a16z Crypto portfolio',
     sector: 'Crypto',
-    year: '2022',
+    year: '2022–2024',
     service: 'Leadership',
     readTime: 3,
     image: '/images/placeholder-mix1/ratio-99x124.svg',
@@ -781,6 +781,15 @@ export const mix1Projects = [
         ],
         images: ['/images/placeholder-mix1/ratio-686x868.svg', '/images/placeholder-mix1/ratio-686x868.svg'],
       },
+      {
+        lead: 'The advisor leaves before the work lands.',
+        richTitle: 'What I\'d do differently',
+        body: [
+          "Attention from ownership and leadership fades right after sign-off — schedule the follow-ups while you still have it, and keep the plan simple enough to survive without you in the room. The same applies to the recommendation itself: test feasibility of team, budget, and politics during discovery, since a recommendation the client can't resource is a weak recommendation no matter how sound the analysis behind it.",
+          "Design intent gets lost at the seam between design and engineering more often than anywhere else in the process. Involve engineers during design so feasibility problems surface early — as Questworks puts it, the most expensive time to discover a feasibility problem is during implementation. Specify behavior, not just visuals: document every state (loading, empty, error, success) and its edge cases, and walk the spec with the client's engineers directly. Design with the components and tokens engineers actually ship — per UXPin, translation is the biggest driver of drift. Build design QA into the process explicitly, reviewing the implementation against the original design before it ships and contracting for that review up front, and agree on a definition of done between design and engineering, then stay available for questions through the build.",
+        ],
+        images: ['/images/placeholder-mix1/ratio-686x868.svg', '/images/placeholder-mix1/ratio-686x868.svg'],
+      },
     ],
     mockups: ['/images/placeholder-mix1/ratio-900x1600.svg', '/images/placeholder-mix1/ratio-900x1600.svg', '/images/placeholder-mix1/ratio-900x1600.svg'],
     closingLead: 'A 4.5-star rating is a market signal. The $500M acquisition validated the strategy the redesign was built around.',
@@ -837,6 +846,14 @@ export const mix1Projects = [
         body: [
           "The shift toward enterprise aesthetics and recording features was a different design brief than the original work was built to serve. But the component layer and the system thinking behind it gave the team a structured starting point for that evolution.",
           "That's the value of system work over surface work — it outlives the original brief.",
+        ],
+        images: ['/images/placeholder-mix1/ratio-686x868.svg', '/images/placeholder-mix1/ratio-686x868.svg'],
+      },
+      {
+        lead: 'We were up against a global pandemic, not a design problem.',
+        richTitle: 'What stayed unresolved',
+        body: [
+          "By the time there was enough clarity to confirm everyone involved had come through the pandemic safely, both the client and I had moved on to other things. It wasn't a resolution so much as time passing until neither side circled back — the kind of ending that doesn't show up in a stats block.",
         ],
         images: ['/images/placeholder-mix1/ratio-686x868.svg', '/images/placeholder-mix1/ratio-686x868.svg'],
       },
