@@ -32,7 +32,10 @@ export const mix1Work = {
   ],
   impact: [
     { org: 'BlockFi', value: '$1.5M → $50M', label: 'monthly revenue' },
-    { org: 'Mezo', value: '$100M+', label: 'mainnet TVL · 25K+ users' },
+    // TVL/users pair sourced together (Mezo-reported, late April 2026) —
+    // kept as a matched snapshot rather than mixing an earlier TVL peak
+    // with a later user count.
+    { org: 'Mezo', value: '$70M+', label: 'mainnet TVL · 43,500+ users' },
     { org: 'a16z', value: '0 → 1', label: 'design function' },
     { org: 'EASI', value: '$500M+', label: 'acquisition valuation' },
     { org: 'Mezo', value: '~40%', label: 'conversion vs. 30% OKR' },
@@ -56,7 +59,7 @@ export const mix1Work = {
       sector: 'crypto',
     },
     {
-      name: 'Mezo Borrow: 25K+ Users',
+      name: 'Mezo Borrow: 43.5K+ Users',
       headline: 'Making high-stakes borrowing feel safe, not complex',
       desc: 'MUSD borrowing required users to understand collateralization, liquidation risk, and variable APR simultaneously — concepts that had no mainstream equivalent. The design challenge wasn’t simplification for its own sake; it was making consequential financial decisions feel appropriately weighted without overwhelming users into inaction. The redesign introduced progressive disclosure, consolidated error handling to a single inline signal, and leaned on benchmarked design patterns to reduce DeFi complexity for a larger addressable market.',
       image: '/images/placeholder-mix1/ratio-451x567.svg',
@@ -401,7 +404,7 @@ export const mix1Projects = [
         richTitle: 'What the audit revealed',
         body: [
           "A 70% component integration rate at post-launch audit sounds like success. It is — but the 30% that wasn't integrated told the real story: premature styling decisions made during testnet were being maintained as one-off overrides instead of being resolved back into the system.",
-          "The audit measured delivery three ways: the component inventory itself, design debt checked against actual component usage, and usability evaluated through a heuristic review — not just whether the system shipped, but whether it held up in use.",
+          "The audit measured delivery three ways: the component inventory itself, design debt checked against actual component usage, and usability evaluated through a heuristic review — whether the system held up in use.",
           "The governance decisions informed by that audit — when to override, when to extend, when to propose a new component — were as important as the components themselves.",
           "The system behind that 70% came together in two months, largely over the Christmas holiday, ahead of a mainnet transition the org couldn't afford to miss. Before it existed, designers on the team treated design systems as a visual exercise, a style guide with a different name. The distinction that changed that: a style guide is paint; a design system is the plumbing and wiring behind the wall, the reason a pattern exists and where else it applies. Once that infrastructure was in place, it cut product development time by a factor of four.",
         ],
@@ -412,7 +415,7 @@ export const mix1Projects = [
         richTitle: 'What I\'d do differently',
         body: [
           "We lost a dedicated engineer to a new product priority early on, and could never get consistent attendance at working sessions or planning from the rest of the team — capacity was thin and the roadmap kept shifting under pivots. Frequent organizational restructuring compounded it, limiting how much dedicated design capacity could contribute and blocking the pattern-library buildout that would have cleaned up work that was poorly implemented both before and after the attrition.",
-          "This tracks with the field more broadly, not just this team: a first-year review of design-system adoption data (zeroheight, via Design Systems Collective) found adoption mattered more than technical elegance. Stakeholders often expect instant adoption against legacy products that can't easily absorb it that fast — a staggered rollout usually fits better, and some resistance from product teams is normal even after a pitch is approved.",
+          "The pattern shows up across the field, not just this team: a first-year review of design-system adoption data (zeroheight, via Design Systems Collective) found adoption mattered more than technical elegance. Stakeholders often expect instant adoption against legacy products that can't easily absorb it that fast — a staggered rollout usually fits better, and some resistance from product teams is normal even after a pitch is approved.",
         ],
         images: ['/images/placeholder-mix1/ratio-686x868.svg', '/images/placeholder-mix1/ratio-686x868.svg'],
       },
@@ -495,7 +498,7 @@ export const mix1Projects = [
     closingLead: 'Clarity at the point of commitment is not a UX nicety in a protocol where a wrong address means permanent loss.',
     stats: [
       { name: 'TVL peak, testnet', description: 'Deposit flow was the primary on-ramp for Mezo liquidity growth toward this peak.', value: '$200M+' },
-      { name: 'Active users', description: 'Reached at mainnet launch, enabled by a deposit experience that worked.', value: '25K+' },
+      { name: 'Active users', description: 'Mezo-reported, April 2026 — enabled by a deposit experience that worked.', value: '43,500+' },
       { name: 'Sprint completion', description: 'Maintained across the engagement from research through handoff.', value: '98%' },
     ],
     tech: [
@@ -520,7 +523,7 @@ export const mix1Projects = [
     // product and users at the time — no research artifact or drop-off data
     // was retained to cite. Confirmed by the author as accurate; kept as-is.
     slug: 'borrow-musd',
-    name: 'Mezo Borrow: 25K+ Users',
+    name: 'Mezo Borrow: 43.5K+ Users',
     client: 'Mezo / Thesis',
     sector: 'Crypto',
     year: '2024–2026',
@@ -550,11 +553,11 @@ export const mix1Projects = [
         images: ['/images/placeholder-mix1/ratio-686x868.svg', '/images/placeholder-mix1/ratio-686x868.svg'],
       },
       {
-        lead: 'We shipped Borrow without fully verifying utility first.',
+        lead: 'We shipped Borrow without verifying utility first.',
         richTitle: 'What I\'d do differently',
         body: [
-          "Testing prototypes with the designers who'd worked on this earlier could have given us a better signal than shipping blindly. Neither time nor resources were allocated for it, and research that did exist was produced in a silo and never fully used.",
-          "Borrow needed clearer alignment on its real-world value proposition before build. The better sequence: build for one verifiable segment first, learn from it, then pursue mainstream adoption once the product actually fit that broader market.",
+          "Testing prototypes with the designers who'd worked on this earlier could have given us a better signal than shipping blindly. We didn't allocate time or resources for it, and research that did exist sat in a silo and never got used.",
+          "Borrow needed clearer alignment on its real-world value proposition before build. The better sequence: build for one verifiable segment first, learn from it, then pursue mainstream adoption once the product fit that broader market.",
         ],
         images: ['/images/placeholder-mix1/ratio-686x868.svg', '/images/placeholder-mix1/ratio-686x868.svg'],
       },
@@ -563,7 +566,7 @@ export const mix1Projects = [
     closingLead: 'The job isn\'t to make DeFi simple. It\'s to make consequential decisions feel proportionally weighted.',
     stats: [
       { name: 'TVL peak, testnet', description: 'Borrow flow contributed to Mezo\'s liquidity growth toward this peak, alongside deposit and wallet.', value: '$200M+' },
-      { name: 'Active users', description: 'Reached at mainnet launch across all Mezo product surfaces.', value: '25K+' },
+      { name: 'Active users', description: 'Mezo-reported, April 2026, across all Mezo product surfaces.', value: '43,500+' },
     ],
     tech: [
       { k: 'Platform', v: 'Mobile + Web' },
@@ -718,7 +721,7 @@ export const mix1Projects = [
         lead: 'I\'d have asked for the investor principal\'s visibility into the team earlier.',
         richTitle: 'What I\'d do differently',
         body: [
-          "Inviting them into planning sessions and roadmap shaping directly, rather than after the fact, would have gotten them to understand the dependencies sooner — and made the eventual pivot conversation land faster.",
+          "Inviting them into planning sessions and roadmap shaping, rather than after the fact, would have gotten them to understand the dependencies sooner — and made the eventual pivot conversation land faster.",
         ],
         images: ['/images/placeholder-mix1/ratio-686x868.svg', '/images/placeholder-mix1/ratio-686x868.svg'],
       },
@@ -787,7 +790,7 @@ export const mix1Projects = [
         richTitle: 'What I\'d do differently',
         body: [
           "Attention from ownership and leadership fades right after sign-off — schedule the follow-ups while you still have it, and keep the plan simple enough to survive without you in the room. The same applies to the recommendation itself: test feasibility of team, budget, and politics during discovery, since a recommendation the client can't resource is a weak recommendation no matter how sound the analysis behind it.",
-          "Design intent gets lost at the seam between design and engineering more often than anywhere else in the process. Involve engineers during design so feasibility problems surface early — as Questworks puts it, the most expensive time to discover a feasibility problem is during implementation. Specify behavior, not just visuals: document every state (loading, empty, error, success) and its edge cases, and walk the spec with the client's engineers directly. Design with the components and tokens engineers actually ship — per UXPin, translation is the biggest driver of drift. Build design QA into the process explicitly, reviewing the implementation against the original design before it ships and contracting for that review up front, and agree on a definition of done between design and engineering, then stay available for questions through the build.",
+          "Design intent gets lost at the seam between design and engineering more often than anywhere else in the process. Involve engineers during design so feasibility problems surface early — as Questworks puts it, the most expensive time to discover a feasibility problem is during implementation. Specify behavior, not just visuals: document every state (loading, empty, error, success) and its edge cases, and walk the spec with the client's engineers. Design with the components and tokens engineers ship — per UXPin, translation is the biggest driver of drift. Build design QA into the process: review the implementation against the original design before it ships, contract for that review up front, and agree on a definition of done between design and engineering, then stay available for questions through the build.",
         ],
         images: ['/images/placeholder-mix1/ratio-686x868.svg', '/images/placeholder-mix1/ratio-686x868.svg'],
       },
@@ -851,7 +854,7 @@ export const mix1Projects = [
         images: ['/images/placeholder-mix1/ratio-686x868.svg', '/images/placeholder-mix1/ratio-686x868.svg'],
       },
       {
-        lead: 'We were up against a global pandemic, not a design problem.',
+        lead: 'The pandemic decided how this ended, not the work.',
         richTitle: 'What stayed unresolved',
         body: [
           "By the time there was enough clarity to confirm everyone involved had come through the pandemic safely, both the client and I had moved on to other things. It wasn't a resolution so much as time passing until neither side circled back — the kind of ending that doesn't show up in a stats block.",
