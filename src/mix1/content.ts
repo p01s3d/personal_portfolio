@@ -32,7 +32,7 @@ export const mix1Work = {
   ],
   impact: [
     { org: 'BlockFi', value: '$1.5M → $50M', label: 'monthly revenue' },
-    { org: 'Mezo', value: '$200M+', label: 'TVL · 25K+ users' },
+    { org: 'Mezo', value: '$100M+', label: 'mainnet TVL · 25K+ users' },
     { org: 'a16z', value: '0 → 1', label: 'design function' },
     { org: 'EASI', value: '$500M+', label: 'acquisition valuation' },
     { org: 'Mezo', value: '~40%', label: 'conversion vs. 30% OKR' },
@@ -42,7 +42,7 @@ export const mix1Work = {
     {
       name: 'Mezo Clay: $200M+ TVL',
       headline: 'Converting design debt into product infrastructure',
-      desc: 'Led Mezo design system migration across three product phases (legacy, testnet, mainnet); post-launch audit established 70% component integration and identified systemic overrides from premature styling as the primary implementation bottleneck, informing governance decisions. Managed a direct report and an engineering contributor from execution through deployment. Partnered with the contributing designer to set quality standards and pattern library conventions, building out Uber Base into a React, WCAG 2.2-compliant library purpose-built for the Thesis BitcoinFi suite. Managed, built, and tested 2,000+ variants across 50+ base components, establishing the single source of truth every product surface shipped: the infrastructure behind $322M in testnet deposits, 154K transactions, and $151M TVL at mainnet, peaking at $200M+.',
+      desc: 'Led Mezo design system migration across three product phases (legacy, testnet, mainnet); post-launch audit established 70% component integration and identified systemic overrides from premature styling as the primary implementation bottleneck, informing governance decisions. Managed a direct report and an engineering contributor from execution through deployment. Partnered with the contributing designer to set quality standards and pattern library conventions, building out Uber Base into a React, WCAG 2.2-compliant library purpose-built for the Thesis BitcoinFi suite. Managed, built, and tested 2,000+ variants across 50+ base components, establishing the single source of truth every product surface shipped: the infrastructure behind $322M in testnet deposits, 154K transactions, and TVL that peaked at $200M+ during testnet.',
       image: '/images/placeholder-mix1/ratio-451x567.svg',
       service: 'systems',
       sector: 'crypto',
@@ -50,7 +50,7 @@ export const mix1Work = {
     {
       name: 'Mezo Deposits: $200M+ TVL',
       headline: 'Improving the deposit flow that unlocked Mezo’s liquidity',
-      desc: 'Depositing Bitcoin to Mezo wasn’t a standard transfer — users were bridging assets across chains into a protocol where a wrong address meant permanent loss of funds. Research confirmed the existing deposit flow was fundamentally broken — perceived as risky and confusing. The redesign introduced upfront deposit instructions, surfaced network context and minimum thresholds before commitment, and provided unambiguous success states so users knew their funds had arrived safely. The deposit flow became the primary on-ramp enabling liquidity for vaults, pools, and rewards — contributing to Mezo’s growth to $200M+ TVL.',
+      desc: 'Depositing Bitcoin to Mezo wasn’t a standard transfer — users were bridging assets across chains into a protocol where a wrong address meant permanent loss of funds. Research confirmed the existing deposit flow was fundamentally broken — perceived as risky and confusing. The redesign introduced upfront deposit instructions, surfaced network context and minimum thresholds before commitment, and provided unambiguous success states so users knew their funds had arrived safely. The deposit flow became the primary on-ramp enabling liquidity for vaults, pools, and rewards — contributing to TVL that peaked at $200M+ during testnet.',
       image: '/images/placeholder-mix1/ratio-451x567.svg',
       service: 'product',
       sector: 'crypto',
@@ -421,7 +421,7 @@ export const mix1Projects = [
     closingLead: 'Infrastructure that outlasts the sprint cycle is the difference between a design system and a component dump.',
     stats: [
       { name: 'Component integration', description: 'Post-launch audit established the baseline for system governance decisions.', value: '70%' },
-      { name: 'TVL at mainnet peak', description: 'The system shipped with every product surface that contributed to Mezo growth.', value: '$200M+' },
+      { name: 'TVL peak, testnet', description: 'Mezo-reported. The system shipped with every product surface that contributed to this growth.', value: '$200M+' },
       { name: 'Testnet deposits', description: 'Built on the infrastructure shipped during this engagement.', value: '$322M' },
       { name: 'Sprint completion', description: 'Maintained across the engagement from system build through deployment.', value: '98%' },
     ],
@@ -468,7 +468,7 @@ export const mix1Projects = [
         lead: 'The deposit flow became the primary on-ramp for all of Mezo\'s liquidity.',
         richTitle: 'Outcome and downstream impact',
         body: [
-          "Vaults, pools, and rewards all depended on a working deposit experience. The redesign unblocked each of them — contributing directly to Mezo's growth to $200M+ TVL.",
+          "Vaults, pools, and rewards all depended on a working deposit experience. The redesign unblocked each of them — contributing directly to TVL that peaked at $200M+ during testnet.",
           "Sprint completion held at 98% across the engagement, which meant the research and design process ran fast enough to stay ahead of engineering.",
         ],
         images: ['/images/placeholder-mix1/ratio-686x868.svg', '/images/placeholder-mix1/ratio-686x868.svg'],
@@ -494,7 +494,7 @@ export const mix1Projects = [
     mockups: ['/images/placeholder-mix1/ratio-900x1600.svg', '/images/placeholder-mix1/ratio-900x1600.svg', '/images/placeholder-mix1/ratio-900x1600.svg'],
     closingLead: 'Clarity at the point of commitment is not a UX nicety in a protocol where a wrong address means permanent loss.',
     stats: [
-      { name: 'TVL at mainnet', description: 'Deposit flow was the primary on-ramp for all Mezo liquidity growth.', value: '$200M+' },
+      { name: 'TVL peak, testnet', description: 'Deposit flow was the primary on-ramp for Mezo liquidity growth toward this peak.', value: '$200M+' },
       { name: 'Active users', description: 'Reached at mainnet launch, enabled by a deposit experience that worked.', value: '25K+' },
       { name: 'Sprint completion', description: 'Maintained across the engagement from research through handoff.', value: '98%' },
     ],
@@ -545,7 +545,7 @@ export const mix1Projects = [
         richTitle: 'Expanding the addressable market',
         body: [
           "The redesign borrowed interaction models from familiar financial interfaces — not to hide the complexity of DeFi, but to lower the entry cost for users coming from traditional finance.",
-          "The borrow flow shipped as part of the mainnet launch suite, contributing to Mezo's $200M+ TVL and supporting expansion into a broader addressable market beyond early adopters.",
+          "The borrow flow shipped as part of the mainnet launch suite, contributing to TVL that peaked at $200M+ during testnet, and supporting expansion into a broader addressable market beyond early adopters.",
         ],
         images: ['/images/placeholder-mix1/ratio-686x868.svg', '/images/placeholder-mix1/ratio-686x868.svg'],
       },
@@ -562,7 +562,7 @@ export const mix1Projects = [
     mockups: ['/images/placeholder-mix1/ratio-900x1600.svg', '/images/placeholder-mix1/ratio-900x1600.svg', '/images/placeholder-mix1/ratio-900x1600.svg'],
     closingLead: 'The job isn\'t to make DeFi simple. It\'s to make consequential decisions feel proportionally weighted.',
     stats: [
-      { name: 'TVL at mainnet', description: 'Borrow flow contributed to Mezo\'s liquidity growth alongside deposit and wallet.', value: '$200M+' },
+      { name: 'TVL peak, testnet', description: 'Borrow flow contributed to Mezo\'s liquidity growth toward this peak, alongside deposit and wallet.', value: '$200M+' },
       { name: 'Active users', description: 'Reached at mainnet launch across all Mezo product surfaces.', value: '25K+' },
     ],
     tech: [
