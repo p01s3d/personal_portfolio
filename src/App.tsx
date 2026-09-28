@@ -83,8 +83,14 @@ function AppRoutes() {
         <Route path="mix1/about" element={<Navigate to="/about" replace />} />
         <Route path="mix1/build" element={<Navigate to="/build" replace />} />
         {/* mezo-leadership-v9 renamed once I-6 settled the real title — "v9" was a
-            draft-review version marker that had leaked into the live slug */}
-        <Route path="work/mezo-leadership-v9" element={<Navigate to="/work/mezo-product-design-operations" replace />} />
+            draft-review version marker that had leaked into the live slug. Went
+            through mezo-product-design-operations briefly before landing on its
+            final slug, so both retired slugs redirect. */}
+        <Route path="work/mezo-leadership-v9" element={<Navigate to="/work/mezo-product-design-ops-leader" replace />} />
+        <Route path="work/mezo-product-design-operations" element={<Navigate to="/work/mezo-product-design-ops-leader" replace />} />
+        {/* blockfi-director-of-design renamed to reflect the real title (I-1:
+            "Director of Product Design," not "Director of Design") */}
+        <Route path="work/blockfi-director-of-design" element={<Navigate to="/work/blockfi-product-design-leader" replace />} />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </div>

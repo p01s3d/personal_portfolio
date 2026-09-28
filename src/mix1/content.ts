@@ -554,7 +554,7 @@ export const mix1Projects = [
     motionDemos: [] as { label: string; src: string }[],
   },
   {
-    slug: 'blockfi-director-of-design',
+    slug: 'blockfi-product-design-leader',
     name: 'BlockFi: $1.5M→$50M/mo',
     client: 'BlockFi',
     sector: 'Fintech',
@@ -836,7 +836,7 @@ export const mix1Projects = [
     // their content if needed. Renamed from mezo-leadership-v9 once I-6 settled
     // on the real title — "v9" was a draft-review version marker that had
     // leaked into the live slug/title/tags.
-    slug: 'mezo-product-design-operations',
+    slug: 'mezo-product-design-ops-leader',
     name: 'Mezo: Product and Design Operations',
     client: 'Mezo / Thesis',
     sector: 'Crypto',
