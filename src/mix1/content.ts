@@ -395,7 +395,7 @@ export const mix1Projects = [
         richTitle: 'Scale, compliance, and delivery',
         body: [
           "Partnered with the contributing designer to set quality standards and pattern library conventions. Built and tested every variant against the Mezo product surfaces — deposit, borrow, wallet, explore — so each could ship without a separate design review cycle.",
-          "The system became the infrastructure behind $322M in testnet deposits, 154K transactions, and $151M TVL at mainnet, peaking at $200M+.",
+          "The system became the infrastructure behind $322M in testnet deposits, 154K transactions, and TVL that peaked at $200M+ during testnet.",
         ],
         images: ['/images/placeholder-mix1/ratio-686x868.svg', '/images/placeholder-mix1/ratio-686x868.svg', '/images/placeholder-mix1/ratio-686x868.svg'],
       },
@@ -406,7 +406,7 @@ export const mix1Projects = [
           "A 70% component integration rate at post-launch audit sounds like success. It is — but the 30% that wasn't integrated told the real story: premature styling decisions made during testnet were being maintained as one-off overrides instead of being resolved back into the system.",
           "The audit measured delivery three ways: the component inventory itself, design debt checked against actual component usage, and usability evaluated through a heuristic review — whether the system held up in use.",
           "The governance decisions informed by that audit — when to override, when to extend, when to propose a new component — were as important as the components themselves.",
-          "The system behind that 70% came together in two months, largely over the Christmas holiday, ahead of a mainnet transition the org couldn't afford to miss. Before it existed, designers on the team treated design systems as a visual exercise, a style guide with a different name. The distinction that changed that: a style guide is paint; a design system is the plumbing and wiring behind the wall, the reason a pattern exists and where else it applies. Once that infrastructure was in place, it cut product development time by a factor of four.",
+          "The system behind that 70% came together over four sprint cycles, ahead of a mainnet transition the org couldn't afford to miss. Before it existed, designers on the team treated design systems as a visual exercise, a style guide with a different name. The distinction that changed that: a style guide is paint; a design system is the plumbing and wiring behind the wall, the reason a pattern exists and where else it applies. Once that infrastructure was in place, it cut product development time by a factor of four.",
         ],
         images: ['/images/placeholder-mix1/ratio-686x868.svg', '/images/placeholder-mix1/ratio-686x868.svg'],
       },
