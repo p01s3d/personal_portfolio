@@ -45,7 +45,7 @@ export const mix1Work = {
     {
       name: 'Mezo Clay: $70M+ TVL',
       headline: 'Mezo Clay turned design debt into $70M+ in TVL',
-      desc: "As Senior Design Operations Manager, I owned Mezo Clay, the design system, and Mezo's product operations. I built Clay into the single source of truth every product surface shipped from, closing the gap between design intent and shipped code. An internal audit found override rates averaging near 60% across the most-overridden components, as high as 92% on ListItem, and I used those findings to decide where to add props and new variants. Feature build time fell from six-plus weeks to two, a 4x multiplier from ideation to build, and adoption reached 60.9% of the app's component usage six days before mainnet. On testnet in February 2025, 2,393 users borrowed 32.8M MUSD through product surfaces built on the system. By April 2026, the app carried $70M+ in TVL across 43,500+ users, and conversion rose 40% against a 30% OKR target. The library scaled to 2,000+ variants across 50+ base components, the infrastructure behind every number above.",
+      desc: "43,500+ users run on Clay, the design system every Mezo product surface shipped from. As Senior Design Operations Manager, I owned Clay and Mezo's product operations, closing the override gap that was slowing every team touching the product. The system cut feature build time from six-plus weeks to two, a 4x multiplier from ideation to build, and reached 60.9% of the app's component usage six days before mainnet.",
       image: '/images/placeholder-mix1/ratio-451x567.svg',
       service: 'systems',
       sector: 'crypto',
