@@ -181,11 +181,20 @@ function warn(check, msg) { warnings.push({ check, msg }); }
 
 // ── Check 4: Credits `name` field doesn't hide a real collaborator behind
 //    the author's own company name for a role that implies a distinct person ─
+// "Poised LLC" is an accepted, confirmed-intentional credit name (author
+// decision, 2026-09-28) — work delivered under the author's own company.
+// Not flagged. A *different* company name in one of these roles still is,
+// since that pattern hasn't been reviewed.
 {
   const PERSON_IMPLYING_ROLES = ['Contributing designer', 'Design systems'];
+  const ACCEPTED_COMPANY_CREDITS = new Set(['Poised LLC']);
   for (const p of projects) {
     for (const c of p.credits) {
-      if (PERSON_IMPLYING_ROLES.includes(c.role) && /LLC|Inc\.?$|Studio$/i.test(c.name)) {
+      if (
+        PERSON_IMPLYING_ROLES.includes(c.role) &&
+        /LLC|Inc\.?$|Studio$/i.test(c.name) &&
+        !ACCEPTED_COMPANY_CREDITS.has(c.name)
+      ) {
         warn('credit-attribution', `${p.slug}: role "${c.role}" is credited to a company ("${c.name}") rather than a named person — confirm this isn't obscuring a real collaborator`);
       }
     }
