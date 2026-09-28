@@ -692,7 +692,7 @@ export const mix1Projects = [
     ],
     tags: ['0→1', 'Lead', 'Crypto', 'Mobile', 'iOS', 'Android', 'Design systems'],
     credits: [
-      { role: 'Design lead', name: 'Osandi Robinson' },
+      { role: 'Founding Head of Design', name: 'Osandi Robinson' },
       { role: 'Engineering', name: 'C@SH engineering' },
     ],
     clientCredits: [
