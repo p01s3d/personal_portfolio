@@ -362,6 +362,10 @@ export const mix1Build = {
 
 export const mix1Projects = [
   {
+    // Problem-validation source (I-7): the styling-debt/inconsistency problem
+    // was verified firsthand while doing this work — no pre-migration audit
+    // or artifact was retained to cite. Confirmed by the author as accurate
+    // from direct contemporaneous knowledge; kept as-is.
     slug: 'mezo-clay',
     name: 'Mezo Clay: $200M+ TVL',
     client: 'Mezo / Thesis',
@@ -492,6 +496,10 @@ export const mix1Projects = [
     motionDemos: [] as { label: string; src: string }[],
   },
   {
+    // Problem-validation source (I-7): the "no mainstream equivalent"
+    // complexity problem was verified firsthand from direct knowledge of the
+    // product and users at the time — no research artifact or drop-off data
+    // was retained to cite. Confirmed by the author as accurate; kept as-is.
     slug: 'borrow-musd',
     name: 'Mezo Borrow: 25K+ Users',
     client: 'Mezo / Thesis',
@@ -574,7 +582,7 @@ export const mix1Projects = [
         lead: 'I built the structure the company lacked.',
         richTitle: 'Leadership',
         body: [
-          "I directed design across BlockFi's full product line: the marketplace, credit card rewards, and BlockFi Interest Accounts, covering retail and institutional customers across US and international markets. On native, I owned the mobile conversion of that same suite to full parity with web, across iOS and Android. That work took shape during a period when BlockFi itself scaled fast, growing assets held on its platform from $1B to $15B and monthly revenue from $1.5M to $50M year over year, the broader business context the product and design org operated inside.",
+          "I directed design across BlockFi's full product line: the marketplace, credit card rewards, and BlockFi Interest Accounts, covering retail and institutional customers across US and international markets. On native, I owned the mobile conversion of that same suite to full parity with web, across iOS and Android. That work took shape during a period when BlockFi itself scaled fast — a $350M Series D at a $3B valuation in March 2021, assets on the platform growing from $1B to $15B across 225K+ clients, and monthly revenue climbing from $1.5M to $50M year over year — the broader business context the product and design org operated inside.",
           "I built the structure the company lacked. BlockFi's one existing designer left as I came on, so I started as the design function's sole contributor. I directed the design system as a standing responsibility, owning its component architecture and implementation as the product grew rather than treating it as a one-time build. I owned a design vision built with the full product development cycle in view: product design, blockchain engineering, front-end and back-end engineering, security, and go-to-market, one that had to hold up across every function expected to execute against it. I also worked as a strategic partner to the go-to-market team, which owned both marketing and creative as one function at BlockFi rather than two. That partnership wasn't a formal design-embedded arm; it was close, ongoing collaboration that let go-to-market shape messaging and creative with real product context, rather than working from the outside once a feature had already shipped. And I pushed for visibility into risk and compliance where none had existed, working to translate that visibility into clear, in-app disclosures for users, including the KYC-related disclosures the product needed.",
         ],
         images: ['/images/placeholder-mix1/ratio-686x868.svg', '/images/placeholder-mix1/ratio-686x868.svg'],
@@ -763,6 +771,10 @@ export const mix1Projects = [
     motionDemos: [] as { label: string; src: string }[],
   },
   {
+    // Problem-validation source (I-7): the interface-lagging-behind problem
+    // was known directly from the engagement itself — no retrievable client
+    // feedback or audit artifact was retained to cite. Confirmed by the
+    // author as accurate; kept as-is.
     slug: 'krisp-ai',
     name: 'Krisp Desktop Redesign',
     client: 'Krisp',
