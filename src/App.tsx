@@ -82,6 +82,9 @@ function AppRoutes() {
         <Route path="mix1/work/:slug" element={<RedirectWorkSlug />} />
         <Route path="mix1/about" element={<Navigate to="/about" replace />} />
         <Route path="mix1/build" element={<Navigate to="/build" replace />} />
+        {/* mezo-leadership-v9 renamed once I-6 settled the real title — "v9" was a
+            draft-review version marker that had leaked into the live slug */}
+        <Route path="work/mezo-leadership-v9" element={<Navigate to="/work/mezo-product-design-operations" replace />} />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </div>

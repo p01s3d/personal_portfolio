@@ -96,9 +96,9 @@ export const mix1Work = {
       sector: 'ai',
     },
     {
-      name: 'Mezo Leadership — v9',
-      headline: 'Problem, Goals, and Hypothesis realigned; redundant callouts dropped; two emphasized callouts kept where they earn their place',
-      desc: "A realignment pass on v8: Problem, Goals, and Hypothesis now map to each other in sequence, the growth-path gap is named honestly without a goal implying it was resolved, and the two callouts that fully duplicated body copy on this page (What the system actually was, What it moved) are dropped in favor of the paragraphs they were pulled from. What the stakes were and What the audit found stay, since neither repeats anything else on the page.",
+      name: 'Mezo: Product and Design Operations',
+      headline: 'Building the operating system Mezo\'s design org didn\'t have',
+      desc: "No documentation, no design system, and no shared process — before a mainnet transition moving $322M in testnet deposits and $1.8B in MUSD borrowed. I introduced sprint discipline, shipped a 1,000+ variant design system in two months, and cut delivery time roughly fourfold, holding 98% sprint completion along the way.",
       image: '/images/placeholder-mix1/ratio-451x567.svg',
       service: 'leadership',
       sector: 'crypto',
@@ -366,7 +366,7 @@ export const mix1Projects = [
     name: 'Mezo Clay: $200M+ TVL',
     client: 'Mezo / Thesis',
     sector: 'Crypto',
-    year: '2023',
+    year: '2024–2026',
     service: 'Systems',
     readTime: 4,
     image: '/images/placeholder-mix1/ratio-99x124.svg',
@@ -433,7 +433,7 @@ export const mix1Projects = [
     name: 'Mezo Deposits: $200M+ TVL',
     client: 'Mezo / Thesis',
     sector: 'Crypto',
-    year: '2023',
+    year: '2024–2026',
     service: 'Product',
     readTime: 3,
     image: '/images/placeholder-mix1/ratio-99x124.svg',
@@ -496,7 +496,7 @@ export const mix1Projects = [
     name: 'Mezo Borrow: 25K+ Users',
     client: 'Mezo / Thesis',
     sector: 'Crypto',
-    year: '2023',
+    year: '2024–2026',
     service: 'Product',
     readTime: 3,
     image: '/images/placeholder-mix1/ratio-99x124.svg',
@@ -634,7 +634,7 @@ export const mix1Projects = [
     tech: [
       { k: 'Platform', v: 'iOS + Android + Web' },
       { k: 'Method', v: 'Stakeholder research · Designer Fund Level Up' },
-      { k: 'Role', v: 'Director of Design' },
+      { k: 'Role', v: 'Director of Product Design' },
     ],
     tags: ['Founding IC', 'Fintech', 'Web', 'Mobile', 'iOS', 'Android', 'Director'],
     credits: [
@@ -811,12 +811,11 @@ export const mix1Projects = [
   {
     // Canonical Mezo leadership entry (issue #95). mezo-design-operations-leadership
     // and mezo-leadership-v8 were removed as duplicates — see git history for
-    // their content if needed. Realigned from v8 per claude-code-handoff-callout-redundancy.md,
-    // claude-code-handoff-growth-path-consistency.md, and
-    // claude-code-handoff-problem-goals-hypothesis.md, plus in-chat tone
-    // edits to Closing and a factual fix to closingLead.
-    slug: 'mezo-leadership-v9',
-    name: 'Mezo Leadership — v9',
+    // their content if needed. Renamed from mezo-leadership-v9 once I-6 settled
+    // on the real title — "v9" was a draft-review version marker that had
+    // leaked into the live slug/title/tags.
+    slug: 'mezo-product-design-operations',
+    name: 'Mezo: Product and Design Operations',
     client: 'Mezo / Thesis',
     sector: 'Crypto',
     year: '2024–2026',
@@ -825,7 +824,7 @@ export const mix1Projects = [
     image: '/images/placeholder-mix1/ratio-99x124.svg',
     headline: 'Building the operational discipline Mezo needed to scale product delivery without shipping broken builds',
     intro:
-      'A realignment pass: Problem, Goals, and Hypothesis now trace to each other in sequence, and the two callouts that fully duplicated body copy on this page are gone. What the stakes were and What the audit found stay, since neither repeats anything else here.',
+      "Mezo had no design system, no documentation standards, and no shared process when I joined — ahead of a mainnet transition that would move $322M in testnet deposits and $1.8B in MUSD borrowed. Shipping that without a shared operating system wasn't viable.",
     featuredSections: [
       {
         lead: 'Senior Design Operations Manager to Senior Principal Designer, Mezo (Thesis). Led a team of one product designer and one visual designer, partnered with a product manager, reporting to the Head of Design.',
@@ -973,7 +972,7 @@ export const mix1Projects = [
       { k: 'Framework', v: 'Designer Fund Level Up · HEART + JTBD' },
       { k: 'Team', v: 'PM + product designer + visual designer' },
     ],
-    tags: ['Design operations', 'Leadership', 'Crypto', 'Design systems', 'Hiring', 'v9'],
+    tags: ['Design operations', 'Leadership', 'Crypto', 'Design systems', 'Hiring'],
     credits: [
       { role: 'Senior Design Operations Manager → Senior Principal Designer', name: 'Osandi Robinson' },
       { role: 'Design systems', name: 'Poised LLC' },

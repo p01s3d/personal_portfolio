@@ -44,8 +44,32 @@ function extractArrayEntries(source, arrayName) {
   const entries = [];
   let depth = 0;
   let entryStart = -1;
+  // Track whether we're inside a string/comment so a literal { or } inside
+  // prose (or the word "v8" inside a // comment) can't desync the brace
+  // count or get sliced into an entry that doesn't actually contain it.
+  let quote = null; // one of "'", '"', '`', or null
+  let inLineComment = false;
   for (; i < source.length; i++) {
     const ch = source[i];
+    const prev = source[i - 1];
+
+    if (inLineComment) {
+      if (ch === '\n') inLineComment = false;
+      continue;
+    }
+    if (quote) {
+      if (ch === quote && prev !== '\\') quote = null;
+      continue;
+    }
+    if (ch === '/' && source[i + 1] === '/') {
+      inLineComment = true;
+      continue;
+    }
+    if (ch === "'" || ch === '"' || ch === '`') {
+      quote = ch;
+      continue;
+    }
+
     if (ch === '{') {
       if (depth === 0) entryStart = i;
       depth++;
@@ -85,6 +109,22 @@ function fieldList(entryText, key) {
   let m;
   while ((m = pairRe.exec(slice)) !== null) pairs.push({ role: m[1], name: m[2] });
   return pairs;
+}
+
+// Strips // line comments from an entry's source text. Comments legitimately
+// reference old slugs, issue numbers, etc. as dev-facing edit history — that's
+// not a leak, it's documentation. Only non-comment (potentially rendered)
+// text should be checked for internal artifacts.
+function stripLineComments(text) {
+  return text
+    .split('\n')
+    .map((line) => {
+      // Naive but sufficient here: this codebase doesn't put `//` inside
+      // string literals on the same line as a real comment marker.
+      const idx = line.indexOf('//');
+      return idx === -1 ? line : line.slice(0, idx);
+    })
+    .join('\n');
 }
 
 const projectEntries = extractArrayEntries(content, 'mix1Projects');
@@ -128,9 +168,11 @@ function warn(check, msg) { warnings.push({ check, msg }); }
       }
     }
     // Also scan the whole entry body (headline/intro/body/tags) for the same patterns —
-    // catches leaks in prose fields, not just slug/name.
+    // catches leaks in prose fields, not just slug/name. Comments are stripped first:
+    // a dev comment mentioning an old slug or issue number is documentation, not a leak.
+    const bodyWithoutComments = stripLineComments(p.raw);
     for (const pattern of LEAK_PATTERNS) {
-      const m = p.raw.match(pattern);
+      const m = bodyWithoutComments.match(pattern);
       if (m && !['slug', 'name'].some((k) => pattern.test(p[k] ?? ''))) {
         warn('internal-leak', `${p.slug ?? '(no slug)'} body contains "${m[0]}" — verify it's not a leaked editorial artifact`);
       }
