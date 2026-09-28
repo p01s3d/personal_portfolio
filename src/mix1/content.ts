@@ -32,7 +32,10 @@ export const mix1Work = {
   ],
   impact: [
     { org: 'BlockFi', value: '$1.5M → $50M', label: 'monthly revenue' },
-    { org: 'Mezo', value: '$200M+', label: 'TVL · 25K+ users' },
+    // TVL/users pair sourced together (Mezo-reported, late April 2026) —
+    // kept as a matched snapshot rather than mixing an earlier TVL peak
+    // with a later user count.
+    { org: 'Mezo', value: '$70M+', label: 'mainnet TVL · 43,500+ users' },
     { org: 'a16z', value: '0 → 1', label: 'design function' },
     { org: 'EASI', value: '$500M+', label: 'acquisition valuation' },
     { org: 'Mezo', value: '~40%', label: 'conversion vs. 30% OKR' },
@@ -42,7 +45,7 @@ export const mix1Work = {
     {
       name: 'Mezo Clay: $200M+ TVL',
       headline: 'Converting design debt into product infrastructure',
-      desc: 'Led Mezo design system migration across three product phases (legacy, testnet, mainnet); post-launch audit established 70% component integration and identified systemic overrides from premature styling as the primary implementation bottleneck, informing governance decisions. Managed a direct report and an engineering contributor from execution through deployment. Partnered with the contributing designer to set quality standards and pattern library conventions, building out Uber Base into a React, WCAG 2.2-compliant library purpose-built for the Thesis BitcoinFi suite. Managed, built, and tested 2,000+ variants across 50+ base components, establishing the single source of truth every product surface shipped: the infrastructure behind $322M in testnet deposits, 154K transactions, and $151M TVL at mainnet, peaking at $200M+.',
+      desc: 'Led Mezo design system migration across three product phases (legacy, testnet, mainnet); post-launch audit established 70% component integration and identified systemic overrides from premature styling as the primary implementation bottleneck, informing governance decisions. Managed a direct report and an engineering contributor from execution through deployment. Partnered with the contributing designer to set quality standards and pattern library conventions, building out Uber Base into a React, WCAG 2.2-compliant library purpose-built for the Thesis BitcoinFi suite. Managed, built, and tested 2,000+ variants across 50+ base components, establishing the single source of truth every product surface shipped: the infrastructure behind $322M in testnet deposits, 154K transactions, and TVL that peaked at $200M+ during testnet.',
       image: '/images/placeholder-mix1/ratio-451x567.svg',
       service: 'systems',
       sector: 'crypto',
@@ -50,13 +53,13 @@ export const mix1Work = {
     {
       name: 'Mezo Deposits: $200M+ TVL',
       headline: 'Improving the deposit flow that unlocked Mezo’s liquidity',
-      desc: 'Depositing Bitcoin to Mezo wasn’t a standard transfer — users were bridging assets across chains into a protocol where a wrong address meant permanent loss of funds. Research confirmed the existing deposit flow was fundamentally broken — perceived as risky and confusing. The redesign introduced upfront deposit instructions, surfaced network context and minimum thresholds before commitment, and provided unambiguous success states so users knew their funds had arrived safely. The deposit flow became the primary on-ramp enabling liquidity for vaults, pools, and rewards — contributing to Mezo’s growth to $200M+ TVL.',
+      desc: 'Depositing Bitcoin to Mezo wasn’t a standard transfer — users were bridging assets across chains into a protocol where a wrong address meant permanent loss of funds. Research confirmed the existing deposit flow was fundamentally broken — perceived as risky and confusing. The redesign introduced upfront deposit instructions, surfaced network context and minimum thresholds before commitment, and provided unambiguous success states so users knew their funds had arrived safely. The deposit flow became the primary on-ramp enabling liquidity for vaults, pools, and rewards — contributing to TVL that peaked at $200M+ during testnet.',
       image: '/images/placeholder-mix1/ratio-451x567.svg',
       service: 'product',
       sector: 'crypto',
     },
     {
-      name: 'Mezo Borrow: 25K+ Users',
+      name: 'Mezo Borrow: 43.5K+ Users',
       headline: 'Making high-stakes borrowing feel safe, not complex',
       desc: 'MUSD borrowing required users to understand collateralization, liquidation risk, and variable APR simultaneously — concepts that had no mainstream equivalent. The design challenge wasn’t simplification for its own sake; it was making consequential financial decisions feel appropriately weighted without overwhelming users into inaction. The redesign introduced progressive disclosure, consolidated error handling to a single inline signal, and leaned on benchmarked design patterns to reduce DeFi complexity for a larger addressable market.',
       image: '/images/placeholder-mix1/ratio-451x567.svg',
@@ -401,8 +404,18 @@ export const mix1Projects = [
         richTitle: 'What the audit revealed',
         body: [
           "A 70% component integration rate at post-launch audit sounds like success. It is — but the 30% that wasn't integrated told the real story: premature styling decisions made during testnet were being maintained as one-off overrides instead of being resolved back into the system.",
+          "The audit measured delivery three ways: the component inventory itself, design debt checked against actual component usage, and usability evaluated through a heuristic review — whether the system held up in use.",
           "The governance decisions informed by that audit — when to override, when to extend, when to propose a new component — were as important as the components themselves.",
           "The system behind that 70% came together in two months, largely over the Christmas holiday, ahead of a mainnet transition the org couldn't afford to miss. Before it existed, designers on the team treated design systems as a visual exercise, a style guide with a different name. The distinction that changed that: a style guide is paint; a design system is the plumbing and wiring behind the wall, the reason a pattern exists and where else it applies. Once that infrastructure was in place, it cut product development time by a factor of four.",
+        ],
+        images: ['/images/placeholder-mix1/ratio-686x868.svg', '/images/placeholder-mix1/ratio-686x868.svg'],
+      },
+      {
+        lead: 'Engineering came, but it didn\'t stay.',
+        richTitle: 'What I\'d do differently',
+        body: [
+          "We lost a dedicated engineer to a new product priority early on, and could never get consistent attendance at working sessions or planning from the rest of the team — capacity was thin and the roadmap kept shifting under pivots. Frequent organizational restructuring compounded it, limiting how much dedicated design capacity could contribute and blocking the pattern-library buildout that would have cleaned up work that was poorly implemented both before and after the attrition.",
+          "The pattern shows up across the field, not just this team: a first-year review of design-system adoption data (zeroheight, via Design Systems Collective) found adoption mattered more than technical elegance. Stakeholders often expect instant adoption against legacy products that can't easily absorb it that fast — a staggered rollout usually fits better, and some resistance from product teams is normal even after a pitch is approved.",
         ],
         images: ['/images/placeholder-mix1/ratio-686x868.svg', '/images/placeholder-mix1/ratio-686x868.svg'],
       },
@@ -411,7 +424,7 @@ export const mix1Projects = [
     closingLead: 'Infrastructure that outlasts the sprint cycle is the difference between a design system and a component dump.',
     stats: [
       { name: 'Component integration', description: 'Post-launch audit established the baseline for system governance decisions.', value: '70%' },
-      { name: 'TVL at mainnet peak', description: 'The system shipped with every product surface that contributed to Mezo growth.', value: '$200M+' },
+      { name: 'TVL peak, testnet', description: 'Mezo-reported. The system shipped with every product surface that contributed to this growth.', value: '$200M+' },
       { name: 'Testnet deposits', description: 'Built on the infrastructure shipped during this engagement.', value: '$322M' },
       { name: 'Sprint completion', description: 'Maintained across the engagement from system build through deployment.', value: '98%' },
     ],
@@ -458,7 +471,7 @@ export const mix1Projects = [
         lead: 'The deposit flow became the primary on-ramp for all of Mezo\'s liquidity.',
         richTitle: 'Outcome and downstream impact',
         body: [
-          "Vaults, pools, and rewards all depended on a working deposit experience. The redesign unblocked each of them — contributing directly to Mezo's growth to $200M+ TVL.",
+          "Vaults, pools, and rewards all depended on a working deposit experience. The redesign unblocked each of them — contributing directly to TVL that peaked at $200M+ during testnet.",
           "Sprint completion held at 98% across the engagement, which meant the research and design process ran fast enough to stay ahead of engineering.",
         ],
         images: ['/images/placeholder-mix1/ratio-686x868.svg', '/images/placeholder-mix1/ratio-686x868.svg'],
@@ -471,12 +484,21 @@ export const mix1Projects = [
         ],
         images: ['/images/placeholder-mix1/ratio-686x868.svg', '/images/placeholder-mix1/ratio-686x868.svg'],
       },
+      {
+        lead: 'Deposit work should have been sequenced with the mainnet build itself, not after it.',
+        richTitle: 'What I\'d do differently',
+        body: [
+          "The debt this flow carried was inherited legacy technical debt, and depositing was the necessary next step after account creation before a user could touch MUSD or spend in the market at all. Planning it alongside the mainnet build, instead of catching up to it afterward, likely would have lifted the earliest revenue metrics.",
+          "What we did ship — mobile-first patterns that deviated from what the team had used pre-attrition — would have addressed that inherited design debt on its own terms. It came after the team had already lost the capacity to carry it all the way through.",
+        ],
+        images: ['/images/placeholder-mix1/ratio-686x868.svg', '/images/placeholder-mix1/ratio-686x868.svg'],
+      },
     ],
     mockups: ['/images/placeholder-mix1/ratio-900x1600.svg', '/images/placeholder-mix1/ratio-900x1600.svg', '/images/placeholder-mix1/ratio-900x1600.svg'],
     closingLead: 'Clarity at the point of commitment is not a UX nicety in a protocol where a wrong address means permanent loss.',
     stats: [
-      { name: 'TVL at mainnet', description: 'Deposit flow was the primary on-ramp for all Mezo liquidity growth.', value: '$200M+' },
-      { name: 'Active users', description: 'Reached at mainnet launch, enabled by a deposit experience that worked.', value: '25K+' },
+      { name: 'TVL peak, testnet', description: 'Deposit flow was the primary on-ramp for Mezo liquidity growth toward this peak.', value: '$200M+' },
+      { name: 'Active users', description: 'Mezo-reported, April 2026 — enabled by a deposit experience that worked.', value: '43,500+' },
       { name: 'Sprint completion', description: 'Maintained across the engagement from research through handoff.', value: '98%' },
     ],
     tech: [
@@ -501,7 +523,7 @@ export const mix1Projects = [
     // product and users at the time — no research artifact or drop-off data
     // was retained to cite. Confirmed by the author as accurate; kept as-is.
     slug: 'borrow-musd',
-    name: 'Mezo Borrow: 25K+ Users',
+    name: 'Mezo Borrow: 43.5K+ Users',
     client: 'Mezo / Thesis',
     sector: 'Crypto',
     year: '2024–2026',
@@ -526,7 +548,16 @@ export const mix1Projects = [
         richTitle: 'Expanding the addressable market',
         body: [
           "The redesign borrowed interaction models from familiar financial interfaces — not to hide the complexity of DeFi, but to lower the entry cost for users coming from traditional finance.",
-          "The borrow flow shipped as part of the mainnet launch suite, contributing to Mezo's $200M+ TVL and supporting expansion into a broader addressable market beyond early adopters.",
+          "The borrow flow shipped as part of the mainnet launch suite, contributing to TVL that peaked at $200M+ during testnet, and supporting expansion into a broader addressable market beyond early adopters.",
+        ],
+        images: ['/images/placeholder-mix1/ratio-686x868.svg', '/images/placeholder-mix1/ratio-686x868.svg'],
+      },
+      {
+        lead: 'We shipped Borrow without verifying utility first.',
+        richTitle: 'What I\'d do differently',
+        body: [
+          "Testing prototypes with the designers who'd worked on this earlier could have given us a better signal than shipping blindly. We didn't allocate time or resources for it, and research that did exist sat in a silo and never got used.",
+          "Borrow needed clearer alignment on its real-world value proposition before build. The better sequence: build for one verifiable segment first, learn from it, then pursue mainstream adoption once the product fit that broader market.",
         ],
         images: ['/images/placeholder-mix1/ratio-686x868.svg', '/images/placeholder-mix1/ratio-686x868.svg'],
       },
@@ -534,8 +565,8 @@ export const mix1Projects = [
     mockups: ['/images/placeholder-mix1/ratio-900x1600.svg', '/images/placeholder-mix1/ratio-900x1600.svg', '/images/placeholder-mix1/ratio-900x1600.svg'],
     closingLead: 'The job isn\'t to make DeFi simple. It\'s to make consequential decisions feel proportionally weighted.',
     stats: [
-      { name: 'TVL at mainnet', description: 'Borrow flow contributed to Mezo\'s liquidity growth alongside deposit and wallet.', value: '$200M+' },
-      { name: 'Active users', description: 'Reached at mainnet launch across all Mezo product surfaces.', value: '25K+' },
+      { name: 'TVL peak, testnet', description: 'Borrow flow contributed to Mezo\'s liquidity growth toward this peak, alongside deposit and wallet.', value: '$200M+' },
+      { name: 'Active users', description: 'Mezo-reported, April 2026, across all Mezo product surfaces.', value: '43,500+' },
     ],
     tech: [
       { k: 'Platform', v: 'Mobile + Web' },
@@ -660,7 +691,7 @@ export const mix1Projects = [
     name: 'C@SH: 0→1 Design Function',
     client: 'a16z Crypto portfolio',
     sector: 'Crypto',
-    year: '2022',
+    year: '2022–2024',
     service: 'Leadership',
     readTime: 3,
     image: '/images/placeholder-mix1/ratio-99x124.svg',
@@ -683,6 +714,14 @@ export const mix1Projects = [
         body: [
           "Identifying insufficient market traction before over-investing in the product direction was the most valuable output of the engagement. The design foundation remained intact for the company's next direction.",
           "Building 0→1 means the research has to do double duty — validating the product and validating the strategy. Here, it did both.",
+        ],
+        images: ['/images/placeholder-mix1/ratio-686x868.svg', '/images/placeholder-mix1/ratio-686x868.svg'],
+      },
+      {
+        lead: 'I\'d have asked for the investor principal\'s visibility into the team earlier.',
+        richTitle: 'What I\'d do differently',
+        body: [
+          "Inviting them into planning sessions and roadmap shaping, rather than after the fact, would have gotten them to understand the dependencies sooner — and made the eventual pivot conversation land faster.",
         ],
         images: ['/images/placeholder-mix1/ratio-686x868.svg', '/images/placeholder-mix1/ratio-686x868.svg'],
       },
@@ -746,6 +785,15 @@ export const mix1Projects = [
         ],
         images: ['/images/placeholder-mix1/ratio-686x868.svg', '/images/placeholder-mix1/ratio-686x868.svg'],
       },
+      {
+        lead: 'The advisor leaves before the work lands.',
+        richTitle: 'What I\'d do differently',
+        body: [
+          "Attention from ownership and leadership fades right after sign-off — schedule the follow-ups while you still have it, and keep the plan simple enough to survive without you in the room. The same applies to the recommendation itself: test feasibility of team, budget, and politics during discovery, since a recommendation the client can't resource is a weak recommendation no matter how sound the analysis behind it.",
+          "Design intent gets lost at the seam between design and engineering more often than anywhere else in the process. Involve engineers during design so feasibility problems surface early — as Questworks puts it, the most expensive time to discover a feasibility problem is during implementation. Specify behavior, not just visuals: document every state (loading, empty, error, success) and its edge cases, and walk the spec with the client's engineers. Design with the components and tokens engineers ship — per UXPin, translation is the biggest driver of drift. Build design QA into the process: review the implementation against the original design before it ships, contract for that review up front, and agree on a definition of done between design and engineering, then stay available for questions through the build.",
+        ],
+        images: ['/images/placeholder-mix1/ratio-686x868.svg', '/images/placeholder-mix1/ratio-686x868.svg'],
+      },
     ],
     mockups: ['/images/placeholder-mix1/ratio-900x1600.svg', '/images/placeholder-mix1/ratio-900x1600.svg', '/images/placeholder-mix1/ratio-900x1600.svg'],
     closingLead: 'A 4.5-star rating is a market signal. The $500M acquisition validated the strategy the redesign was built around.',
@@ -802,6 +850,14 @@ export const mix1Projects = [
         body: [
           "The shift toward enterprise aesthetics and recording features was a different design brief than the original work was built to serve. But the component layer and the system thinking behind it gave the team a structured starting point for that evolution.",
           "That's the value of system work over surface work — it outlives the original brief.",
+        ],
+        images: ['/images/placeholder-mix1/ratio-686x868.svg', '/images/placeholder-mix1/ratio-686x868.svg'],
+      },
+      {
+        lead: 'The pandemic decided how this ended, not the work.',
+        richTitle: 'What stayed unresolved',
+        body: [
+          "By the time there was enough clarity to confirm everyone involved had come through the pandemic safely, both the client and I had moved on to other things. It wasn't a resolution so much as time passing until neither side circled back — the kind of ending that doesn't show up in a stats block.",
         ],
         images: ['/images/placeholder-mix1/ratio-686x868.svg', '/images/placeholder-mix1/ratio-686x868.svg'],
       },
@@ -912,10 +968,10 @@ export const mix1Projects = [
         images: ['/images/placeholder-mix1/ratio-686x868.svg', '/images/placeholder-mix1/ratio-686x868.svg'],
       },
       {
-        lead: 'A former direct report and I shipped a full component library over two months, through the Christmas holiday.',
+        lead: 'A former direct report and I shipped a full component library over four sprint cycles.',
         richTitle: 'The design system',
         body: [
-          'Designers on the team treated design systems as visual exercises. I put the distinction in plain terms: a style guide is paint; a design system is the plumbing and wiring behind the wall. I brought on a former direct report, and over two months, through the Christmas holiday, we shipped a full component library: over 1,000 components counting variants, documented, tested, and verifiable, cutting product development time by a factor of four.',
+          'Designers on the team treated design systems as visual exercises. I put the distinction in plain terms: a style guide is paint; a design system is the plumbing and wiring behind the wall. I brought on a former direct report, and over four sprint cycles, we shipped a full component library: over 1,000 components counting variants, documented, tested, and verifiable. Feature builds that had taken roughly four times as long before it existed dropped to two to three weeks, zero to one, once it was in place.',
           "I managed that sprint to 98% completion, the org's first proof that planned work could ship on schedule without blowing capacity.",
         ],
         images: ['/images/placeholder-mix1/ratio-686x868.svg', '/images/placeholder-mix1/ratio-686x868.svg'],
@@ -982,8 +1038,13 @@ export const mix1Projects = [
     mockups: ['/images/placeholder-mix1/ratio-900x1600.svg', '/images/placeholder-mix1/ratio-900x1600.svg', '/images/placeholder-mix1/ratio-900x1600.svg'],
     closingLead:
       "What shipped: a documented operating system for design at Mezo, none of it in place when I joined. Tooling, standards, and a 1,000+ variant design system went live ahead of the mainnet transition the org needed to enter prepared for. The team rebuild came after, within that same tenure, and the system is still what the team builds on.",
+    // "4x" (below): author-confirmed from direct experience — full 0-to-1 feature
+    // builds ran roughly 2-3 weeks once the design system was in place, versus
+    // roughly four times that long before it existed. Stated internally at the
+    // time; never externally documented, so kept as a rounded multiple rather
+    // than a precise week count.
     stats: [
-      { name: 'Component variants shipped', description: 'Shipped in two months, largely over the Christmas holiday, ahead of a mainnet transition.', value: '1,000+' },
+      { name: 'Component variants shipped', description: 'Shipped over four sprint cycles, ahead of a mainnet transition.', value: '1,000+' },
       { name: 'Product development speed', description: "Cut by a factor of four once the design system's infrastructure was in place.", value: '4x' },
       { name: 'Sprint completion', description: "The org's first working proof that Agile could function at Mezo.", value: '98%' },
       { name: 'Design headcount rebuilt', description: 'Net growth across growth design, product design, and design systems.', value: '+3' },
