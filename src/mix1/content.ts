@@ -61,7 +61,7 @@ export const mix1Work = {
     {
       name: 'Mezo Borrow: 43.5K+ Users',
       headline: 'Making high-stakes borrowing feel safe, not complex',
-      desc: 'MUSD borrowing required users to understand collateralization, liquidation risk, and variable APR simultaneously — concepts that had no mainstream equivalent. The design challenge wasn’t simplification for its own sake; it was making consequential financial decisions feel appropriately weighted without overwhelming users into inaction. The redesign introduced progressive disclosure, consolidated error handling to a single inline signal, and leaned on benchmarked design patterns to reduce DeFi complexity for a larger addressable market.',
+      desc: 'MUSD borrowing required users to understand collateralization, liquidation risk, and variable APR simultaneously — concepts that had no mainstream equivalent. The design challenge wasn’t simplification for its own sake; it was making consequential financial decisions feel appropriately weighted without overwhelming users into inaction. The redesign introduced progressive disclosure, consolidated error handling to a single inline signal, and leaned on benchmarked design patterns to lower the entry cost for users coming from traditional finance. Borrow shipped as part of the mainnet launch suite, contributing to TVL that peaked at $200M+ during testnet.',
       image: '/images/placeholder-mix1/ratio-451x567.svg',
       service: 'product',
       sector: 'crypto',
@@ -93,7 +93,7 @@ export const mix1Work = {
     {
       name: 'Krisp Desktop Redesign',
       headline: 'Product innovation for Krisp.ai’s noise cancelling desktop application',
-      desc: 'Krisp had built strong utility as a consumer noise-cancellation tool, but the desktop experience hadn’t kept pace with what AI-native software was starting to look like. Engaged as principal design consultant, I redesigned the application around a modern UI system — introducing branded components to accelerate implementation, reduce design debt, and establish a visual foundation capable of scaling with the product. The engagement paused when COVID-19 created market uncertainty across the space. Krisp would later pivot into meeting intelligence and recording — a shift toward enterprise aesthetics and a design brief the original work wasn’t built to serve.',
+      desc: 'Krisp had built strong utility as a consumer noise-cancellation tool, but the desktop experience hadn’t kept pace with what AI-native software was starting to look like. Engaged as principal design consultant, I redesigned the application around a modern UI system — introducing branded components to accelerate implementation, reduce design debt, and establish a visual foundation capable of scaling with the product. The engagement paused when COVID-19 created market uncertainty across the space. Krisp later pivoted into meeting intelligence and recording — a different design brief than the original work was built to serve, but the component layer and system thinking behind it gave the team a structured starting point for that shift.',
       image: '/images/placeholder-mix1/ratio-451x567.svg',
       service: 'consultant',
       sector: 'ai',
@@ -101,7 +101,7 @@ export const mix1Work = {
     {
       name: 'Mezo: Product and Design Operations',
       headline: 'Building the operating system Mezo\'s design org didn\'t have',
-      desc: "No documentation, no design system, and no shared process — before a mainnet transition moving $322M in testnet deposits and $1.8B in MUSD borrowed. I introduced sprint discipline, shipped a 1,000+ variant design system in two months, and cut delivery time roughly fourfold, holding 98% sprint completion along the way.",
+      desc: "No documentation, no design system, and no shared process — before a mainnet transition moving $322M in testnet deposits and $1.8B in MUSD borrowed. I introduced sprint discipline, shipped a 1,000+ variant design system over four sprint cycles, and cut delivery time roughly fourfold, holding 98% sprint completion along the way.",
       image: '/images/placeholder-mix1/ratio-451x567.svg',
       service: 'leadership',
       sector: 'crypto',
