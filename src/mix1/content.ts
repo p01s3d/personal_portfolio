@@ -43,9 +43,9 @@ export const mix1Work = {
   ],
   items: [
     {
-      name: 'Mezo Clay: $200M+ TVL',
-      headline: 'Converting design debt into product infrastructure',
-      desc: 'Led Mezo design system migration across three product phases (legacy, testnet, mainnet); post-launch audit established 70% component integration and identified systemic overrides from premature styling as the primary implementation bottleneck, informing governance decisions. Managed a direct report and an engineering contributor from execution through deployment. Partnered with the contributing designer to set quality standards and pattern library conventions, building out Uber Base into a React, WCAG 2.2-compliant library purpose-built for the Thesis BitcoinFi suite. Managed, built, and tested 2,000+ variants across 50+ base components, establishing the single source of truth every product surface shipped: the infrastructure behind $322M in testnet deposits, 154K transactions, and TVL that peaked at $200M+ during testnet.',
+      name: 'Mezo Clay: ~$171.3M TVL',
+      headline: 'Mezo Clay turned design debt into $171M in TVL',
+      desc: "As design systems manager and strategist, I built Mezo Clay into the base library's single source of truth, closing the gap between design intent and shipped code. Feature build time fell from six-plus weeks to two, a 4x multiplier from ideation to build. Component overrides fell 60%, and adoption reached 60.9% of the app six days before mainnet. On testnet in February 2025, 2,393 users borrowed $32.8M MUSD through product surfaces built on the system. By April 2026, the app carried $171.3M in TVL across 43,500+ users, and conversion rose 40% against a 30% OKR target. The library scaled to 2,000+ variants across 50+ base components, the infrastructure behind every number above.",
       image: '/images/placeholder-mix1/ratio-451x567.svg',
       service: 'systems',
       sector: 'crypto',
@@ -370,7 +370,7 @@ export const mix1Projects = [
     // or artifact was retained to cite. Confirmed by the author as accurate
     // from direct contemporaneous knowledge; kept as-is.
     slug: 'mezo-clay',
-    name: 'Mezo Clay: $200M+ TVL',
+    name: 'Mezo Clay: ~$171.3M TVL',
     client: 'Mezo / Thesis',
     sector: 'Crypto',
     year: '2024–2026',
