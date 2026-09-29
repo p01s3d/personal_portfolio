@@ -16,7 +16,7 @@ export const archive: ArchiveFrame[] = [
   { no: '/03', name: 'Thesis* — Sr. Principal Product Designer', frame: 'CS-03', film: 'JUN 2025 — JUN 2026 · REMOTE', category: 'Product', image: '/images/portfolio/project-01-borrow.png' },
   { no: '/04', name: 'Thesis* — Sr. Design Systems & Ops Manager', frame: 'CS-04', film: 'JUN 2024 — JUN 2025 · REMOTE', category: 'Systems', image: '/images/portfolio/mock-thesis-systems.png' },
   { no: '/05', name: 'Andreessen Horowitz — Founding Head of Design', frame: 'CS-05', film: 'JUL 2022 — JUL 2024 · NEW YORK', category: 'Leadership', image: '/images/portfolio/mock-a16z.png' },
-  { no: '/06', name: 'BlockFi — Director of Product Design', frame: 'CS-06', film: 'JUL 2020 — JUL 2022 · UNITED STATES', category: 'Leadership', image: '/images/portfolio/gf-blockfi.jpg' },
+  { no: '/06', name: 'BlockFi — Director of Product Design', frame: 'CS-06', film: '2020 — 2022 · UNITED STATES', category: 'Leadership', image: '/images/portfolio/gf-blockfi.jpg' },
   { no: '/07', name: 'VNYLST — Founder, Head of Product & Design', frame: 'CS-07', film: '2013 — 2016 · LOS ANGELES', category: 'Leadership', image: '/images/portfolio/mock-vnylst.png' },
   { no: '/08', name: 'Ubiquiti Networks — Principal Mobile Product Designer', frame: 'CS-08', film: '2014 — 2015 · LOS ANGELES', category: 'Product', image: '/images/portfolio/mock-ubiquiti.png' },
   { no: '/09', name: 'Square Inc. — Product Insights Analyst', frame: 'CS-09', film: 'JUL 2012 — JUL 2013 · SAN FRANCISCO', category: 'Research', image: '/images/portfolio/mock-square.png' },
