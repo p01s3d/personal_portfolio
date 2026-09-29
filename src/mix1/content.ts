@@ -603,7 +603,7 @@ export const mix1Projects = [
         body: [
           'BlockFi was the first company to offer interest on crypto assets. It also earned fees from a crypto marketplace and offered a rewards product that incentivized use of a line of credit. We served users globally, both retail and institutional investors, as regulation of crypto assets was still in early development and the second major bull market fueled media buzz, NFTs, DeFi, and interest from a younger demographic. The web product supported asset trading, creating and managing your BlockFi Interest Account, and accessing your settings and documents. The mobile product allowed you to track your portfolio, with limited support for a crypto marketplace.',
         ],
-        images: ['/images/placeholder-mix1/ratio-686x868.svg', '/images/placeholder-mix1/ratio-686x868.svg'],
+        images: [],
       },
       {
         lead: 'I was tasked with leveling up the product leadership around me and establishing the craft bar for design.',
