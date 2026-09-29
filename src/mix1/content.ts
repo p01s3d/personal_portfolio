@@ -589,7 +589,7 @@ export const mix1Projects = [
     name: 'BlockFi: $1.5M→$50M/mo',
     client: 'BlockFi',
     sector: 'Fintech',
-    year: '2021',
+    year: '2020–2022',
     service: 'Leadership',
     readTime: 7,
     image: '/images/placeholder-mix1/ratio-99x124.svg',
