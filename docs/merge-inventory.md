@@ -107,7 +107,7 @@ Full entry verbatim is above (read in full this turn — slug `blockfi-product-d
 
 | Section / stat / image | Pile |
 |---|---|
-| "The Opportunity" (full section — no design function, no product ops, no design system, no documentation, no user testing, stakeholder interviews, Designer Fund Level Up read, category context) | **Management** |
+| "The Product's Business" (product and market context) and "Evidential Challenges" (first design leader mandate, Level Up read, heuristic evaluation) — replaced "The Opportunity" | **Management** |
 | "Leadership" — directed design across full product line; Series D/valuation/assets/revenue business context; built the structure (design system as standing responsibility, cross-functional design vision, GTM partnership, risk/compliance visibility) | **Management** |
 | "Leadership Impact" — scaled 1→4, design system cut delivery ~4x, roadmap, 20%+ YoY target met; risk/compliance authority-gap learning | **Management** |
 | "Hands On Design Contribution" — three products designed by hand (native trading app, web trading premium redesign + recurring trades, credit card rewards end-to-end + IA rebuild) | **IC** |

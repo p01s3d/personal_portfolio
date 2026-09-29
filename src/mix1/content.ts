@@ -593,19 +593,25 @@ export const mix1Projects = [
     service: 'Leadership',
     readTime: 7,
     image: '/images/placeholder-mix1/ratio-99x124.svg',
-    headline: 'BlockFi hired me as its first design leader. Before I arrived, the company had no in-house design function.',
+    headline: "Building BlockFi's design function and raising the craft bar as the company scaled to a $3B valuation.",
     intro:
       'BlockFi hired me as its first design leader. Before I arrived, the company had no in-house design function — third-party vendors and one junior designer carried the work, and that designer left soon after I joined.',
     featuredSections: [
       {
-        lead: 'BlockFi hired me as its first design leader. Before I arrived, the company had no in-house design function.',
-        richTitle: 'The Opportunity',
+        lead: "Building BlockFi's design function and raising the craft bar as the company scaled to a $3B valuation.",
+        richTitle: "The Product's Business",
         body: [
-          "BlockFi hired me as its first design leader. Before I arrived, the company had no in-house design function. Third-party vendors and one junior designer carried the work, without a leader who could develop that designer's skills, and the designer left soon after I joined.",
-          "I inherited a company without product operations. No one estimated work, so scope grew mid-flight and releases shipped broken or caused regressions on web. Mobile carried a separate problem: features scoped for web didn't account for mobile's real workload, on a team smaller and less mature than its web counterpart. No documentation standards meant no gated inputs feeding into what got built. No user testing meant we shipped without verifying features solved real problems, so work came back incomplete or unusable. No design system meant the product read as inconsistent, and that inconsistency cost user trust, a currency that mattered more here than at most startups, since users were handing BlockFi their funds in exchange for interest.",
-          "Four disciplines built the product: web, mobile, blockchain, and cybersecurity, with go-to-market running alongside them as its own pillar. Without a real development process, that team found out about releases after the fact and couldn't message features ahead of launch or get ahead of user concerns before they shipped. Cybersecurity couldn't assess risk or compliance exposure on features it never saw coming, a gap serious enough that I later restructured how design partnered with that team. Users filled Zendesk with feedback, but nobody aggregated that sentiment into a view anyone could act on, and BlockFi defaulted to shipping new features over fixing the ones users already flagged as broken.",
-          "I interviewed stakeholders to understand what was costing us churn and the feedback that was surfacing online, rather than assuming I knew. That research, read through Designer Fund's Level Up framework, the tool I've used since to diagnose design-org health, pointed to two structural gaps: no design system meant the product couldn't scale, and no documentation or process meant the team couldn't move at the speed the business needed. The people side told a parallel story. Nothing existed to develop talent, so the company would need to hire people who could mentor or build formal training in its place. Even senior hires needed protected time for one-to-one coaching, because people in high-impact roles still needed room to grow into them. And the company had no shared point of view on what the product was supposed to become.",
-          "None of this made BlockFi unusual. It made the opportunity real. Blockchain, self-custody, and retail crypto trading were new interaction paradigms, not an established category with settled patterns. Coinbase and Robinhood had already set the bar for what good looked like in fintech-grade crypto products. BlockFi's edge was an institutional-investor base neither of them served in the same way, a real foothold in a category where the design language itself was still being invented.",
+          'BlockFi was the first company to offer interest on crypto assets. It also earned fees from a crypto marketplace and offered a rewards product that incentivized use of a line of credit. We served users globally, both retail and institutional investors, as regulation of crypto assets was still in early development and the second major bull market fueled media buzz, NFTs, DeFi, and interest from a younger demographic. The web product supported asset trading, creating and managing your BlockFi Interest Account, and accessing your settings and documents. The mobile product allowed you to track your portfolio, with limited support for a crypto marketplace.',
+        ],
+        images: ['/images/placeholder-mix1/ratio-686x868.svg', '/images/placeholder-mix1/ratio-686x868.svg'],
+      },
+      {
+        lead: 'I was tasked with leveling up the product leadership around me and establishing the craft bar for design.',
+        richTitle: 'Evidential Challenges',
+        body: [
+          "As the first design leader at BlockFi, I was tasked with leveling up the product leadership around me and establishing the craft bar for design, while ensuring we had the infrastructure to achieve it. The org was undergoing yet another restructure, and the expectation was to hit the ground running and ship features that had fallen behind their expected launch dates. The mandate was to build fast and ship quality. Accomplishing this meant understanding where the product org sat in terms of leveling.",
+          'Using the Level Up framework, I found the operation in the early stages of development across every pillar. There was no design system or standard product development process, and there were no signals of healthy collaboration or feedback. Design recruiting and talent development were nonexistent, and interviews with those around me pointed to low morale in an environment with unclear expectations.',
+          "A heuristic evaluation I conducted identified accessibility, navigation, and inconsistency as the gravest issues for the web experience. The mobile experience lagged behind the web's implementation, so the biggest issues I observed there were mostly related to inconsistency, given that web components were being used for the React build of the product.",
         ],
         images: ['/images/placeholder-mix1/ratio-686x868.svg', '/images/placeholder-mix1/ratio-686x868.svg'],
       },
