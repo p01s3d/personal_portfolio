@@ -163,13 +163,15 @@ export function ProjectPage() {
               </div>
 
               {/* Block Media — image grid */}
-              <div className="block block-media block--bg-light block--safe-area block-media--cols-2 block-media--ctx-project block-media--expansion-wrapper">
-                {section.images.map((src, ii) => (
-                  <div key={ii} className="media block-media__item">
-                    <Picture src={src} alt="" className="picture--cover picture--rounded" />
-                  </div>
-                ))}
-              </div>
+              {section.images.length > 0 && (
+                <div className="block block-media block--bg-light block--safe-area block-media--cols-2 block-media--ctx-project block-media--expansion-wrapper">
+                  {section.images.map((src, ii) => (
+                    <div key={ii} className="media block-media__item">
+                      <Picture src={src} alt="" className="picture--cover picture--rounded" />
+                    </div>
+                  ))}
+                </div>
+              )}
 
               {breakAfter === 'screenCarousel' && screenCarouselBlock}
               {breakAfter === 'mockups' && mockupsBlock}
