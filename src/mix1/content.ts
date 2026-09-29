@@ -593,12 +593,12 @@ export const mix1Projects = [
     service: 'Leadership',
     readTime: 7,
     image: '/images/placeholder-mix1/ratio-99x124.svg',
-    headline: 'BlockFi hired me as its first design leader. Before I arrived, the company had no in-house design function.',
+    headline: "Building BlockFi's design function and raising the craft bar as the company scaled to a $3B valuation.",
     intro:
       'BlockFi hired me as its first design leader. Before I arrived, the company had no in-house design function — third-party vendors and one junior designer carried the work, and that designer left soon after I joined.',
     featuredSections: [
       {
-        lead: 'BlockFi was the first company to offer interest on crypto assets.',
+        lead: "Building BlockFi's design function and raising the craft bar as the company scaled to a $3B valuation.",
         richTitle: "The Product's Business",
         body: [
           'BlockFi was the first company to offer interest on crypto assets. It also earned fees from a crypto marketplace and offered a rewards product that incentivized use of a line of credit. We served users globally, both retail and institutional investors, as regulation of crypto assets was still in early development and the second major bull market fueled media buzz, NFTs, DeFi, and interest from a younger demographic. The web product supported asset trading, creating and managing your BlockFi Interest Account, and accessing your settings and documents. The mobile product allowed you to track your portfolio, with limited support for a crypto marketplace.',
