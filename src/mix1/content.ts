@@ -619,8 +619,8 @@ export const mix1Projects = [
             title: 'Hypothesis: Accelerating Product Builds, Elevating Craft',
             body: [
               'Analyzing the design patterns of our benchmarks suggested we could use Uber Base to build a native-first experience while shipping a retail-investor-friendly application. Scaling the design patterns to browser layouts would give us web coverage, ensuring native and web parity. Unless we learned otherwise, the approach would allow us to build for institutional investor segments as well.',
-              'If we’re right: With production work landing on my backlog, I could demonstrate how we might close the process and collaboration gap by example. What we do well, we adopt and keep doing. Where we fail, we learn and operationalize our roadmap.',
-              'If we’re wrong: If the Base Design System strategy falls short, we may not close the parity gap this iteration. The approach could add friction or prove less usable, or our components might not be shareable across web and mobile surfaces. Either outcome would require more time to ship, since we would need two different approaches.',
+              'If we’re right: With production work landing on my backlog, I could demonstrate how we might close the process and collaboration gap through demonstration. What we do well, we adopt and keep doing. Where we fail, we learn and operationalize our roadmap.',
+              'If we’re wrong: If Base Design System strategy falls short, we may not close the parity gap this iteration: the approach adds friction or is less usable, our components can’t be shared across web and mobile surfaces, requiring more time to ship given the need for two different approaches.',
             ],
           },
           {
