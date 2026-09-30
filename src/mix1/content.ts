@@ -626,9 +626,9 @@ export const mix1Projects = [
           {
             title: 'Approach: Demonstration Is a Designer’s Secret Weapon',
             body: [
-              'The VP of Product and I turned status check-ins into brainstorming, benchmarking, competitive analysis, and sketching sessions. I invited engineers and cross-functional stakeholders to the org’s first discovery, where we determined improving the entire flow was a worthwhile pursuit. The journey I designed for native carried over to web by displaying a modal when the user taps the buy or sell CTA.',
-              'I aligned the product team around forking Uber Base because the goal was to ensure our product could be used anywhere our clients might want to use it. This meant a mobile-first approach, as a business directive, would map cleanly to the component library’s intent. Engineers gave the sign-off, and after some light exploration, we had already begun refactoring buttons and lists.',
-              'To broaden the input from cybersecurity, marketing, and legal, I hosted the first cross-functional product review; the questions and input led to another round of iterations for the native and web prototypes I built. By the third week of iterations, I had handed the designs over to web and native engineers for implementation.',
+              'The VP of Product and I turned status check-ins into brainstorming, benchmarking, competitive analysis, and sketching sessions. I invited engineers and cross-functional stakeholders to the org’s first discovery, where we determined improving the entire flow was a worthwhile pursuit.',
+              'I prototyped a cross-platform journey that displayed a modal when the user tapped the buy or sell CTA. To align stakeholders, I hosted the first cross-functional product review; the questions and input led to another round of iterations. Designs were handed over for implementation the following week. We closed the design phase of the cycle in a three-week sprint.',
+              'Uber Base documentation followed the prototype to guide engineers through the library’s intent. With engineering sign-off, the approach kicked off native component refactoring plans and set the stage for web, as well as discussions to grow our design team.',
             ],
           },
         ],
