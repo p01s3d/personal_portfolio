@@ -158,17 +158,14 @@ export function ProjectPage() {
                         <p key={pi}>{para}</p>
                       ))}
                       {'subsections' in section &&
-                        section.subsections.map((sub, si) => {
-                          const Heading = sub.level === 4 ? 'h4' : 'h3';
-                          return (
-                            <div key={si} className="rich-content__subsection">
-                              <Heading>{sub.title}</Heading>
-                              {sub.body.map((para, pi) => (
-                                <p key={pi}>{para}</p>
-                              ))}
-                            </div>
-                          );
-                        })}
+                        section.subsections.map((sub, si) => (
+                          <div key={si} className="rich-content__subsection">
+                            <h3>{sub.title}</h3>
+                            {sub.body.map((para, pi) => (
+                              <p key={pi}>{para}</p>
+                            ))}
+                          </div>
+                        ))}
                     </div>
                   </div>
                 </div>
