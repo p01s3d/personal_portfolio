@@ -1185,7 +1185,8 @@ html[data-mix1] .rich-content {
   --p-after-heading-margin-top: 1.5em;
 }
 
-html[data-mix1] .rich-content h2 + p {
+html[data-mix1] .rich-content h2 + p,
+html[data-mix1] .rich-content h3 + p {
   margin-top: var(--p-after-heading-margin-top);
 }
 
@@ -1193,7 +1194,8 @@ html[data-mix1] .rich-content p + p {
   margin-top: 1em;
 }
 
-html[data-mix1] .rich-content h2 {
+html[data-mix1] .rich-content h2,
+html[data-mix1] .rich-content h3 {
   font-size: var(--fs-md);
   line-height: var(--lh-md);
   letter-spacing: var(--ls-md);
@@ -1203,17 +1205,6 @@ html[data-mix1] .rich-content h2 {
 
 html[data-mix1] .rich-content__subsection {
   margin-top: 2em;
-}
-
-html[data-mix1] .rich-content h3 {
-  font-size: var(--fs-md);
-  line-height: var(--lh-md);
-  letter-spacing: var(--ls-md);
-  margin-bottom: 0.6em;
-}
-
-html[data-mix1] .rich-content h3 + p {
-  margin-top: 0;
 }
 
 /* ── Block Featured Rich ────────────────────────────────── */
