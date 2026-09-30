@@ -613,6 +613,39 @@ export const mix1Projects = [
           'Using the Level Up framework, I found the operation in the early stages of development across every pillar. There was no design system or standard product development process, and there were no signals of healthy collaboration or feedback. Design recruiting and talent development were nonexistent, and interviews with those around me pointed to low morale in an environment with unclear expectations.',
           "A heuristic evaluation I conducted identified accessibility, navigation, and inconsistency as the gravest issues for the web experience. The mobile experience lagged behind the web's implementation, so the biggest issues I observed there were mostly related to inconsistency, given that web components were being used for the React build of the product.",
         ],
+        // Sub-headed copy that sits under the section body, with no images between the parts.
+        subsections: [
+          {
+            level: 3,
+            title: 'Hypothesis: Accelerating Product Builds, Elevating Craft',
+            body: [
+              'Analyzing the design patterns of our benchmarks suggested we could use Uber Base to build a native-first experience while shipping a retail-investor-friendly application. Scaling the design patterns to browser layouts would give us web coverage, ensuring native and web parity. Unless we learned otherwise, the approach would allow us to build for institutional investor segments as well.',
+            ],
+          },
+          {
+            level: 4,
+            title: 'If we’re right',
+            body: [
+              'With production work landing on my backlog, I could demonstrate how we might close the process and collaboration gap by example. What we do well, we adopt and keep doing. Where we fail, we learn and operationalize our roadmap.',
+            ],
+          },
+          {
+            level: 4,
+            title: 'If we’re wrong',
+            body: [
+              'If the Base Design System strategy falls short, we may not close the parity gap this iteration. The approach could add friction or prove less usable, or our components might not be shareable across web and mobile surfaces. Either outcome would require more time to ship, since we would need two different approaches.',
+            ],
+          },
+          {
+            level: 3,
+            title: 'Approach: Demonstration Is a Designer’s Secret Weapon',
+            body: [
+              'The VP of Product and I turned status check-ins into brainstorming, benchmarking, competitive analysis, and sketching sessions. I invited engineers and cross-functional stakeholders to the org’s first discovery, where we determined improving the entire flow was a worthwhile pursuit. The journey I designed for native carried over to web by displaying a modal when the user taps the buy or sell CTA.',
+              'I aligned the product team around forking Uber Base because the goal was to ensure our product could be used anywhere our clients might want to use it. This meant a mobile-first approach, as a business directive, would map cleanly to the component library’s intent. Engineers gave the sign-off, and after some light exploration, we had already begun refactoring buttons and lists.',
+              'To broaden the input from cybersecurity, marketing, and legal, I hosted the first cross-functional product review; the questions and input led to another round of iterations for the native and web prototypes I built. By the third week of iterations, I had handed the designs over to web and native engineers for implementation.',
+            ],
+          },
+        ],
         images: ['/images/placeholder-mix1/ratio-686x868.svg', '/images/placeholder-mix1/ratio-686x868.svg'],
       },
       {

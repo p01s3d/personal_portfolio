@@ -1201,6 +1201,27 @@ html[data-mix1] .rich-content h2 {
   text-transform: uppercase;
 }
 
+html[data-mix1] .rich-content__subsection {
+  margin-top: 2em;
+}
+
+html[data-mix1] .rich-content h3,
+html[data-mix1] .rich-content h4 {
+  font-size: var(--fs-md);
+  line-height: var(--lh-md);
+  letter-spacing: var(--ls-md);
+  margin-bottom: 0.6em;
+}
+
+html[data-mix1] .rich-content h4 {
+  opacity: 0.7;
+}
+
+html[data-mix1] .rich-content h3 + p,
+html[data-mix1] .rich-content h4 + p {
+  margin-top: 0;
+}
+
 /* ── Block Featured Rich ────────────────────────────────── */
 
 html[data-mix1] .block-featured-rich__inner {
