@@ -84,8 +84,8 @@ export const mix1Work = {
     },
     {
       name: 'EASI: App Store 3.0→4.5',
-      headline: 'Redesigning EASI’s entire app in eight weeks as design strategist and IC lead. The App Store rating rose from below 3.0 to 4.5 within a year of launch.',
-      desc: 'EASI had a loyal base in Asian diaspora communities in Australia and a product that held it back: poor usability, frequent crashes, and a sub-3.0 App Store rating. Its C-suite wanted to deploy in the US and Australian diaspora markets. As design strategist and IC lead for eight weeks, I redesigned the full app, from information architecture through Home, Search, Cart, Profile, and Orders. Engineering shipped my architecture, and the App Store rating rose from below 3.0 to 4.5 within a year of launch. HungryPanda acquired EASI in 2022.',
+      headline: 'Redesigning EASI’s full app in eight weeks as design strategist and IC lead',
+      desc: 'A sub-3.0 App Store rating capped growth. I owned the information architecture and key flows, engineering shipped them, and the rating reached 4.5 within a year of launch.',
       image: '/images/placeholder-mix1/ratio-451x567.svg',
       service: 'consultant',
       sector: 'consumer',
