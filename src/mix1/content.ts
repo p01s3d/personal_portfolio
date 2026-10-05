@@ -788,31 +788,31 @@ export const mix1Projects = [
     service: 'Consultant',
     readTime: 4,
     image: '/images/placeholder-mix1/ratio-99x124.svg',
-    headline: 'Redesigning EASI’s entire app in eight weeks as design strategist and IC lead. The App Store rating rose from below 3.0 to 4.5 within a year of launch.',
+    headline: 'Redesigning EASI’s full app in eight weeks as design strategist and IC lead',
     intro:
-      'EASI, an Asian food delivery app founded in Melbourne, had a loyal diaspora base and a product that held it back. A sub-3.0 App Store rating and frequent crashes capped growth. The C-suite wanted to deploy in the Asian diaspora markets of both the US and Australia. POISED placed me as design strategist and IC lead for eight weeks, working with business, marketing, engineering, and product stakeholders based in Australia.',
+      'EASI, an Asian food delivery app founded in Melbourne, had a loyal diaspora base and a sub-3.0 App Store rating. POISED placed me as design strategist and IC lead for eight weeks, working with business, marketing, engineering, and product stakeholders in Australia.',
     featuredSections: [
       {
         lead: 'EASI needed an app that new users in new markets could rely on.',
         richTitle: "The Product's Business",
         body: [
-          'EASI launched in Melbourne in 2014 as an Asian food delivery app, with grocery delivery and travel booking alongside it. It served diaspora communities across Australia. By 2020 the base was loyal, but a sub-3.0 App Store rating and frequent crashes capped growth. The C-suite set a goal to deploy in the Asian diaspora markets of both the US and Australia. That goal required an app that new users in each market could rely on.',
+          'EASI launched in Melbourne in 2014 as an Asian food delivery app, with grocery delivery and travel booking alongside it, and served diaspora communities across Australia. The base was loyal, but a sub-3.0 App Store rating and frequent crashes capped growth. The C-suite wanted to deploy in Asian diaspora markets in the US and Australia.',
         ],
         images: [],
       },
       {
-        lead: 'Eight weeks, a C-suite goal, and stakeholders across four functions.',
+        lead: 'Stakeholders who built the original product doubted it needed to change.',
         richTitle: 'Evidential Challenges',
         body: [
-          'The mandate was an app that could win new users in two markets, delivered in eight weeks. My counterparts in business, marketing, engineering, and product were based in Australia. Several stakeholders had shipped the original product and doubted it needed to change. In week one I benchmarked products the team already respected, which gave everyone a shared standard for good.',
+          'My counterparts in business, marketing, engineering, and product were based in Australia, and several had shipped the original app. In week one I benchmarked products the team already respected, which gave everyone a shared standard for good.',
         ],
         images: ['/images/placeholder-mix1/ratio-686x868.svg', '/images/placeholder-mix1/ratio-686x868.svg'],
       },
       {
-        lead: 'I set the architecture first and designed outward from it.',
+        lead: 'Engineering built from my architecture, the benchmarks, and my direction.',
         richTitle: 'Approach',
         body: [
-          'I began with information architecture, then designed outward: Home and Discover, Search, Cart, Profile, and Orders. The key flows covered buying, tracking an order, redeeming coupons, and managing profile and settings. Engineering built from my architecture and drew on the benchmarks and my direction. The client kept ownership of branding. The shipped app supported English and Mandarin.',
+          'I designed the information architecture first, then Home and Discover, Search, Cart, Profile, and Orders. The key flows covered buying, tracking an order, redeeming coupons, and managing profile and settings. The client kept ownership of branding. The shipped app supported English and Mandarin.',
         ],
         images: ['/images/placeholder-mix1/ratio-686x868.svg', '/images/placeholder-mix1/ratio-686x868.svg'],
       },
@@ -820,7 +820,7 @@ export const mix1Projects = [
         lead: 'App Store rating: below 3.0 to 4.5 within a year of launch.',
         richTitle: 'Individual Contributor Impact',
         body: [
-          'The App Store rating rose from below 3.0 to 4.5 within a year of launch. I report that figure from direct knowledge, since no public snapshot exists for the period. HungryPanda announced its acquisition of EASI on January 10, 2022. Public reporting on EASI after my engagement is limited.',
+          'HungryPanda announced its acquisition of EASI on January 10, 2022.',
         ],
         images: ['/images/placeholder-mix1/ratio-686x868.svg', '/images/placeholder-mix1/ratio-686x868.svg'],
       },
@@ -828,26 +828,24 @@ export const mix1Projects = [
         lead: 'The advisor leaves before the work lands.',
         richTitle: 'What I\'d do differently',
         body: [
-          "Attention from ownership and leadership fades right after sign-off — schedule the follow-ups while you still have it, and keep the plan simple enough to survive without you in the room. The same applies to the recommendation itself: test feasibility of team, budget, and politics during discovery, since a recommendation the client can't resource is a weak recommendation no matter how sound the analysis behind it.",
-          "Design intent gets lost at the seam between design and engineering more often than anywhere else in the process. Involve engineers during design so feasibility problems surface early — as Questworks puts it, the most expensive time to discover a feasibility problem is during implementation. Specify behavior, not just visuals: document every state (loading, empty, error, success) and its edge cases, and walk the spec with the client's engineers. Design with the components and tokens engineers ship — per UXPin, translation is the biggest driver of drift. Build design QA into the process: review the implementation against the original design before it ships, contract for that review up front, and agree on a definition of done between design and engineering, then stay available for questions through the build.",
+          "Leadership attention fades after sign-off, so schedule follow-ups while you still have it and keep the plan simple enough to survive without you in the room. Test feasibility of team, budget, and politics during discovery, because a recommendation the client cannot resource is weak however sound the analysis.",
+          "Design intent gets lost at the seam between design and engineering more often than anywhere else in the process. Involve engineers during design so feasibility problems surface early; as Questworks puts it, the most expensive time to discover a feasibility problem is during implementation. Specify behavior along with visuals: document every state (loading, empty, error, success) and its edge cases, and walk the spec with the client's engineers. Design with the components and tokens engineers ship, since per UXPin translation is the biggest driver of drift. Review the implementation against the original design before it ships, contract for that review up front, agree on a definition of done with engineering, and stay available for questions through the build.",
         ],
         images: ['/images/placeholder-mix1/ratio-686x868.svg', '/images/placeholder-mix1/ratio-686x868.svg'],
       },
     ],
     mockups: ['/images/placeholder-mix1/ratio-900x1600.svg', '/images/placeholder-mix1/ratio-900x1600.svg', '/images/placeholder-mix1/ratio-900x1600.svg'],
-    closingLead: 'A sub-3.0 rating became 4.5 within a year of launch, on an architecture I designed and engineering shipped.',
+    closingLead: 'Design intent survives the build when design stays through it.',
     stats: [
-      { name: 'App Store rating', description: 'Rose from below 3.0 to 4.5 within a year of launch (author-reported; no public snapshot exists for the period).', value: '3.0→4.5' },
-      { name: 'Engagement', description: 'Design strategist and IC lead on a full-time contract.', value: '8 weeks' },
-      { name: 'Scope', description: 'Information architecture, Home and Discover, Search, Cart, Profile, Orders, and the key flows.', value: 'Full app' },
+      { name: 'App Store rating', description: 'Author-reported; no public snapshot exists for the period.', value: '3.0→4.5' },
+      { name: 'Tenure', description: 'Full-time contract as design strategist and IC lead.', value: '8 weeks' },
     ],
     tech: [
       { k: 'Platform', v: 'iOS + Android' },
       { k: 'Method', v: 'Benchmarking · prototype testing' },
       { k: 'Role', v: 'Design strategist · IC lead' },
-      { k: 'Timeline', v: '8 weeks' },
     ],
-    tags: ['Consultant', 'Consumer', 'Mobile', 'iOS', 'Android', 'Benchmarking'],
+    tags: ['IC Lead', 'Consumer', 'Mobile', 'iOS', 'Android', 'Design strategist'],
     credits: [
       { role: 'Design strategist', name: 'Osandi Robinson' },
       { role: 'Engineering', name: 'EASI engineering' },
