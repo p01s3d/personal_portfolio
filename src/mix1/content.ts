@@ -84,7 +84,7 @@ export const mix1Work = {
     },
     {
       name: 'EASI: App Store 3.0→4.5',
-      headline: 'Redesigning EASI’s full app in eight weeks as design strategist and IC lead',
+      headline: 'Redesigning EASI’s full app in eight weeks as principal IC',
       desc: 'A sub-3.0 App Store rating capped growth. I owned the information architecture and key flows, engineering shipped them, and the rating reached 4.5 within a year of launch.',
       image: '/images/placeholder-mix1/ratio-451x567.svg',
       service: 'consultant',
@@ -792,9 +792,9 @@ export const mix1Projects = [
     service: 'Consultant',
     readTime: 3,
     image: '/images/placeholder-mix1/ratio-99x124.svg',
-    headline: 'Redesigning EASI’s full app in eight weeks as design strategist and IC lead',
+    headline: 'Redesigning EASI’s full app in eight weeks as principal IC',
     intro:
-      'EASI, an Asian food delivery app founded in Melbourne, had a loyal diaspora base and a sub-3.0 App Store rating. POISED placed me as design strategist and IC lead for eight weeks, working with business, marketing, engineering, and product stakeholders in Australia.',
+      'EASI, an Asian food delivery app founded in Melbourne, had a loyal diaspora base and a sub-3.0 App Store rating. POISED placed me as principal IC for eight weeks, covering design strategy and hands-on design with business, marketing, engineering, and product stakeholders in Australia.',
     featuredSections: [
       {
         lead: 'EASI needed an app that new users in new markets could rely on.',
@@ -808,7 +808,7 @@ export const mix1Projects = [
         lead: 'Stakeholders who built the original product doubted it needed to change.',
         richTitle: 'Evidential Challenges',
         body: [
-          'POISED placed me as design strategist and IC lead for eight weeks. My counterparts in business, marketing, engineering, and product were based in Australia, and several had shipped the original app. In week one I benchmarked products the team already respected, which gave everyone a shared standard for good.',
+          'POISED placed me as principal IC for eight weeks, covering design strategy and hands-on design. My counterparts in business, marketing, engineering, and product were based in Australia, and several had shipped the original app. In week one I benchmarked products the team already respected, which gave everyone a shared standard for good.',
         ],
         images: ['/images/placeholder-mix1/ratio-686x868.svg', '/images/placeholder-mix1/ratio-686x868.svg'],
       },
@@ -843,16 +843,16 @@ export const mix1Projects = [
     stats: [
       { name: 'App Store rating', description: 'Author-reported; no public snapshot exists for the period.', value: '3.0→4.5' },
       { name: 'Acquisition', description: 'HungryPanda announced its acquisition of EASI (HungryPanda, Jan 10, 2022). Terms undisclosed.', value: '2022' },
-      { name: 'Tenure', description: 'Full-time contract as design strategist and IC lead.', value: '8 weeks' },
+      { name: 'Tenure', description: 'Full-time contract as principal IC.', value: '8 weeks' },
     ],
     tech: [
       { k: 'Platform', v: 'iOS + Android' },
       { k: 'Method', v: 'Benchmarking · prototype testing' },
-      { k: 'Role', v: 'Design strategist · IC lead' },
+      { k: 'Role', v: 'Principal IC' },
     ],
-    tags: ['IC Lead', 'Consumer', 'Mobile', 'iOS', 'Android', 'Design strategist'],
+    tags: ['IC', 'Consumer', 'Mobile', 'iOS', 'Android', 'Principal'],
     credits: [
-      { role: 'Design strategist', name: 'Osandi Robinson' },
+      { role: 'Principal IC', name: 'Osandi Robinson' },
       { role: 'Engineering', name: 'EASI engineering' },
     ],
     clientCredits: [
