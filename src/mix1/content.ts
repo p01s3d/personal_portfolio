@@ -84,8 +84,8 @@ export const mix1Work = {
     },
     {
       name: 'EASI: App Store 3.0→4.5',
-      headline: 'Redesigning EASI’s entire app in eight weeks as design strategist and IC lead. The App Store rating rose from below 3.0 to 4.5 within a year of launch.',
-      desc: 'EASI had a loyal base in Asian diaspora communities in Australia and a product that held it back: poor usability, frequent crashes, and a sub-3.0 App Store rating. Its C-suite wanted to deploy in the US and Australian diaspora markets. As design strategist and IC lead for eight weeks, I redesigned the full app, from information architecture through Home, Search, Cart, Profile, and Orders. Engineering shipped my architecture, and the App Store rating rose from below 3.0 to 4.5 within a year of launch. HungryPanda acquired EASI in 2022.',
+      headline: 'Redesigning EASI’s full app in eight weeks as principal IC',
+      desc: 'A sub-3.0 App Store rating capped growth. I owned the information architecture and key flows, engineering shipped them, and the rating reached 4.5 within a year of launch.',
       image: '/images/placeholder-mix1/ratio-451x567.svg',
       service: 'consultant',
       sector: 'consumer',
@@ -774,45 +774,66 @@ export const mix1Projects = [
     motionDemos: [] as { label: string; src: string }[],
   },
   {
-    // Problem-validation source (I-7): the sub-3.0 rating and crash-rate
-    // figures below were verified firsthand while contracted on this
-    // engagement — no App Store historical snapshot exists to cite (no
-    // public rating-history log for this period). Confirmed by the author
-    // as accurate from direct contemporaneous knowledge; kept as-is rather
-    // than softened or removed.
+    // Evidence basis (I-7). Author-confirmed from direct knowledge, no
+    // public artifact to cite: the sub-3.0 rating and crash rate before the
+    // redesign, the 4.5 rating within a year of launch, the 8-week
+    // full-time contract, the C-suite goal (US and Australian Asian
+    // diaspora markets), English localization answering user feedback,
+    // adoption growth after launch, the architecture allowing new features
+    // to scale, the designs carrying forward as part of the product's
+    // proprietary value, the three working hypotheses, and the
+    // four benchmarks (Postmates, Uber Eats, Deliveroo, DoorDash). No
+    // success metrics were shared with the author; the hypotheses were the
+    // working assumptions. Left out on purpose: "design led to the
+    // acquisition" (no source ties the two). Sourced: the Jan
+    // 10, 2022 HungryPanda acquisition announcement (terms undisclosed;
+    // local reports say A$50M, not used). Removed after checking sources:
+    // the "$500M+ valuation" (HungryPanda's own valuation, not EASI's
+    // price), "1M+ users" (undated company marketing), and the claim that
+    // the acquirer's rationale mirrored this strategy.
     slug: 'easi-food-delivery',
     name: 'EASI: App Store 3.0→4.5',
     client: 'EASI',
     sector: 'Consumer',
     year: '2020',
     service: 'Consultant',
-    readTime: 4,
+    readTime: 3,
     image: '/images/placeholder-mix1/ratio-99x124.svg',
-    headline: 'Redesigning EASI’s entire app in eight weeks as design strategist and IC lead. The App Store rating rose from below 3.0 to 4.5 within a year of launch.',
+    headline: 'Redesigning EASI’s full app in eight weeks as principal IC',
     intro:
-      'EASI, an Asian food delivery app founded in Melbourne, had a loyal diaspora base and a product that held it back. A sub-3.0 App Store rating and frequent crashes capped growth. The C-suite wanted to deploy in the Asian diaspora markets of both the US and Australia. POISED placed me as design strategist and IC lead for eight weeks, working with business, marketing, engineering, and product stakeholders based in Australia.',
+      'EASI, an Asian food delivery app founded in Melbourne, had a loyal diaspora base and a sub-3.0 App Store rating. POISED placed me as principal IC for eight weeks, covering design strategy and hands-on design with business, marketing, engineering, and product stakeholders in Australia.',
     featuredSections: [
       {
         lead: 'EASI needed an app that new users in new markets could rely on.',
         richTitle: "The Product's Business",
         body: [
-          'EASI launched in Melbourne in 2014 as an Asian food delivery app, with grocery delivery and travel booking alongside it. It served diaspora communities across Australia. By 2020 the base was loyal, but a sub-3.0 App Store rating and frequent crashes capped growth. The C-suite set a goal to deploy in the Asian diaspora markets of both the US and Australia. That goal required an app that new users in each market could rely on.',
+          'EASI launched in Melbourne in 2014 as an Asian food delivery app, with grocery delivery and travel booking alongside it, and served diaspora communities across Australia. The base was loyal, but a sub-3.0 App Store rating and frequent crashes capped growth. The C-suite wanted to deploy in Asian diaspora markets in the US and Australia.',
         ],
         images: [],
       },
       {
-        lead: 'Eight weeks, a C-suite goal, and stakeholders across four functions.',
+        lead: 'Stakeholders who built the original product doubted it needed to change.',
         richTitle: 'Evidential Challenges',
         body: [
-          'The mandate was an app that could win new users in two markets, delivered in eight weeks. My counterparts in business, marketing, engineering, and product were based in Australia. Several stakeholders had shipped the original product and doubted it needed to change. In week one I benchmarked products the team already respected, which gave everyone a shared standard for good.',
+          'POISED placed me as principal IC for eight weeks, covering design strategy and hands-on design. My counterparts in business, marketing, engineering, and product were based in Australia, and several had shipped the original app. In week one I benchmarked Postmates, Uber Eats, Deliveroo, and DoorDash, which gave everyone a shared standard for good.',
+        ],
+        subsections: [
+          {
+            title: 'Hypothesis: Easier Navigation, Wider Reach, More Repeat Orders',
+            body: [
+              'A better architecture would make the app easier to navigate and so easier to use. We would know we were right if ordering, redeeming a coupon, and tracking an order got faster, ratings and reviews went up, and customers became likelier to refer a friend with a discount code.',
+              'Appealing to a broader addressable market would grow share in a niche category. EASI worked directly with restaurant owners who, at the time, had no online business, delivery, menu, or couriers of their own.',
+              'More repeat and new orders would drive the business, with retention as the signal.',
+            ],
+          },
         ],
         images: ['/images/placeholder-mix1/ratio-686x868.svg', '/images/placeholder-mix1/ratio-686x868.svg'],
       },
       {
-        lead: 'I set the architecture first and designed outward from it.',
+        lead: 'Engineering built from my architecture, the benchmarks, and my direction.',
         richTitle: 'Approach',
         body: [
-          'I began with information architecture, then designed outward: Home and Discover, Search, Cart, Profile, and Orders. The key flows covered buying, tracking an order, redeeming coupons, and managing profile and settings. Engineering built from my architecture and drew on the benchmarks and my direction. The client kept ownership of branding. The shipped app supported English and Mandarin.',
+          'I designed the information architecture first, then Home and Discover, Search, Cart, Profile, and Orders. The key flows covered buying, tracking an order, redeeming coupons, and managing profile and settings. The client kept ownership of branding.',
         ],
         images: ['/images/placeholder-mix1/ratio-686x868.svg', '/images/placeholder-mix1/ratio-686x868.svg'],
       },
@@ -820,7 +841,9 @@ export const mix1Projects = [
         lead: 'App Store rating: below 3.0 to 4.5 within a year of launch.',
         richTitle: 'Individual Contributor Impact',
         body: [
-          'The App Store rating rose from below 3.0 to 4.5 within a year of launch. I report that figure from direct knowledge, since no public snapshot exists for the period. HungryPanda announced its acquisition of EASI on January 10, 2022. Public reporting on EASI after my engagement is limited.',
+          'The architecture allowed new features to scale. The designs held up as part of the product’s proprietary property, and those decisions carried forward as part of its value.',
+          'The shipped app was localized in English, which user feedback had named as a key issue, and it supported Mandarin as well. Adoption grew after launch.',
+          'HungryPanda announced its acquisition of EASI and BUY@HOME on January 10, 2022. Terms were not disclosed.',
         ],
         images: ['/images/placeholder-mix1/ratio-686x868.svg', '/images/placeholder-mix1/ratio-686x868.svg'],
       },
@@ -828,28 +851,27 @@ export const mix1Projects = [
         lead: 'The advisor leaves before the work lands.',
         richTitle: 'What I\'d do differently',
         body: [
-          "Attention from ownership and leadership fades right after sign-off — schedule the follow-ups while you still have it, and keep the plan simple enough to survive without you in the room. The same applies to the recommendation itself: test feasibility of team, budget, and politics during discovery, since a recommendation the client can't resource is a weak recommendation no matter how sound the analysis behind it.",
-          "Design intent gets lost at the seam between design and engineering more often than anywhere else in the process. Involve engineers during design so feasibility problems surface early — as Questworks puts it, the most expensive time to discover a feasibility problem is during implementation. Specify behavior, not just visuals: document every state (loading, empty, error, success) and its edge cases, and walk the spec with the client's engineers. Design with the components and tokens engineers ship — per UXPin, translation is the biggest driver of drift. Build design QA into the process: review the implementation against the original design before it ships, contract for that review up front, and agree on a definition of done between design and engineering, then stay available for questions through the build.",
+          "Leadership attention fades after sign-off, so schedule follow-ups while you still have it and keep the plan simple enough to survive without you in the room. Test feasibility of team, budget, and politics during discovery, because a recommendation the client cannot resource is weak however sound the analysis.",
+          "Design intent gets lost at the seam between design and engineering more often than anywhere else in the process. Involve engineers during design so feasibility problems surface early; as Questworks puts it, the most expensive time to discover a feasibility problem is during implementation. Specify behavior along with visuals: document every state (loading, empty, error, success) and its edge cases, and walk the spec with the client's engineers. Design with the components and tokens engineers ship, since per UXPin translation is the biggest driver of drift. Review the implementation against the original design before it ships, contract for that review up front, agree on a definition of done with engineering, and stay available for questions through the build.",
         ],
         images: ['/images/placeholder-mix1/ratio-686x868.svg', '/images/placeholder-mix1/ratio-686x868.svg'],
       },
     ],
     mockups: ['/images/placeholder-mix1/ratio-900x1600.svg', '/images/placeholder-mix1/ratio-900x1600.svg', '/images/placeholder-mix1/ratio-900x1600.svg'],
-    closingLead: 'A sub-3.0 rating became 4.5 within a year of launch, on an architecture I designed and engineering shipped.',
+    closingLead: 'Design intent survives the build when design stays through it.',
     stats: [
-      { name: 'App Store rating', description: 'Rose from below 3.0 to 4.5 within a year of launch (author-reported; no public snapshot exists for the period).', value: '3.0→4.5' },
-      { name: 'Engagement', description: 'Design strategist and IC lead on a full-time contract.', value: '8 weeks' },
-      { name: 'Scope', description: 'Information architecture, Home and Discover, Search, Cart, Profile, Orders, and the key flows.', value: 'Full app' },
+      { name: 'App Store rating', description: 'Author-reported; no public snapshot exists for the period.', value: '3.0→4.5' },
+      { name: 'Acquisition', description: 'HungryPanda announced its acquisition of EASI (HungryPanda, Jan 10, 2022). Terms undisclosed.', value: '2022' },
+      { name: 'Tenure', description: 'Full-time contract as principal IC.', value: '8 weeks' },
     ],
     tech: [
       { k: 'Platform', v: 'iOS + Android' },
       { k: 'Method', v: 'Benchmarking · prototype testing' },
-      { k: 'Role', v: 'Design strategist · IC lead' },
-      { k: 'Timeline', v: '8 weeks' },
+      { k: 'Role', v: 'Principal IC' },
     ],
-    tags: ['Consultant', 'Consumer', 'Mobile', 'iOS', 'Android', 'Benchmarking'],
+    tags: ['IC', 'Consumer', 'Mobile', 'iOS', 'Android', 'Principal'],
     credits: [
-      { role: 'Design strategist', name: 'Osandi Robinson' },
+      { role: 'Principal IC', name: 'Osandi Robinson' },
       { role: 'Engineering', name: 'EASI engineering' },
     ],
     clientCredits: [
