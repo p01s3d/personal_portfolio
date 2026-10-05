@@ -85,7 +85,8 @@ Full list:
 | `Product design` | credits | `deposit-on-mezo`, `borrow-musd` |
 | `Director of Product Design` | credits | `blockfi-product-design-leader` (real title, confirmed — see `01-inputs-to-fill.md` I-1) |
 | `Founding Head of Design` | credits | `cash-native-app` (real title, confirmed by the author — see `01-inputs-to-fill.md` I-13) |
-| `Design consultant` | credits | `easi-food-delivery`, `krisp-ai` |
+| `Design consultant` | credits | `krisp-ai` |
+| `Design strategist` | credits | `easi-food-delivery` (author-stated role: design strategist and IC lead) |
 | `Organization` | clientCredits | see **The Organization field** |
 | `Head of Design` | clientCredits | `mezo-product-design-ops-leader` |
 | `PM` | clientCredits | most projects |
