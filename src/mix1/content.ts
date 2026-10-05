@@ -812,7 +812,7 @@ export const mix1Projects = [
         lead: 'I set the architecture first and designed outward from it.',
         richTitle: 'Approach',
         body: [
-          'I began with information architecture, then designed outward: Home and Discover, Search, Cart, Profile, and Orders. The key flows covered buying, tracking an order, redeeming coupons, and managing profile and settings. Engineering built from my architecture and drew on the benchmarks and my direction. The client kept ownership of branding. The shipped app supported English and additional languages.',
+          'I began with information architecture, then designed outward: Home and Discover, Search, Cart, Profile, and Orders. The key flows covered buying, tracking an order, redeeming coupons, and managing profile and settings. Engineering built from my architecture and drew on the benchmarks and my direction. The client kept ownership of branding. The shipped app supported English and Mandarin.',
         ],
         images: ['/images/placeholder-mix1/ratio-686x868.svg', '/images/placeholder-mix1/ratio-686x868.svg'],
       },
