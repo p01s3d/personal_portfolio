@@ -778,7 +778,12 @@ export const mix1Projects = [
     // public artifact to cite: the sub-3.0 rating and crash rate before the
     // redesign, the 4.5 rating within a year of launch, the 8-week
     // full-time contract, the C-suite goal (US and Australian Asian
-    // diaspora markets), and English + Mandarin support. Sourced: the Jan
+    // diaspora markets), English localization answering user feedback,
+    // adoption growth after launch, the three working hypotheses, and the
+    // four benchmarks (Postmates, Uber Eats, Deliveroo, DoorDash). No
+    // success metrics were shared with the author; the hypotheses were the
+    // working assumptions. Left out on purpose: "design led to the
+    // acquisition" (no source ties the two). Sourced: the Jan
     // 10, 2022 HungryPanda acquisition announcement (terms undisclosed;
     // local reports say A$50M, not used). Removed after checking sources:
     // the "$500M+ valuation" (HungryPanda's own valuation, not EASI's
@@ -808,7 +813,17 @@ export const mix1Projects = [
         lead: 'Stakeholders who built the original product doubted it needed to change.',
         richTitle: 'Evidential Challenges',
         body: [
-          'POISED placed me as principal IC for eight weeks, covering design strategy and hands-on design. My counterparts in business, marketing, engineering, and product were based in Australia, and several had shipped the original app. In week one I benchmarked products the team already respected, which gave everyone a shared standard for good.',
+          'POISED placed me as principal IC for eight weeks, covering design strategy and hands-on design. My counterparts in business, marketing, engineering, and product were based in Australia, and several had shipped the original app. In week one I benchmarked Postmates, Uber Eats, Deliveroo, and DoorDash, which gave everyone a shared standard for good.',
+        ],
+        subsections: [
+          {
+            title: 'Hypothesis: Easier Navigation, Wider Reach, More Repeat Orders',
+            body: [
+              'A better architecture would make the app easier to navigate and so easier to use. We would know we were right if ordering, redeeming a coupon, and tracking an order got faster, ratings and reviews went up, and customers became likelier to refer a friend with a discount code.',
+              'Appealing to a broader addressable market would grow share in a niche category. EASI worked directly with restaurant owners who, at the time, had no online business, delivery, menu, or couriers of their own.',
+              'More repeat and new orders would drive the business, with retention as the signal.',
+            ],
+          },
         ],
         images: ['/images/placeholder-mix1/ratio-686x868.svg', '/images/placeholder-mix1/ratio-686x868.svg'],
       },
@@ -816,7 +831,7 @@ export const mix1Projects = [
         lead: 'Engineering built from my architecture, the benchmarks, and my direction.',
         richTitle: 'Approach',
         body: [
-          'I designed the information architecture first, then Home and Discover, Search, Cart, Profile, and Orders. The key flows covered buying, tracking an order, redeeming coupons, and managing profile and settings. The client kept ownership of branding. The shipped app supported English and Mandarin.',
+          'I designed the information architecture first, then Home and Discover, Search, Cart, Profile, and Orders. The key flows covered buying, tracking an order, redeeming coupons, and managing profile and settings. The client kept ownership of branding.',
         ],
         images: ['/images/placeholder-mix1/ratio-686x868.svg', '/images/placeholder-mix1/ratio-686x868.svg'],
       },
@@ -824,6 +839,7 @@ export const mix1Projects = [
         lead: 'App Store rating: below 3.0 to 4.5 within a year of launch.',
         richTitle: 'Individual Contributor Impact',
         body: [
+          'The shipped app was localized in English, which user feedback had named as a key issue, and it supported Mandarin as well. Adoption grew after launch.',
           'HungryPanda announced its acquisition of EASI and BUY@HOME on January 10, 2022. Terms were not disclosed.',
         ],
         images: ['/images/placeholder-mix1/ratio-686x868.svg', '/images/placeholder-mix1/ratio-686x868.svg'],
