@@ -779,7 +779,9 @@ export const mix1Projects = [
     // redesign, the 4.5 rating within a year of launch, the 8-week
     // full-time contract, the C-suite goal (US and Australian Asian
     // diaspora markets), English localization answering user feedback,
-    // adoption growth after launch, the three working hypotheses, and the
+    // adoption growth after launch, the architecture allowing new features
+    // to scale, the designs carrying forward as part of the product's
+    // proprietary value, the three working hypotheses, and the
     // four benchmarks (Postmates, Uber Eats, Deliveroo, DoorDash). No
     // success metrics were shared with the author; the hypotheses were the
     // working assumptions. Left out on purpose: "design led to the
@@ -839,6 +841,7 @@ export const mix1Projects = [
         lead: 'App Store rating: below 3.0 to 4.5 within a year of launch.',
         richTitle: 'Individual Contributor Impact',
         body: [
+          'The architecture allowed new features to scale. The designs held up as part of the product’s proprietary property, and those decisions carried forward as part of its value.',
           'The shipped app was localized in English, which user feedback had named as a key issue, and it supported Mandarin as well. Adoption grew after launch.',
           'HungryPanda announced its acquisition of EASI and BUY@HOME on January 10, 2022. Terms were not disclosed.',
         ],
