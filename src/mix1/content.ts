@@ -37,7 +37,7 @@ export const mix1Work = {
     // with a later user count.
     { org: 'Mezo', value: '$70M+', label: 'mainnet TVL · 43,500+ users' },
     { org: 'a16z', value: '0 → 1', label: 'design function' },
-    { org: 'EASI', value: '$500M+', label: 'acquisition valuation' },
+    { org: 'EASI', value: '3.0 → 4.5', label: 'App Store rating' },
     { org: 'Mezo', value: '~40%', label: 'conversion vs. 30% OKR' },
     { org: 'Vinyl Crate', value: '$250K', label: 'dev cost saved' },
   ],
@@ -83,9 +83,9 @@ export const mix1Work = {
       sector: 'crypto',
     },
     {
-      name: 'EASI: $500M+ Valuation',
-      headline: 'Rearchitecting EASI to win a second audience — and a $500M valuation',
-      desc: 'EASI had a strong market position in Australian diaspora communities, but poor usability, frequent crashes, and a sub-3.0 App Store rating were capping their TAM. In six weeks, I used benchmarking to build stakeholder confidence for a full redesign, then rebuilt core ordering flow in parallel with engineering’s re-architecture — prototyping and testing each decision before handoff. App Store rating climbed from below 3.0 to 4.5 stars. EASI surpassed 1M+ users, reached a $500M+ valuation, and was acquired by HungryPanda in 2022 — whose acquisition rationale mirrored the market strategy the redesign was built around.',
+      name: 'EASI: App Store 3.0→4.5',
+      headline: 'Redesigning EASI’s entire app in eight weeks as design strategist and IC lead. The App Store rating rose from below 3.0 to 4.5 within a year of launch.',
+      desc: 'EASI had a loyal base in Asian diaspora communities in Australia and a product that held it back: poor usability, frequent crashes, and a sub-3.0 App Store rating. Its C-suite wanted to deploy in the US and Australian diaspora markets. As design strategist and IC lead for eight weeks, I redesigned the full app, from information architecture through Home, Search, Cart, Profile, and Orders. Engineering shipped my architecture, and the App Store rating rose from below 3.0 to 4.5 within a year of launch. HungryPanda acquired EASI in 2022.',
       image: '/images/placeholder-mix1/ratio-451x567.svg',
       service: 'consultant',
       sector: 'consumer',
@@ -781,32 +781,46 @@ export const mix1Projects = [
     // as accurate from direct contemporaneous knowledge; kept as-is rather
     // than softened or removed.
     slug: 'easi-food-delivery',
-    name: 'EASI: $500M+ Valuation',
+    name: 'EASI: App Store 3.0→4.5',
     client: 'EASI',
     sector: 'Consumer',
     year: '2020',
     service: 'Consultant',
     readTime: 4,
     image: '/images/placeholder-mix1/ratio-99x124.svg',
-    headline: 'Rearchitecting EASI to win a second audience — and a $500M valuation',
+    headline: 'Redesigning EASI’s entire app in eight weeks as design strategist and IC lead. The App Store rating rose from below 3.0 to 4.5 within a year of launch.',
     intro:
-      "EASI had a real market and a broken product. A sub-3.0 App Store rating and frequent crashes weren't edge cases — they were capping the total addressable market. The problem wasn't the audience; it was the experience they were being asked to tolerate.",
+      'EASI, an Asian food delivery app founded in Melbourne, had a loyal diaspora base and a product that held it back. A sub-3.0 App Store rating and frequent crashes capped growth. The C-suite wanted to deploy in the Asian diaspora markets of both the US and Australia. POISED placed me as design strategist and IC lead for eight weeks, working with business, marketing, engineering, and product stakeholders based in Australia.',
     featuredSections: [
       {
-        lead: 'Benchmarking built the stakeholder confidence that unlocked the redesign.',
-        richTitle: 'Building the case for change',
+        lead: 'EASI needed an app that new users in new markets could rely on.',
+        richTitle: "The Product's Business",
         body: [
-          "Six weeks. Skeptical stakeholders. A team that had shipped the original product and wasn't sure anything needed to change. Benchmarking gave us a shared language for what 'good' looked like — not opinions, but patterns from products the team already respected.",
-          "Once the case was made, the redesign ran in parallel with engineering's re-architecture — prototyping and testing each decision before handoff, so no one was waiting on anyone.",
+          'EASI launched in Melbourne in 2014 as an Asian food delivery app, with grocery delivery and travel booking alongside it. It served diaspora communities across Australia. By 2020 the base was loyal, but a sub-3.0 App Store rating and frequent crashes capped growth. The C-suite set a goal to deploy in the Asian diaspora markets of both the US and Australia. That goal required an app that new users in each market could rely on.',
+        ],
+        images: [],
+      },
+      {
+        lead: 'Eight weeks, a C-suite goal, and stakeholders across four functions.',
+        richTitle: 'Evidential Challenges',
+        body: [
+          'The mandate was an app that could win new users in two markets, delivered in eight weeks. My counterparts in business, marketing, engineering, and product were based in Australia. Several stakeholders had shipped the original product and doubted it needed to change. In week one I benchmarked products the team already respected, which gave everyone a shared standard for good.',
         ],
         images: ['/images/placeholder-mix1/ratio-686x868.svg', '/images/placeholder-mix1/ratio-686x868.svg'],
       },
       {
-        lead: 'App Store rating: below 3.0 to 4.5. Acquired for $500M+.',
-        richTitle: 'The numbers that followed',
+        lead: 'I set the architecture first and designed outward from it.',
+        richTitle: 'Approach',
         body: [
-          "EASI surpassed 1M+ users and reached a $500M+ valuation. HungryPanda's acquisition rationale in 2022 mirrored the market strategy the redesign was built around — expanding from diaspora communities into a broader urban audience.",
-          "The six-week timeline wasn't a constraint. It was the discipline that kept the scope focused on what would move the numbers.",
+          'I began with information architecture, then designed outward: Home and Discover, Search, Cart, Profile, and Orders. The key flows covered buying, tracking an order, redeeming coupons, and managing profile and settings. Engineering built from my architecture and drew on the benchmarks and my direction. The client kept ownership of branding. The shipped app supported English and additional languages.',
+        ],
+        images: ['/images/placeholder-mix1/ratio-686x868.svg', '/images/placeholder-mix1/ratio-686x868.svg'],
+      },
+      {
+        lead: 'App Store rating: below 3.0 to 4.5 within a year of launch.',
+        richTitle: 'Individual Contributor Impact',
+        body: [
+          'The App Store rating rose from below 3.0 to 4.5 within a year of launch. I report that figure from direct knowledge, since no public snapshot exists for the period. HungryPanda announced its acquisition of EASI on January 10, 2022. Public reporting on EASI after my engagement is limited.',
         ],
         images: ['/images/placeholder-mix1/ratio-686x868.svg', '/images/placeholder-mix1/ratio-686x868.svg'],
       },
@@ -821,20 +835,21 @@ export const mix1Projects = [
       },
     ],
     mockups: ['/images/placeholder-mix1/ratio-900x1600.svg', '/images/placeholder-mix1/ratio-900x1600.svg', '/images/placeholder-mix1/ratio-900x1600.svg'],
-    closingLead: 'A 4.5-star rating is a market signal. The $500M acquisition validated the strategy the redesign was built around.',
+    closingLead: 'A sub-3.0 rating became 4.5 within a year of launch, on an architecture I designed and engineering shipped.',
     stats: [
-      { name: 'App Store rating', description: 'Climbed from below 3.0 to 4.5 stars following the redesign launch.', value: '3.0→4.5' },
-      { name: 'Users', description: 'EASI passed 1M+ users after the redesign expanded its addressable market.', value: '1M+' },
-      { name: 'Valuation at acquisition', description: 'HungryPanda acquired EASI in 2022 for a reported $500M+.', value: '$500M+' },
+      { name: 'App Store rating', description: 'Rose from below 3.0 to 4.5 within a year of launch (author-reported; no public snapshot exists for the period).', value: '3.0→4.5' },
+      { name: 'Engagement', description: 'Design strategist and IC lead on a full-time contract.', value: '8 weeks' },
+      { name: 'Scope', description: 'Information architecture, Home and Discover, Search, Cart, Profile, Orders, and the key flows.', value: 'Full app' },
     ],
     tech: [
       { k: 'Platform', v: 'iOS + Android' },
       { k: 'Method', v: 'Benchmarking · prototype testing' },
-      { k: 'Timeline', v: '6 weeks' },
+      { k: 'Role', v: 'Design strategist · IC lead' },
+      { k: 'Timeline', v: '8 weeks' },
     ],
     tags: ['Consultant', 'Consumer', 'Mobile', 'iOS', 'Android', 'Benchmarking'],
     credits: [
-      { role: 'Design consultant', name: 'Osandi Robinson' },
+      { role: 'Design strategist', name: 'Osandi Robinson' },
       { role: 'Engineering', name: 'EASI engineering' },
     ],
     clientCredits: [
