@@ -774,19 +774,23 @@ export const mix1Projects = [
     motionDemos: [] as { label: string; src: string }[],
   },
   {
-    // Problem-validation source (I-7): the sub-3.0 rating and crash-rate
-    // figures below were verified firsthand while contracted on this
-    // engagement — no App Store historical snapshot exists to cite (no
-    // public rating-history log for this period). Confirmed by the author
-    // as accurate from direct contemporaneous knowledge; kept as-is rather
-    // than softened or removed.
+    // Evidence basis (I-7). Author-confirmed from direct knowledge, no
+    // public artifact to cite: the sub-3.0 rating and crash rate before the
+    // redesign, the 4.5 rating within a year of launch, the 8-week
+    // full-time contract, the C-suite goal (US and Australian Asian
+    // diaspora markets), and English + Mandarin support. Sourced: the Jan
+    // 10, 2022 HungryPanda acquisition announcement (terms undisclosed;
+    // local reports say A$50M, not used). Removed after checking sources:
+    // the "$500M+ valuation" (HungryPanda's own valuation, not EASI's
+    // price), "1M+ users" (undated company marketing), and the claim that
+    // the acquirer's rationale mirrored this strategy.
     slug: 'easi-food-delivery',
     name: 'EASI: App Store 3.0→4.5',
     client: 'EASI',
     sector: 'Consumer',
     year: '2020',
     service: 'Consultant',
-    readTime: 4,
+    readTime: 3,
     image: '/images/placeholder-mix1/ratio-99x124.svg',
     headline: 'Redesigning EASI’s full app in eight weeks as design strategist and IC lead',
     intro:
@@ -804,7 +808,7 @@ export const mix1Projects = [
         lead: 'Stakeholders who built the original product doubted it needed to change.',
         richTitle: 'Evidential Challenges',
         body: [
-          'My counterparts in business, marketing, engineering, and product were based in Australia, and several had shipped the original app. In week one I benchmarked products the team already respected, which gave everyone a shared standard for good.',
+          'POISED placed me as design strategist and IC lead for eight weeks. My counterparts in business, marketing, engineering, and product were based in Australia, and several had shipped the original app. In week one I benchmarked products the team already respected, which gave everyone a shared standard for good.',
         ],
         images: ['/images/placeholder-mix1/ratio-686x868.svg', '/images/placeholder-mix1/ratio-686x868.svg'],
       },
@@ -820,7 +824,7 @@ export const mix1Projects = [
         lead: 'App Store rating: below 3.0 to 4.5 within a year of launch.',
         richTitle: 'Individual Contributor Impact',
         body: [
-          'HungryPanda announced its acquisition of EASI on January 10, 2022.',
+          'HungryPanda announced its acquisition of EASI and BUY@HOME on January 10, 2022. Terms were not disclosed.',
         ],
         images: ['/images/placeholder-mix1/ratio-686x868.svg', '/images/placeholder-mix1/ratio-686x868.svg'],
       },
@@ -838,6 +842,7 @@ export const mix1Projects = [
     closingLead: 'Design intent survives the build when design stays through it.',
     stats: [
       { name: 'App Store rating', description: 'Author-reported; no public snapshot exists for the period.', value: '3.0→4.5' },
+      { name: 'Acquisition', description: 'HungryPanda announced its acquisition of EASI (HungryPanda, Jan 10, 2022). Terms undisclosed.', value: '2022' },
       { name: 'Tenure', description: 'Full-time contract as design strategist and IC lead.', value: '8 weeks' },
     ],
     tech: [
